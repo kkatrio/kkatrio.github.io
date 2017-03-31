@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: A blog about GSoC
-email: konst.katrioplas@domain.com
+email: konst.katrioplas@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   My name is Konstantinos Katrioplas and this is a blog about Google summer of Code 2017!
 baseurl: "" # the subpath of your site, e.g. /blog
