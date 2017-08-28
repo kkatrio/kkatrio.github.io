@@ -1,0 +1,27 @@
+var classEdgeProfile =
+[
+    [ "ECM", "../Surface_mesh_simplification/classEdgeProfile.html#a4935043a21047421fc6e974a4bb88eae", null ],
+    [ "VertexPointMap", "../Surface_mesh_simplification/classEdgeProfile.html#ac1ccf60effd05136c6007f0c4d26a853", null ],
+    [ "border_edges", "../Surface_mesh_simplification/classEdgeProfile.html#aa3ffebd28ffecc341280e9fb8b34f7db", null ],
+    [ "left_face_exists", "../Surface_mesh_simplification/classEdgeProfile.html#a52a391f292a7667dd4f1e1390bff7b05", null ],
+    [ "link", "../Surface_mesh_simplification/classEdgeProfile.html#a3fccaaa1a8df21b0f812f12717c805df", null ],
+    [ "p0", "../Surface_mesh_simplification/classEdgeProfile.html#a99c5d63999aec1620a1639bda0a495c6", null ],
+    [ "p1", "../Surface_mesh_simplification/classEdgeProfile.html#a3fd3076b2099441e91e8eaf8a35b0e4e", null ],
+    [ "right_face_exists", "../Surface_mesh_simplification/classEdgeProfile.html#a68585e4ca493b69d446de669553349c2", null ],
+    [ "surface_mesh", "../Surface_mesh_simplification/classEdgeProfile.html#a74b5f4286b8e18345e7ee10a7c2ca715", null ],
+    [ "v0", "../Surface_mesh_simplification/classEdgeProfile.html#aa78d2ce2e46129e12a2a5e79e159fe7d", null ],
+    [ "v0_v1", "../Surface_mesh_simplification/classEdgeProfile.html#a5177f90d8d239aec9e593a521add6d0c", null ],
+    [ "v0_vR", "../Surface_mesh_simplification/classEdgeProfile.html#a1b616ff60ce45de7456b17cae7bef89b", null ],
+    [ "v1", "../Surface_mesh_simplification/classEdgeProfile.html#a9e2bbe7f1980a198fbc63b1890946cbc", null ],
+    [ "v1_v0", "../Surface_mesh_simplification/classEdgeProfile.html#aebc5c03140c0451600c9b34d7bb39f95", null ],
+    [ "v1_vL", "../Surface_mesh_simplification/classEdgeProfile.html#a90f66ccf39fa84211b6f0e47ab680844", null ],
+    [ "vertex_point_map", "../Surface_mesh_simplification/classEdgeProfile.html#a2f1e83f7c5e1dc0554cb8cb8c81b10ba", null ],
+    [ "vL", "../Surface_mesh_simplification/classEdgeProfile.html#a3dcebeba4f38f378d268464daf93f4d5", null ],
+    [ "vL_v0", "../Surface_mesh_simplification/classEdgeProfile.html#a0d78519ba015c8908981e88c69c69f72", null ],
+    [ "vR", "../Surface_mesh_simplification/classEdgeProfile.html#a2f1af7cac48efdbb4b7ca554507bd831", null ],
+    [ "vR_v1", "../Surface_mesh_simplification/classEdgeProfile.html#af759f90d03bcb431cbe81f9b86b9fee3", null ],
+    [ "FT", "../Surface_mesh_simplification/classEdgeProfile.html#a0177903803a5a2c6ceba94d0caca808a", null ],
+    [ "halfedge_descriptor", "../Surface_mesh_simplification/classEdgeProfile.html#aaa244ea28866ccf1ab5fae6d0143faa4", null ],
+    [ "Point", "../Surface_mesh_simplification/classEdgeProfile.html#a2a25fea0f4988dd09b78ba432078e59b", null ],
+    [ "vertex_descriptor", "../Surface_mesh_simplification/classEdgeProfile.html#a3ab2f2b85c1c2a112791b13ba79f55d3", null ]
+];
