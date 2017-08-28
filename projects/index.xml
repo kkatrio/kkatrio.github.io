@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Konstantinos Katrioplas</title>
+    <link>https://kkatrio.github.io/projects/</link>
+    <description>Recent content in Projects on Konstantinos Katrioplas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Aug 2017 17:13:11 +0300</lastBuildDate>
+    
+	<atom:link href="https://kkatrio.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Smoothing for the CGAL during Google summer of Code 2017</title>
+      <link>https://kkatrio.github.io/projects/smoothing-gsoc17/</link>
+      <pubDate>Sun, 27 Aug 2017 17:13:11 +0300</pubDate>
+      
+      <guid>https://kkatrio.github.io/projects/smoothing-gsoc17/</guid>
+      <description>This is a final report on my work for the CGAL project during the 2017 Google summer of code.
+My main task was to enhance the Polygon mesh processing package with two algorithms for optimization of a triangulated 3D surface mesh. The first algorithm aims at improving the mesh quality by using geometric criteria such as angles adjacent to mesh vertices and element areas, as proposed in this paper by Surazhsky and Gotsman.</description>
+    </item>
+    
+  </channel>
+</rss>

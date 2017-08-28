@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Things_I_am_passionate_about on Konstantinos Katrioplas</title>
+    <link>https://kkatrio.github.io/things_i_am_passionate_about/</link>
+    <description>Recent content in Things_I_am_passionate_about on Konstantinos Katrioplas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Aug 2017 17:13:11 +0300</lastBuildDate>
+    
+	<atom:link href="https://kkatrio.github.io/things_i_am_passionate_about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Prime numbers</title>
+      <link>https://kkatrio.github.io/things_i_am_passionate_about/2017-08-08-prime-numbers/</link>
+      <pubDate>Tue, 08 Aug 2017 17:13:11 +0300</pubDate>
+      
+      <guid>https://kkatrio.github.io/things_i_am_passionate_about/2017-08-08-prime-numbers/</guid>
+      <description>This is my sieve of Eratosthenes. Well, it&#39;s not mine and Eratosthenes&#39; at the same time. It rather belongs to Eratosthenes more, since he thought of it first. I guess I just like it so much that subconsciously I claimed his idea. And how fast is it? Hmmm
+ .numbers li{ display: inline-block; counter-increment: numbers; color: grey; text-align:center; padding: 0.5vw; width: 30px; height: 30px; line-height: 30px; color: red; } .numbers li::before{ content: counter(numbers); } .</description>
+    </item>
+    
+  </channel>
+</rss>
