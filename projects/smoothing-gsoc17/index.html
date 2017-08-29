@@ -27,6 +27,17 @@
 
 
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-105597427-1', 'auto');
+	  ga('send', 'pageview');
+
+</script>
+
 
     </head>
 
@@ -152,7 +163,7 @@ that minimize the difference of the areas of all triangles around each vertex to
 <p><code>x_(n+1) = x_n - eta dr/dx</code></p>
 
 <p>An amazing problem that appeared was that energy was being stuck in local minima.
-To confront this, I added learning rate annealing based on an approach [proposed by L. Bottou].  (<a href="http://leon.bottou.org/publications/pdf/tricks-2012.pdf">http://leon.bottou.org/publications/pdf/tricks-2012.pdf</a>)</p>
+To confront this, I added learning rate annealing based on an approach <a href="http://leon.bottou.org/publications/pdf/tricks-2012.pdf">proposed by L. Bottou</a>.</p>
 
 <p><code>eta = eta0 / (1 + t0*t)</code></p>
 
