@@ -6,10 +6,19 @@
     <description>Recent content in Things_I_am_passionate_about on Konstantinos Katrioplas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Aug 2017 17:13:11 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 29 Aug 2017 17:13:11 +0300</lastBuildDate>
     
 	<atom:link href="https://kkatrio.github.io/things_i_am_passionate_about/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Game of life on a torus</title>
+      <link>https://kkatrio.github.io/things_i_am_passionate_about/game-of-life-torus/</link>
+      <pubDate>Tue, 29 Aug 2017 17:13:11 +0300</pubDate>
+      
+      <guid>https://kkatrio.github.io/things_i_am_passionate_about/game-of-life-torus/</guid>
+      <description>The game of life on a torus</description>
+    </item>
     
     <item>
       <title>Prime numbers</title>
