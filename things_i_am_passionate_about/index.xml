@@ -6,10 +6,19 @@
     <description>Recent content in Things_I_am_passionate_about on Konstantinos Katrioplas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Aug 2017 17:13:11 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 10 Sep 2017 17:13:11 +0300</lastBuildDate>
     
 	<atom:link href="https://kkatrio.github.io/things_i_am_passionate_about/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Towers of Hanoi and their visualization as the Sierpiński triangle</title>
+      <link>https://kkatrio.github.io/things_i_am_passionate_about/hanoi-sierpinski/</link>
+      <pubDate>Sun, 10 Sep 2017 17:13:11 +0300</pubDate>
+      
+      <guid>https://kkatrio.github.io/things_i_am_passionate_about/hanoi-sierpinski/</guid>
+      <description>https://en.wikipedia.org/wiki/Tower_of_Hanoi</description>
+    </item>
     
     <item>
       <title>Game of life on a torus</title>
