@@ -21,5 +21,14 @@
 My main task was to enhance the Polygon mesh processing package with two algorithms for optimization of a triangulated 3D surface mesh. The first algorithm aims at improving the mesh quality by using geometric criteria such as angles adjacent to mesh vertices and element areas, as proposed in this paper by Surazhsky and Gotsman.</description>
     </item>
     
+    <item>
+      <title>Finite element image reconstruction during microwave ablation</title>
+      <link>https://kkatrio.github.io/projects/master-thesis/</link>
+      <pubDate>Mon, 27 Feb 2017 17:13:11 +0300</pubDate>
+      
+      <guid>https://kkatrio.github.io/projects/master-thesis/</guid>
+      <description>Here is the full text of my master&amp;rsquo;s degree thesis, released under a Creative Commons license.</description>
+    </item>
+    
   </channel>
 </rss>
