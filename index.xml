@@ -6,10 +6,20 @@
     <description>Recent content on Konstantinos Katrioplas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Sep 2017 17:23:11 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 01 Oct 2017 17:23:11 +0300</lastBuildDate>
     
 	<atom:link href="https://kkatrio.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenAI</title>
+      <link>https://kkatrio.github.io/things_i_am_passionate_about/open-ai/</link>
+      <pubDate>Sun, 01 Oct 2017 17:23:11 +0300</pubDate>
+      
+      <guid>https://kkatrio.github.io/things_i_am_passionate_about/open-ai/</guid>
+      <description>OpenAI&amp;rsquo;s article on evolution strategies algorithm as a scalable alternative to reinforcement learning. For unsupervised learning, the gradients can be computed with finite differences instead of backpropagation.
+Apparently, using this algorithm in tensorflow which works with denormal numbers off, nonlinearity arises from deep linear networks.</description>
+    </item>
     
     <item>
       <title>Cellular automata</title>
