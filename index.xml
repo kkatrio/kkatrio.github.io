@@ -6,10 +6,20 @@
     <description>Recent content on Konstantinos Katrioplas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Oct 2017 17:23:11 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 05 Oct 2017 17:23:11 +0300</lastBuildDate>
     
 	<atom:link href="https://kkatrio.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MIT on decentralization</title>
+      <link>https://kkatrio.github.io/things_i_am_passionate_about/mit-decentralization/</link>
+      <pubDate>Thu, 05 Oct 2017 17:23:11 +0300</pubDate>
+      
+      <guid>https://kkatrio.github.io/things_i_am_passionate_about/mit-decentralization/</guid>
+      <description>MIT paper on defending internet freedom through decentralization:
+http://dci.mit.edu/assets/papers/decentralized_web.pdf</description>
+    </item>
     
     <item>
       <title>OpenAI</title>
