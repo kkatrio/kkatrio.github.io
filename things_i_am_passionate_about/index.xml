@@ -6,10 +6,20 @@
     <description>Recent content in Things_I_am_passionate_about on Konstantinos Katrioplas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Oct 2017 17:23:11 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 29 Oct 2017 17:23:11 +0300</lastBuildDate>
     
 	<atom:link href="https://kkatrio.github.io/things_i_am_passionate_about/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sorting algorithms</title>
+      <link>https://kkatrio.github.io/things_i_am_passionate_about/sorting-algorithms/</link>
+      <pubDate>Sun, 29 Oct 2017 17:23:11 +0300</pubDate>
+      
+      <guid>https://kkatrio.github.io/things_i_am_passionate_about/sorting-algorithms/</guid>
+      <description>Nice visualization of sorting algorithms:
+ </description>
+    </item>
     
     <item>
       <title>MIT on decentralization</title>
