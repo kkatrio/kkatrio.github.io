@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kkatrio.github.io/things_i_am_passionate_about/compiler-explorer/</loc>
+    <lastmod>2017-11-10T17:23:11+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kkatrio.github.io/things_i_am_passionate_about/sorting-algorithms/</loc>
     <lastmod>2017-10-29T17:23:11+03:00</lastmod>
   </url>
@@ -63,7 +68,7 @@
   
   <url>
     <loc>https://kkatrio.github.io/</loc>
-    <lastmod>2017-10-29T17:23:11+03:00</lastmod>
+    <lastmod>2017-11-10T17:23:11+03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -80,7 +85,7 @@
   
   <url>
     <loc>https://kkatrio.github.io/things_i_am_passionate_about/</loc>
-    <lastmod>2017-10-29T17:23:11+03:00</lastmod>
+    <lastmod>2017-11-10T17:23:11+03:00</lastmod>
     <priority>0</priority>
   </url>
   
