@@ -9,6 +9,7 @@ var searchData=
   ['algebraic_20concepts',['Algebraic Concepts',['../../Circular_kernel_2/group__PkgCircularKernel2AlgebraicConcepts.html',1,'']]],
   ['adapters_20for_20iterators_20and_20containers',['Adapters for Iterators and Containers',['../../Circulator/group__PkgHandlesAndCirculatorsAdapter.html',1,'']]],
   ['assertions',['Assertions',['../../Circulator/group__PkgHandlesAndCirculatorsAssert.html',1,'']]],
+  ['algorithms',['Algorithms',['../../Point_set_processing_3/group__PkgPointSetProcessingAlgorithms.html',1,'']]],
   ['approximation_20of_20ridges_20and_20umbilics_20on_20triangulated_20surface_20meshes_20reference',['Approximation of Ridges and Umbilics on Triangulated Surface Meshes Reference',['../../Ridges_3/group__PkgRidges__3.html',1,'']]],
   ['algebraic_20kernel_20and_20classes',['Algebraic Kernel and Classes',['../../Circular_kernel_3/group__PkgSphericalKernel3AlgebraicClasses.html',1,'']]],
   ['algebraic_20concepts',['Algebraic Concepts',['../../Circular_kernel_3/group__PkgSphericalKernel3AlgebraicConcepts.html',1,'']]],

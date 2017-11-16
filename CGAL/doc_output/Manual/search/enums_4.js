@@ -1,5 +1,6 @@
 var searchData=
 [
   ['edge_5findex_5ft',['edge_index_t',['../../BGL/group__PkgBGLProperties.html#ga982c6c7eef63cee15d1769fd1a8b0d26',1,'boost::edge_index_t()'],['../../BGL/group__PkgBGLProperties.html#ga982c6c7eef63cee15d1769fd1a8b0d26',1,'edge_index_t()(Global Namespace)']]],
-  ['error_5fcode',['Error_code',['../../Surface_mesh_parameterization/classCGAL_1_1Parameterizer__traits__3.html#a7c378eec47a501fd55c9879115edeaa9',1,'CGAL::Parameterizer_traits_3::Error_code()'],['../../Surface_mesh_parameterization/classParameterizerTraits__3.html#a9f4c3642a8910d06145f805d8514eb8f',1,'ParameterizerTraits_3::Error_code()']]]
+  ['effect',['Effect',['../../Classification/classCGAL_1_1Classification_1_1Sum__of__weighted__features__classifier.html#a6aab054f8adf32f1e05b693f5caf9512',1,'CGAL::Classification::Sum_of_weighted_features_classifier']]],
+  ['error_5fcode',['Error_code',['../../Surface_mesh_parameterization/group__PkgSurfaceParameterizationEnums.html#gaee614329039ca5fdba0e1059cd7d3e94',1,]]]
 ];

@@ -12,6 +12,7 @@ var group__PkgPolygonMeshProcessing =
     [ "Combinatorial Repairing", "group__PMP__repairing__grp.html", "group__PMP__repairing__grp" ],
     [ "Distance Functions", "group__PMP__distance__grp.html", "group__PMP__distance__grp" ],
     [ "Corefinement and Boolean Operations", "group__PMP__corefinement__grp.html", "group__PMP__corefinement__grp" ],
+    [ "Feature Detection Functions", "group__PMP__detect__features__grp.html", "group__PMP__detect__features__grp" ],
     [ "polygon_mesh_processing.h", "polygon__mesh__processing_8h.html", null ],
     [ "Polygon_mesh_slicer", "classCGAL_1_1Polygon__mesh__slicer.html", [
       [ "Polygon_mesh_slicer", "classCGAL_1_1Polygon__mesh__slicer.html#aad9b168fa99f09b4f865293842a4c3e0", null ],

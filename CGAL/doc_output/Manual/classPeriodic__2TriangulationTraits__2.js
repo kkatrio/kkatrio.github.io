@@ -14,8 +14,6 @@ var classPeriodic__2TriangulationTraits__2 =
     [ "Segment_2", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#ad4494418ec4972b694b69ee010c8114c", null ],
     [ "Triangle_2", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#ac7d9831e961148f750ea0b650d87a7c7", null ],
     [ "Vector_2", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#ab12eb3c65b94e1bbe7a6106c4b5011c9", null ],
-    [ "Periodic_2TriangulationTraits_2", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#a521dda42a9f93d6940933cde7b2988d0", null ],
-    [ "Periodic_2TriangulationTraits_2", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#a29ae77a5e22b0df453aa5b7b3ed78589", null ],
     [ "compare_x_2_object", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#ae410125973b72577548ac6808fceadc8", null ],
     [ "compare_y_2_object", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#a02581656f89b19dadb430bcdc4015e45", null ],
     [ "construct_point_2_object", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#abe2dbf3015e6208926c76377fd0b8108", null ],
@@ -24,7 +22,8 @@ var classPeriodic__2TriangulationTraits__2 =
     [ "get_domain", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#ae2c35b0ddc579152c08d7179a628688d", null ],
     [ "less_x_2_object", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#a289ca49cd643c36fdf22e795772c0bf1", null ],
     [ "less_y_2_object", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#aeb9faf7b6b9b101dee9ee109ab3491af", null ],
-    [ "operator=", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#a5f255d94b6daf08e3ca09cde048fab5c", null ],
     [ "orientation_2_object", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#a6abfc7fafee4db6f9bc50839c1a796dc", null ],
+    [ "Periodic_2_triangulation_traits_2", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#aaffe0f5840796f20f4d8ab0780b1bbf4", null ],
+    [ "Periodic_2_triangulation_traits_2", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#a1a3b699579e4974bae7d8a6dab7f4b15", null ],
     [ "set_domain", "../Periodic_2_triangulation_2/classPeriodic__2TriangulationTraits__2.html#a93bd4db6752da676535db6bc32532ed0", null ]
 ];

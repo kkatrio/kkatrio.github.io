@@ -5,7 +5,7 @@ var classHalfedgeGraph =
     [ "halfedge", "../BGL/classHalfedgeGraph.html#a965f1ed3f109080edd516222b273426c", null ],
     [ "halfedge", "../BGL/classHalfedgeGraph.html#a71d2d886a4fb2c56efefe5d912c3daaa", null ],
     [ "next", "../BGL/classHalfedgeGraph.html#a4a6f4b80283296be4c1040288fa663db", null ],
-    [ "null_halfedge", "../BGL/classHalfedgeGraph.html#a213e75a7d8d05672220e91dbcdbdaf1d", null ],
+    [ "null_halfedge", "../BGL/classHalfedgeGraph.html#af0048eb6212d6ec23b9b773b34d9c9eb", null ],
     [ "opposite", "../BGL/classHalfedgeGraph.html#afe2f53c3740e4f4f701fc7989403bcdc", null ],
     [ "prev", "../BGL/classHalfedgeGraph.html#a0b869316f2ef7333ce826249d627a967", null ],
     [ "source", "../BGL/classHalfedgeGraph.html#a982e9fb54ebba64fa58ce5ceb0c7e7ad", null ],

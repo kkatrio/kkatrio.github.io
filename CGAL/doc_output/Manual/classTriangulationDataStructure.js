@@ -31,7 +31,7 @@ var classTriangulationDataStructure =
     [ "full_cell", "../Triangulation/classTriangulationDataStructure.html#a24c1e1e59bc04b87972cb28f99451b3a", null ],
     [ "full_cells_begin", "../Triangulation/classTriangulationDataStructure.html#aa17461b589697a64a4fef3bdcf0dda68", null ],
     [ "full_cells_end", "../Triangulation/classTriangulationDataStructure.html#adcf5aa984f7e81678106090736138988", null ],
-    [ "gather_full_cells", "../Triangulation/classTriangulationDataStructure.html#a5480bcb222a9067a1c951acd6b634598", null ],
+    [ "gather_full_cells", "../Triangulation/classTriangulationDataStructure.html#a736072a157ba6e09084b0f2245ace46b", null ],
     [ "incident_faces", "../Triangulation/classTriangulationDataStructure.html#a9700c5ae4a6a2af65b002fb1057d47fa", null ],
     [ "incident_full_cells", "../Triangulation/classTriangulationDataStructure.html#a024f5dd99e9259115bb470f31ad8a6ce", null ],
     [ "incident_full_cells", "../Triangulation/classTriangulationDataStructure.html#a896e03621077cdd49d3b1bc64e43a18a", null ],

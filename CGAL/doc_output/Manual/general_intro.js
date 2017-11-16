@@ -36,7 +36,9 @@ var general_intro =
         [ "Eigen", "installation.html#thirdpartyEigen", null ],
         [ "libQGLViewer", "installation.html#thirdpartylibQGLViewer", null ],
         [ "ESBTL", "installation.html#thirdpartyESBTL", null ],
-        [ "Intel TBB", "installation.html#thirdpartyTBB", null ]
+        [ "Intel TBB", "installation.html#thirdpartyTBB", null ],
+        [ "LASlib", "installation.html#thirdpartyLASlib", null ],
+        [ "OpenCV", "installation.html#thirdpartyOpenCV", null ]
       ] ],
       [ "Building CGAL", "installation.html#secbuilding", null ],
       [ "Installing CGAL", "installation.html#secinstalling", null ],

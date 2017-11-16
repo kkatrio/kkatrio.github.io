@@ -1,6 +1,7 @@
 var searchData=
 [
   ['leda',['LEDA',['../../Number_types/group__nt__leda.html',1,'']]],
+  ['label',['Label',['../../Classification/group__PkgClassificationLabel.html',1,'']]],
   ['linear_20algebra_20classes',['Linear Algebra Classes',['../../Kernel_d/group__PkgKernelDLinAlgClasses.html',1,'']]],
   ['linear_20algebra_20concepts',['Linear Algebra Concepts',['../../Kernel_d/group__PkgKernelDLinAlgConcepts.html',1,'']]],
   ['linear_20cell_20complex_20reference',['Linear Cell Complex Reference',['../../Linear_cell_complex/group__PkgLinearCellComplex.html',1,'']]],

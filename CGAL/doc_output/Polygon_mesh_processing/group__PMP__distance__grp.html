@@ -1,13 +1,12 @@
+<!-- HTML header for doxygen 1.8.13-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="canonical" href="http://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__distance__grp.html"/>
-
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=9" />
-<meta name="generator" content="Doxygen 1.8.13" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>CGAL 4.11 - Polygon Mesh Processing: Distance Functions</title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CGAL 4.12 - Polygon Mesh Processing: Distance Functions</title>
 <!-- <link href="../Manual/tabs.css" rel="stylesheet" type="text/css"/> -->
 <script type="text/javascript" src="../Manual/jquery.js"></script>
 <script type="text/javascript" src="../Manual/dynsections.js"></script>
@@ -15,7 +14,7 @@
      paths to the directory Manual . -->
 <!-- $.treeview -->
 <!-- $.search -->
-<link href="navtree.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
@@ -23,13 +22,13 @@
   $(document).ready(initResizable);
   $(window).load(resizeHeight);
 </script>
-<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
 <script type="text/javascript" src="../Manual/search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
-<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/search.js"></script>
 <!-- Manually done below. -->
 <link href="../Manual/stylesheet.css" rel="stylesheet" type="text/css" />
@@ -77,10 +76,16 @@ MathJax.Hub.Config({
        that we also take pngs from the Manual. -->
   <div id="MSearchBox" class="MSearchBoxInactive">
     <span class="left">
-      <img id="MSearchSelect" src="../Manual/search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
-      <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
+      <img id="MSearchSelect" src="../Manual/search/mag_sel.png"
+           onmouseover="return searchBox.OnSearchSelectShow()"
+           onmouseout="return searchBox.OnSearchSelectHide()"
+           alt=""/>
+      <input type="text" id="MSearchField" value="Search" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)"
+             onblur="searchBox.OnSearchFieldFocus(false)"
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
     </span><span class="right">
-      <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt="" /></a>
+      <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt=""/></a>
     </span>
   </div>
 </div>
@@ -89,7 +94,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CGAL 4.11 - Polygon Mesh Processing
+   <div id="projectname">CGAL 4.12 - Polygon Mesh Processing
    </div>
   </td>
  </tr>
@@ -103,11 +108,15 @@ MathJax.Hub.Config({
 var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 </script>
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+<iframe src="javascript:void(0)" frameborder="0"
+        name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 <!-- end header part -->
@@ -116,10 +125,11 @@ var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync" style="display: none"></div>
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
@@ -136,32 +146,32 @@ $(document).ready(function(){initNavTree('group__PMP__distance__grp.html','');})
 <a name="details" id="details"></a><h2 class="groupheader"> </h2>
 <p>Functions to compute the distance between meshes, between a mesh and a point set and between a point set and a mesh. </p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members" id="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga7874c0f16badf7b7939039cf979ad16d"><td class="memTemplParams" colspan="2">template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &gt; </td></tr>
-<tr class="memitem:ga7874c0f16badf7b7939039cf979ad16d"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d">CGAL::Polygon_mesh_processing::sample_triangle_mesh</a> (const TriangleMesh &amp;tm, <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, NamedParameters np)</td></tr>
-<tr class="memdesc:ga7874c0f16badf7b7939039cf979ad16d"><td class="mdescLeft"> </td><td class="mdescRight">generates points taken on <code>tm</code> and outputs them to <code>out</code>, the sampling method is selected using named parameters.  <a href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d">More...</a><br /></td></tr>
-<tr class="separator:ga7874c0f16badf7b7939039cf979ad16d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ga7874c0f16badf7b7939039cf979ad16d"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d">CGAL::Polygon_mesh_processing::sample_triangle_mesh</a> (const TriangleMesh &amp;tm, <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, NamedParameters np)</td></tr>
+<tr class="memdesc:ga7874c0f16badf7b7939039cf979ad16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates points taken on <code>tm</code> and outputs them to <code>out</code>, the sampling method is selected using named parameters.  <a href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d">More...</a><br /></td></tr>
+<tr class="separator:ga7874c0f16badf7b7939039cf979ad16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b28867dc150931b2f12d17b77d15266"><td class="memTemplParams" colspan="2">template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 , class NamedParameters2 &gt; </td></tr>
-<tr class="memitem:ga2b28867dc150931b2f12d17b77d15266"><td class="memTemplItemLeft" align="right" valign="top">double </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga2b28867dc150931b2f12d17b77d15266">CGAL::Polygon_mesh_processing::approximate_Hausdorff_distance</a> (const TriangleMesh &amp;tm1, const TriangleMesh &amp;tm2, const NamedParameters1 &amp;np1, const NamedParameters2 &amp;np2)</td></tr>
-<tr class="memdesc:ga2b28867dc150931b2f12d17b77d15266"><td class="mdescLeft"> </td><td class="mdescRight">computes the approximate Hausdorff distance from <code>tm1</code> to <code>tm2</code> by returning the distance of the farthest point from <code>tm2</code> amongst a sampling of <code>tm1</code> generated with the function <code><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d" title="generates points taken on tm and outputs them to out, the sampling method is selected using named par...">sample_triangle_mesh()</a></code> with <code>tm1</code> and <code>np1</code> as parameter.  <a href="group__PMP__distance__grp.html#ga2b28867dc150931b2f12d17b77d15266">More...</a><br /></td></tr>
-<tr class="separator:ga2b28867dc150931b2f12d17b77d15266"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ga2b28867dc150931b2f12d17b77d15266"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga2b28867dc150931b2f12d17b77d15266">CGAL::Polygon_mesh_processing::approximate_Hausdorff_distance</a> (const TriangleMesh &amp;tm1, const TriangleMesh &amp;tm2, const NamedParameters1 &amp;np1, const NamedParameters2 &amp;np2)</td></tr>
+<tr class="memdesc:ga2b28867dc150931b2f12d17b77d15266"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the approximate Hausdorff distance from <code>tm1</code> to <code>tm2</code> by returning the distance of the farthest point from <code>tm2</code> amongst a sampling of <code>tm1</code> generated with the function <code><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d" title="generates points taken on tm and outputs them to out, the sampling method is selected using named par...">sample_triangle_mesh()</a></code> with <code>tm1</code> and <code>np1</code> as parameter.  <a href="group__PMP__distance__grp.html#ga2b28867dc150931b2f12d17b77d15266">More...</a><br /></td></tr>
+<tr class="separator:ga2b28867dc150931b2f12d17b77d15266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa5c83a2d9e8c1251e1ca3f2cdd59785c"><td class="memTemplParams" colspan="2">template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 , class NamedParameters2 &gt; </td></tr>
-<tr class="memitem:gaa5c83a2d9e8c1251e1ca3f2cdd59785c"><td class="memTemplItemLeft" align="right" valign="top">double </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#gaa5c83a2d9e8c1251e1ca3f2cdd59785c">CGAL::Polygon_mesh_processing::approximate_symmetric_Hausdorff_distance</a> (const TriangleMesh &amp;tm1, const TriangleMesh &amp;tm2, const NamedParameters1 &amp;np1, const NamedParameters2 &amp;np2)</td></tr>
-<tr class="memdesc:gaa5c83a2d9e8c1251e1ca3f2cdd59785c"><td class="mdescLeft"> </td><td class="mdescRight">computes the approximate symmetric Hausdorff distance between <code>tm1</code> and <code>tm2</code>.  <a href="group__PMP__distance__grp.html#gaa5c83a2d9e8c1251e1ca3f2cdd59785c">More...</a><br /></td></tr>
-<tr class="separator:gaa5c83a2d9e8c1251e1ca3f2cdd59785c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:gaa5c83a2d9e8c1251e1ca3f2cdd59785c"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#gaa5c83a2d9e8c1251e1ca3f2cdd59785c">CGAL::Polygon_mesh_processing::approximate_symmetric_Hausdorff_distance</a> (const TriangleMesh &amp;tm1, const TriangleMesh &amp;tm2, const NamedParameters1 &amp;np1, const NamedParameters2 &amp;np2)</td></tr>
+<tr class="memdesc:gaa5c83a2d9e8c1251e1ca3f2cdd59785c"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the approximate symmetric Hausdorff distance between <code>tm1</code> and <code>tm2</code>.  <a href="group__PMP__distance__grp.html#gaa5c83a2d9e8c1251e1ca3f2cdd59785c">More...</a><br /></td></tr>
+<tr class="separator:gaa5c83a2d9e8c1251e1ca3f2cdd59785c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga44609a1b94f1ede1c87b2cfdc441d966"><td class="memTemplParams" colspan="2">template&lt;class Concurrency_tag , class TriangleMesh , class PointRange , class NamedParameters &gt; </td></tr>
-<tr class="memitem:ga44609a1b94f1ede1c87b2cfdc441d966"><td class="memTemplItemLeft" align="right" valign="top">double </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga44609a1b94f1ede1c87b2cfdc441d966">CGAL::Polygon_mesh_processing::max_distance_to_triangle_mesh</a> (const PointRange &amp;points, const TriangleMesh &amp;tm, const NamedParameters &amp;np)</td></tr>
-<tr class="memdesc:ga44609a1b94f1ede1c87b2cfdc441d966"><td class="mdescLeft"> </td><td class="mdescRight">returns the distance to <code>tm</code> of the point from <code>points</code> that is the furthest from <code>tm</code>.  <a href="group__PMP__distance__grp.html#ga44609a1b94f1ede1c87b2cfdc441d966">More...</a><br /></td></tr>
-<tr class="separator:ga44609a1b94f1ede1c87b2cfdc441d966"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ga44609a1b94f1ede1c87b2cfdc441d966"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga44609a1b94f1ede1c87b2cfdc441d966">CGAL::Polygon_mesh_processing::max_distance_to_triangle_mesh</a> (const PointRange &amp;points, const TriangleMesh &amp;tm, const NamedParameters &amp;np)</td></tr>
+<tr class="memdesc:ga44609a1b94f1ede1c87b2cfdc441d966"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the distance to <code>tm</code> of the point from <code>points</code> that is the furthest from <code>tm</code>.  <a href="group__PMP__distance__grp.html#ga44609a1b94f1ede1c87b2cfdc441d966">More...</a><br /></td></tr>
+<tr class="separator:ga44609a1b94f1ede1c87b2cfdc441d966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga349ddbf7a4a44e820794dbe4680d0026"><td class="memTemplParams" colspan="2">template&lt;class TriangleMesh , class PointRange , class NamedParameters &gt; </td></tr>
-<tr class="memitem:ga349ddbf7a4a44e820794dbe4680d0026"><td class="memTemplItemLeft" align="right" valign="top">double </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga349ddbf7a4a44e820794dbe4680d0026">CGAL::Polygon_mesh_processing::approximate_max_distance_to_point_set</a> (const TriangleMesh &amp;tm, const PointRange &amp;points, const double precision, const NamedParameters &amp;np)</td></tr>
-<tr class="memdesc:ga349ddbf7a4a44e820794dbe4680d0026"><td class="mdescLeft"> </td><td class="mdescRight">returns an approximation of the distance between <code>points</code> and the point lying on <code>tm</code> that is the farthest from <code>points</code>  <a href="group__PMP__distance__grp.html#ga349ddbf7a4a44e820794dbe4680d0026">More...</a><br /></td></tr>
-<tr class="separator:ga349ddbf7a4a44e820794dbe4680d0026"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ga349ddbf7a4a44e820794dbe4680d0026"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga349ddbf7a4a44e820794dbe4680d0026">CGAL::Polygon_mesh_processing::approximate_max_distance_to_point_set</a> (const TriangleMesh &amp;tm, const PointRange &amp;points, const double precision, const NamedParameters &amp;np)</td></tr>
+<tr class="memdesc:ga349ddbf7a4a44e820794dbe4680d0026"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns an approximation of the distance between <code>points</code> and the point lying on <code>tm</code> that is the farthest from <code>points</code>  <a href="group__PMP__distance__grp.html#ga349ddbf7a4a44e820794dbe4680d0026">More...</a><br /></td></tr>
+<tr class="separator:ga349ddbf7a4a44e820794dbe4680d0026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga2b28867dc150931b2f12d17b77d15266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2b28867dc150931b2f12d17b77d15266">◆ </a></span>approximate_Hausdorff_distance()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b28867dc150931b2f12d17b77d15266">&#9670;&nbsp;</a></span>approximate_Hausdorff_distance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,26 +181,26 @@ template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 
         <tr>
           <td class="memname">double CGAL::Polygon_mesh_processing::approximate_Hausdorff_distance </td>
           <td>(</td>
-          <td class="paramtype">const TriangleMesh &amp; </td>
+          <td class="paramtype">const TriangleMesh &amp;&#160;</td>
           <td class="paramname"><em>tm1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const TriangleMesh &amp; </td>
+          <td class="paramtype">const TriangleMesh &amp;&#160;</td>
           <td class="paramname"><em>tm2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters1 &amp; </td>
+          <td class="paramtype">const NamedParameters1 &amp;&#160;</td>
           <td class="paramname"><em>np1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters2 &amp; </td>
-          <td class="paramname"><em>np2</em> </td>
+          <td class="paramtype">const NamedParameters2 &amp;&#160;</td>
+          <td class="paramname"><em>np2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -206,8 +216,8 @@ template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 
 <p>A parallel version is provided and requires the executable to be linked against the <a href="http://www.threadingbuildingblocks.org">Intel TBB library</a>. To control the number of threads used, the user may use the <code>tbb::task_scheduler_init</code> class. See the <a href="http://www.threadingbuildingblocks.org/documentation">TBB documentation</a> for more details.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Concurrency_tag</td><td>enables sequential versus parallel algorithm. Possible values are <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Sequential__tag.html">Sequential_tag</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Parallel__tag.html">Parallel_tag</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">Concurrency_tag</td><td>enables sequential versus parallel algorithm. Possible values are <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Sequential__tag.html">Sequential_tag</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Parallel__tag.html">Parallel_tag</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> for <code>tm1</code> </td></tr>
     <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> for <code>tm2</code></td></tr>
   </table>
@@ -236,7 +246,7 @@ template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 
 </div>
 </div>
 <a id="ga349ddbf7a4a44e820794dbe4680d0026"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga349ddbf7a4a44e820794dbe4680d0026">◆ </a></span>approximate_max_distance_to_point_set()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga349ddbf7a4a44e820794dbe4680d0026">&#9670;&nbsp;</a></span>approximate_max_distance_to_point_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,26 +256,26 @@ template&lt;class TriangleMesh , class PointRange , class NamedParameters &gt; <
         <tr>
           <td class="memname">double CGAL::Polygon_mesh_processing::approximate_max_distance_to_point_set </td>
           <td>(</td>
-          <td class="paramtype">const TriangleMesh &amp; </td>
+          <td class="paramtype">const TriangleMesh &amp;&#160;</td>
           <td class="paramname"><em>tm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const PointRange &amp; </td>
+          <td class="paramtype">const PointRange &amp;&#160;</td>
           <td class="paramname"><em>points</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double </td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>precision</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters &amp; </td>
-          <td class="paramname"><em>np</em> </td>
+          <td class="paramtype">const NamedParameters &amp;&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -280,8 +290,8 @@ template&lt;class TriangleMesh , class PointRange , class NamedParameters &gt; <
 <p>returns an approximation of the distance between <code>points</code> and the point lying on <code>tm</code> that is the farthest from <code>points</code> </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
   </table>
   </dd>
@@ -310,7 +320,7 @@ template&lt;class TriangleMesh , class PointRange , class NamedParameters &gt; <
 </div>
 </div>
 <a id="gaa5c83a2d9e8c1251e1ca3f2cdd59785c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa5c83a2d9e8c1251e1ca3f2cdd59785c">◆ </a></span>approximate_symmetric_Hausdorff_distance()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5c83a2d9e8c1251e1ca3f2cdd59785c">&#9670;&nbsp;</a></span>approximate_symmetric_Hausdorff_distance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,26 +330,26 @@ template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 
         <tr>
           <td class="memname">double CGAL::Polygon_mesh_processing::approximate_symmetric_Hausdorff_distance </td>
           <td>(</td>
-          <td class="paramtype">const TriangleMesh &amp; </td>
+          <td class="paramtype">const TriangleMesh &amp;&#160;</td>
           <td class="paramname"><em>tm1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const TriangleMesh &amp; </td>
+          <td class="paramtype">const TriangleMesh &amp;&#160;</td>
           <td class="paramname"><em>tm2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters1 &amp; </td>
+          <td class="paramtype">const NamedParameters1 &amp;&#160;</td>
           <td class="paramname"><em>np1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters2 &amp; </td>
-          <td class="paramname"><em>np2</em> </td>
+          <td class="paramtype">const NamedParameters2 &amp;&#160;</td>
+          <td class="paramname"><em>np2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -357,7 +367,7 @@ template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 
 </div>
 </div>
 <a id="ga44609a1b94f1ede1c87b2cfdc441d966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga44609a1b94f1ede1c87b2cfdc441d966">◆ </a></span>max_distance_to_triangle_mesh()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga44609a1b94f1ede1c87b2cfdc441d966">&#9670;&nbsp;</a></span>max_distance_to_triangle_mesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -367,20 +377,20 @@ template&lt;class Concurrency_tag , class TriangleMesh , class PointRange , clas
         <tr>
           <td class="memname">double CGAL::Polygon_mesh_processing::max_distance_to_triangle_mesh </td>
           <td>(</td>
-          <td class="paramtype">const PointRange &amp; </td>
+          <td class="paramtype">const PointRange &amp;&#160;</td>
           <td class="paramname"><em>points</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const TriangleMesh &amp; </td>
+          <td class="paramtype">const TriangleMesh &amp;&#160;</td>
           <td class="paramname"><em>tm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters &amp; </td>
-          <td class="paramname"><em>np</em> </td>
+          <td class="paramtype">const NamedParameters &amp;&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -395,8 +405,8 @@ template&lt;class Concurrency_tag , class TriangleMesh , class PointRange , clas
 <p>returns the distance to <code>tm</code> of the point from <code>points</code> that is the furthest from <code>tm</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
   </table>
   </dd>
@@ -423,7 +433,7 @@ template&lt;class Concurrency_tag , class TriangleMesh , class PointRange , clas
 </div>
 </div>
 <a id="ga7874c0f16badf7b7939039cf979ad16d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7874c0f16badf7b7939039cf979ad16d">◆ </a></span>sample_triangle_mesh()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7874c0f16badf7b7939039cf979ad16d">&#9670;&nbsp;</a></span>sample_triangle_mesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,22 +441,22 @@ template&lt;class Concurrency_tag , class TriangleMesh , class PointRange , clas
 template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::sample_triangle_mesh </td>
+          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::sample_triangle_mesh </td>
           <td>(</td>
-          <td class="paramtype">const TriangleMesh &amp; </td>
+          <td class="paramtype">const TriangleMesh &amp;&#160;</td>
           <td class="paramname"><em>tm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> </td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">NamedParameters </td>
-          <td class="paramname"><em>np</em> </td>
+          <td class="paramtype">NamedParameters&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -461,8 +471,8 @@ template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &g
 <p>generates points taken on <code>tm</code> and outputs them to <code>out</code>, the sampling method is selected using named parameters. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding objects of the same point type as the value type of the internal vertex point map of <code>tm</code></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding objects of the same point type as the value type of the internal vertex point map of <code>tm</code></td></tr>
   </table>
   </dd>
 </dl>
@@ -522,12 +532,11 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Aug 27 2017 15:49:34 for CGAL 4.11 - Polygon Mesh Processing by
+    <li class="footer">Generated on Thu Nov 16 2017 16:13:57 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </div>
 </body>
-
 </html>

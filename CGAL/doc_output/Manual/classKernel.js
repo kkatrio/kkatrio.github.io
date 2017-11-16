@@ -323,7 +323,6 @@ var classKernel =
     [ "Compare_distance_3", "../Kernel_23/classKernel.html#aa52b88a746b432ad721b2a3b767b525c", null ],
     [ "Compare_power_distance_2", "../Kernel_23/classKernel.html#af9f70ba9c2bb9ed7517ddc156a18e050", null ],
     [ "Compare_power_distance_3", "../Kernel_23/classKernel.html#aa3be6d5f6a0520be89167e273fb312f6", null ],
-    [ "Compare_power_distance_to_power_sphere_3", "../Kernel_23/classKernel.html#a27b94ec99de52202af25b6124dd71582", null ],
     [ "Compare_slope_2", "../Kernel_23/classKernel.html#aed1101d5f2a375e952d7276cac2d0cce", null ],
     [ "Compare_slope_3", "../Kernel_23/classKernel.html#a94bdcdbe4413e4f8bf36b4856cf5a466", null ],
     [ "Compare_square_distance_2", "../Kernel_23/classKernel.html#a925c8aa3251382d4865e0e98fa1e0642", null ],

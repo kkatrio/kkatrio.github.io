@@ -1,24 +1,24 @@
+<!-- HTML header for doxygen 1.8.13-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="canonical" href="http://doc.cgal.org/latest/Manual/devman_code_format.html"/>
-
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=9" />
-<meta name="generator" content="Doxygen 1.8.13" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>CGAL 4.11 - Manual: Coding Conventions</title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CGAL 4.12 - Manual: Coding Conventions</title>
 <!-- <link href="../Manual/tabs.css" rel="stylesheet" type="text/css"/> -->
 <script type="text/javascript" src="../Manual/jquery.js"></script>
 <script type="text/javascript" src="../Manual/dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css" />
+<script src="../Manual/hacks.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
-<link href="search/search.css" rel="stylesheet" type="text/css" />
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -59,10 +59,16 @@
   </ul>
           <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
-          <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt="" /></a>
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
           </span>
         </div>
 </div>
@@ -71,7 +77,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CGAL 4.11 - Manual
+   <div id="projectname">CGAL 4.12 - Manual
    </div>
   </td>
   <!-- We disable the search box because we have added it in the
@@ -104,10 +110,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync" style="display: none"></div>
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
@@ -115,12 +122,16 @@ $(document).ready(function(){initNavTree('devman_code_format.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 
@@ -129,7 +140,7 @@ $(document).ready(function(){initNavTree('devman_code_format.html','');});
 <div class="title">Coding Conventions </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Sven Schönherr</dd></dl>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Sven Sch&ouml;nherr</dd></dl>
 <p>We do not want to impose very strict coding rules on the developers. What is most important is to follow the <span style="font-variant: small-caps;">CGAL</span> naming scheme described in the next section. However, there are some programming conventions (Section <a class="el" href="devman_code_format.html#secprogramming_conventions">Programming conventions</a> ) that should be adhered to, rules for the code format (Section <a class="el" href="devman_code_format.html#seccode_format">Code format</a> ), and a mandatory heading for each source file (Section <a class="el" href="devman_code_format.html#secfile_header">File header</a> )</p>
 <h1><a class="anchor" id="secnaming_scheme"></a>
 Naming scheme</h1>
@@ -140,7 +151,7 @@ General rules</h2>
 <li>
 Words in the names of everything except concepts should be separated by underscores. For example, one would use <code>function_name</code> and <code>Class_name</code> instead of <code>functionName</code> or <code>Classname</code>. </li>
 <li>
-Words in the names of concepts (<em>e.g.</em>, template parameters) should be separated using capital letters. The only use of underscores in concept names is before the dimension suffix. For example, one should use a name such as <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Convex_hull_2.tag:../Convex_hull_2/" href="../Convex_hull_2/classConvexHullTraits__2.html">ConvexHullTraits_2</a> for the concept in contrast to <code>Convex_hull_traits_2</code> for the name of the class that is a model of this concept. This different naming scheme for concepts and classes was adopted mainly for two reasons (a) it is consistent with the <span style="font-variant: small-caps;">STL</span> (cf. <a class="el" href="classInputIterator.html" title="Concept from the C++ standard. See http://en.cppreference.com/w/cpp/concept/InputIterator. ">InputIterator</a>) and (b) it avoids name clashes between concepts and classes that would require one or the other to have a rather contrived name. </li>
+Words in the names of concepts (<em>e.g.</em>, template parameters) should be separated using capital letters. The only use of underscores in concept names is before the dimension suffix. For example, one should use a name such as <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Convex_hull_2.tag:../Convex_hull_2/" href="../Convex_hull_2/classConvexHullTraits__2.html">ConvexHullTraits_2</a> for the concept in contrast to <code>Convex_hull_traits_2</code> for the name of the class that is a model of this concept. This different naming scheme for concepts and classes was adopted mainly for two reasons (a) it is consistent with the <span style="font-variant: small-caps;">STL</span> (cf. <a class="el" href="classInputIterator.html" title="Concept from the C++ standard. See http://en.cppreference.com/w/cpp/concept/InputIterator. ">InputIterator</a>) and (b) it avoids name clashes between concepts and classes that would require one or the other to have a rather contrived name. </li>
 <li>
 Abbreviations of words are to be avoided (<em>e.g.</em>, use <code>Triangulation</code> instead of <code>Tri</code>). The only exceptions might be standard geometric abbreviations (such as "CH" for "convex
       hull") and standard data structure abbreviations (such as "DS" for "data structure"). Unfortunately, the long names that result from the absence of abbreviations are known to cause problems with some compilers. </li>
@@ -177,7 +188,7 @@ Access to data structures is given via iterators and circulators (Chapter <a cla
 Kernel traits</h2>
 <p>All types in the kernel concept are functor types. We distinguish the following four categories: </p><ol>
 <li>
-<b>generalized predicates</b>, that is, standard predicates returning a Boolean value as well as functions such as <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__orientation__grp.html#ga91d9866cfde916ba70e5dbc596176d9e">orientation()</a></code> that return an enumeration type (values from a finite discrete set). </li>
+<b>generalized predicates</b>, that is, standard predicates returning a Boolean value as well as functions such as <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__orientation__grp.html#ga91d9866cfde916ba70e5dbc596176d9e">orientation()</a></code> that return an enumeration type (values from a finite discrete set). </li>
 <li>
 <b>construction objects</b>, which replace constructors in the kernel, </li>
 <li>
@@ -312,12 +323,11 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Aug 27 2017 15:49:02 for CGAL 4.11 - Manual by
+    <li class="footer">Generated on Wed Nov 15 2017 15:41:18 for CGAL 4.12 - Manual by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </div>
 </body>
-
 </html>

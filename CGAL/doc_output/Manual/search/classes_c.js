@@ -16,7 +16,7 @@ var searchData=
   ['max',['Max',['../../Number_types/classCGAL_1_1Max.html',1,'CGAL']]],
   ['mean_5fcurvature_5fflow_5fskeletonization',['Mean_curvature_flow_skeletonization',['../../Surface_mesh_skeletonization/classCGAL_1_1Mean__curvature__flow__skeletonization.html',1,'CGAL']]],
   ['mean_5fvalue_5f2',['Mean_value_2',['../../Barycentric_coordinates_2/classCGAL_1_1Barycentric__coordinates_1_1Mean__value__2.html',1,'CGAL::Barycentric_coordinates']]],
-  ['mean_5fvalue_5fcoordinates_5fparameterizer_5f3',['Mean_value_coordinates_parameterizer_3',['../../Surface_mesh_parameterization/classCGAL_1_1Mean__value__coordinates__parameterizer__3.html',1,'CGAL']]],
+  ['mean_5fvalue_5fcoordinates_5fparameterizer_5f3',['Mean_value_coordinates_parameterizer_3',['../../Surface_mesh_parameterization/classCGAL_1_1Surface__mesh__parameterization_1_1Mean__value__coordinates__parameterizer__3.html',1,'CGAL::Surface_mesh_parameterization']]],
   ['meancurvatureskeletonizationtraits',['MeanCurvatureSkeletonizationTraits',['../../Surface_mesh_skeletonization/classMeanCurvatureSkeletonizationTraits.html',1,'']]],
   ['median',['Median',['../../Spatial_sorting/classCGAL_1_1Median.html',1,'CGAL']]],
   ['median_5fof_5fmax_5fspread',['Median_of_max_spread',['../../Spatial_searching/classCGAL_1_1Median__of__max__spread.html',1,'CGAL']]],
@@ -30,6 +30,7 @@ var searchData=
   ['mesh_5fcriteria_5f3',['Mesh_criteria_3',['../../Mesh_3/classCGAL_1_1Mesh__criteria__3.html',1,'CGAL']]],
   ['mesh_5fdomain_5fwith_5fpolyline_5ffeatures_5f3',['Mesh_domain_with_polyline_features_3',['../../Mesh_3/classCGAL_1_1Mesh__domain__with__polyline__features__3.html',1,'CGAL']]],
   ['mesh_5fdomain_5fwith_5fpolyline_5ffeatures_5f3_3c_20cgal_3a_3apolyhedral_5fmesh_5fdomain_5f3_3c_20cgal_3a_3amesh_5fpolyhedron_5f3_3c_20igt_20_3e_3a_3atype_2c_20igt_20_3e_20_3e',['Mesh_domain_with_polyline_features_3&lt; CGAL::Polyhedral_mesh_domain_3&lt; CGAL::Mesh_polyhedron_3&lt; IGT &gt;::type, IGT &gt; &gt;',['../../Mesh_3/classCGAL_1_1Mesh__domain__with__polyline__features__3.html',1,'']]],
+  ['mesh_5fdomain_5fwith_5fpolyline_5ffeatures_5f3_3c_20polyhedral_5fmesh_5fdomain_5f3_3c_20polyhedron_2c_20igt_5f_2c_20cgal_3a_3adefault_2c_20int_2c_20tag_5ftrue_20_3e_20_3e',['Mesh_domain_with_polyline_features_3&lt; Polyhedral_mesh_domain_3&lt; Polyhedron, IGT_, CGAL::Default, int, Tag_true &gt; &gt;',['../../Mesh_3/classCGAL_1_1Mesh__domain__with__polyline__features__3.html',1,'']]],
   ['mesh_5fedge_5fcriteria_5f3',['Mesh_edge_criteria_3',['../../Mesh_3/classCGAL_1_1Mesh__edge__criteria__3.html',1,'CGAL']]],
   ['mesh_5ffacet_5fcriteria_5f3',['Mesh_facet_criteria_3',['../../Mesh_3/classCGAL_1_1Mesh__facet__criteria__3.html',1,'CGAL']]],
   ['mesh_5fpolyhedron_5f3',['Mesh_polyhedron_3',['../../Mesh_3/classCGAL_1_1Mesh__polyhedron__3.html',1,'CGAL']]],
@@ -45,6 +46,7 @@ var searchData=
   ['meshdomainfield_5f3',['MeshDomainField_3',['../../Mesh_3/classMeshDomainField__3.html',1,'']]],
   ['meshdomainwithfeatures_5f3',['MeshDomainWithFeatures_3',['../../Mesh_3/classMeshDomainWithFeatures__3.html',1,'']]],
   ['meshedgecriteria_5f3',['MeshEdgeCriteria_3',['../../Mesh_3/classMeshEdgeCriteria__3.html',1,'']]],
+  ['mesher',['Mesher',['../../Scale_space_reconstruction_3/classCGAL_1_1Scale__space__reconstruction__3_1_1Mesher.html',1,'CGAL::Scale_space_reconstruction_3']]],
   ['meshfacetcriteria_5f3',['MeshFacetCriteria_3',['../../Mesh_3/classMeshFacetCriteria__3.html',1,'']]],
   ['meshingcriteria_5f2',['MeshingCriteria_2',['../../Mesh_2/classMeshingCriteria__2.html',1,'']]],
   ['meshpolyline_5f3',['MeshPolyline_3',['../../Mesh_3/classMeshPolyline__3.html',1,'']]],
@@ -100,5 +102,6 @@ var searchData=
   ['multiset',['Multiset',['../../STL_Extension/classCGAL_1_1Multiset.html',1,'CGAL']]],
   ['multivariatecontent',['MultivariateContent',['../../Polynomial/classPolynomialTraits__d_1_1MultivariateContent.html',1,'PolynomialTraits_d']]],
   ['mutablefacegraph',['MutableFaceGraph',['../../BGL/classMutableFaceGraph.html',1,'']]],
-  ['mutablehalfedgegraph',['MutableHalfedgeGraph',['../../BGL/classMutableHalfedgeGraph.html',1,'']]]
+  ['mutablehalfedgegraph',['MutableHalfedgeGraph',['../../BGL/classMutableHalfedgeGraph.html',1,'']]],
+  ['mvc_5fpost_5fprocessor_5f3',['MVC_post_processor_3',['../../Surface_mesh_parameterization/classCGAL_1_1Surface__mesh__parameterization_1_1MVC__post__processor__3.html',1,'CGAL::Surface_mesh_parameterization']]]
 ];

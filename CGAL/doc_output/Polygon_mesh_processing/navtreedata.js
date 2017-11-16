@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "CGAL 4.11 - Polygon Mesh Processing", "index.html", [
+  [ "CGAL 4.12 - Polygon Mesh Processing", "index.html", [
     [ "User Manual", "index.html", [
       [ "Introduction", "index.html#PMPIntroduction", [
         [ "Polygon Mesh", "index.html#PMPDef", null ],
@@ -35,7 +35,8 @@ var NAVTREE =
         [ "Examples", "index.html#HFExamples", [
           [ "Triangulate a Polyline", "index.html#HFExample_1", null ],
           [ "Hole Filling From the Border of the Hole", "index.html#HFExample_2", null ]
-        ] ]
+        ] ],
+        [ "Performance", "index.html#HFPerformance", null ]
       ] ],
       [ "Predicates", "index.html#PMPPredicates", [
         [ "Self Intersections", "index.html#PMPSelIntersections", [
@@ -69,6 +70,9 @@ var NAVTREE =
       [ "Approximate Hausdorff Distance", "index.html#PMPDistance", [
         [ "Approximate Hausdorff Distance Example", "index.html#AHDExample", null ],
         [ "Max Distance Between Point Set and Surface Example", "index.html#PoissonDistanceExample", null ]
+      ] ],
+      [ "Feature Detection", "index.html#PMPDetectFeatures", [
+        [ "Feature Detection Example", "index.html#DetectFeaturesExample", null ]
       ] ],
       [ "Implementation History", "index.html#PMPHistory", null ]
     ] ],

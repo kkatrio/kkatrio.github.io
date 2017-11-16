@@ -4,6 +4,7 @@ var searchData=
   ['geometric_20measure_20functions',['Geometric Measure Functions',['../../Polygon_mesh_processing/group__measure__grp.html',1,'']]],
   ['gmp',['GMP',['../../Number_types/group__nt__gmp.html',1,'']]],
   ['geometric_20object_20concepts',['Geometric Object Concepts',['../../Arrangement_on_surface_2/group__PkgArrangement2ConceptsGeometricObjects.html',1,'']]],
+  ['graph_20adaptors',['Graph adaptors',['../../BGL/group__PkgBGLAdaptors.html',1,'']]],
   ['geometric_20kernel_20and_20classes',['Geometric Kernel and Classes',['../../Circular_kernel_2/group__PkgCircularKernel2GeometricClasses.html',1,'']]],
   ['geometric_20concepts',['Geometric Concepts',['../../Circular_kernel_2/group__PkgCircularKernel2GeometricConcepts.html',1,'']]],
   ['geometric_20global_20functions',['Geometric Global Functions',['../../Circular_kernel_2/group__PkgCircularKernel2GeometricFunctions.html',1,'']]],

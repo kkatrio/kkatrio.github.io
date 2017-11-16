@@ -7,6 +7,7 @@ var searchData=
   ['halfedge_5faround_5fsource_5fiterator',['Halfedge_around_source_iterator',['../../BGL/classCGAL_1_1Halfedge__around__source__iterator.html',1,'CGAL']]],
   ['halfedge_5faround_5ftarget_5fcirculator',['Halfedge_around_target_circulator',['../../BGL/classCGAL_1_1Halfedge__around__target__circulator.html',1,'CGAL']]],
   ['halfedge_5faround_5ftarget_5fiterator',['Halfedge_around_target_iterator',['../../BGL/classCGAL_1_1Halfedge__around__target__iterator.html',1,'CGAL']]],
+  ['halfedge_5fdescriptor',['halfedge_descriptor',['../../BGL/classCGAL_1_1Seam__mesh_1_1halfedge__descriptor.html',1,'CGAL::Seam_mesh']]],
   ['halfedge_5findex',['Halfedge_index',['../../Surface_mesh/classCGAL_1_1Surface__mesh_1_1Halfedge__index.html',1,'CGAL::Surface_mesh']]],
   ['halfedgeds',['HalfedgeDS',['../../HalfedgeDS/classHalfedgeDS.html',1,'']]],
   ['halfedgeds_5fconst_5fdecorator',['HalfedgeDS_const_decorator',['../../HalfedgeDS/classCGAL_1_1HalfedgeDS__const__decorator.html',1,'CGAL']]],
@@ -64,6 +65,7 @@ var searchData=
   ['homogeneous',['Homogeneous',['../../Kernel_23/classCGAL_1_1Homogeneous.html',1,'CGAL']]],
   ['homogeneous_5fconverter',['Homogeneous_converter',['../../Kernel_23/classCGAL_1_1Homogeneous__converter.html',1,'CGAL']]],
   ['homogeneous_5fd',['Homogeneous_d',['../../Kernel_d/classCGAL_1_1Homogeneous__d.html',1,'CGAL']]],
+  ['hsv',['Hsv',['../../Classification/classCGAL_1_1Classification_1_1Feature_1_1Hsv.html',1,'CGAL::Classification::Feature']]],
   ['hybrid_5fsquared_5fdistance_5fcost',['Hybrid_squared_distance_cost',['../../Polyline_simplification_2/classCGAL_1_1Polyline__simplification__2_1_1Hybrid__squared__distance__cost.html',1,'CGAL::Polyline_simplification_2']]],
   ['hyperplane_5fd',['Hyperplane_d',['../../Kernel_d/classCGAL_1_1Hyperplane__d.html',1,'CGAL']]]
 ];

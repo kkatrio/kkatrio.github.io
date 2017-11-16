@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "CGAL 4.11 - Manual", "index.html", [
+  [ "CGAL 4.12 - Manual", "index.html", [
     [ "Getting Started", "general_intro.html", "general_intro" ],
     [ "Tutorials", "tutorials.html", "tutorials" ],
     [ "Package Overview", "packages.html", [
@@ -35,7 +35,8 @@ var NAVTREE =
         [ "2D Straight Skeleton and Polygon Offsetting", "packages.html#PkgStraightSkeleton2Summary", null ],
         [ "2D Minkowski Sums", "packages.html#PkgMinkowskiSum2Summary", null ],
         [ "2D Polyline Simplification", "packages.html#PkgPolylineSimplification2Summary", null ],
-        [ "2D Visibility Computation", "packages.html#PkgVisibility_2Summary", null ]
+        [ "2D Visibility Computation", "packages.html#PkgVisibility_2Summary", null ],
+        [ "2D Movable Separability of Sets", "packages.html#PkgSetMovableSeparability2Summary", null ]
       ] ],
       [ "Cell Complexes and Polyhedra", "packages.html#PartPolyhedra", [
         [ "3D Polyhedral Surface", "packages.html#PkgPolyhedronSummary", null ],
@@ -98,7 +99,8 @@ var NAVTREE =
         [ "3D Point Set", "packages.html#PkgPointSet3Summary", null ],
         [ "Point Set Processing", "packages.html#PkgPointSetProcessingSummary", null ],
         [ "Point Set Shape Detection", "packages.html#PkgPointSetShapeDetection3Summary", null ],
-        [ "2D Placement of Streamlines", "packages.html#PkgPlacementOfStreamlines2Summary", null ]
+        [ "2D Placement of Streamlines", "packages.html#PkgPlacementOfStreamlines2Summary", null ],
+        [ "Classification", "packages.html#PkgClassificationSummary", null ]
       ] ],
       [ "Spatial Searching and Sorting", "packages.html#PartSearchStructures", [
         [ "2D Range and Neighbor Search", "packages.html#PkgPointSet2Summary", null ],
@@ -154,32 +156,31 @@ var NAVTREEINDEX =
 "classAlgebraicStructureTraits.html#a990559cc1b088c6894d2834bf7616ee9",
 "classArrangementDcelFace.html#abfb4dbcac5d405a70abb5b5cf717c29c",
 "classBarycentricTraits__2.html#affa17b8360994b178515a1d51f56caac",
-"classCGAL_1_1Periodic__3__triangulation__3.html#a5ec4de2ab8472238884c5a68cfbd7b1e",
-"classCGAL_1_1Triangulation__3.html#a23369f62436eb0f53ea0883d9e5ee431",
-"classCGAL_1_1Triangulation__3.html#ad3bc80270d803b67490836a6ed6a336c",
-"classCombinationElement.html#a28e8bc65c9929eba23002826e22bb362",
-"classDelaunayTraits__d.html#aa87a10b1be04c8e695a7401a113de152",
-"classExtendedKernelTraits__2.html#a09311cff653d94c00aee504fe24b694a",
-"classGenericMap.html#a6e4ee8b525afeb9bbaed065623e26e68",
-"classImplicitFunction.html#a64d004db524cae27c77040eb6c3b8833",
-"classKernel.html#a841f155da66265dd2e8c7399e16c61e5",
-"classKernel_1_1CompareSquaredRadius__3.html#aa91cbf2115e8791f3b03407558f894ef",
-"classKernel_1_1ConstructCenter__3.html#a2452d948133b94b4a8b57025d94d096a",
-"classKernel_1_1ConstructVector__3.html#a2a9cf2319d1127fa3b4a476b0d39bcdf",
-"classKernel_1_1Vector__3.html",
-"classLocalKernel.html#a5689bb62c4fd9ef4c939e6314c2119c2",
-"classMeshVertexBase__3.html#a543f343c70e58d584f7228d54b92bf85",
-"classPMPSelfIntersectionTraits.html#aec3c2d71b0d0197f7b991cf45954a6c5",
-"classPointSetTraits.html#a9fe0a0ab6b45ccbc1071a7439459d5ed",
-"classPolynomialTraits__d_1_1PseudoDivisionQuotient.html#a76c0b8a67dc27e52d6c4aec5517bfb26",
-"classRegularTriangulationTraits__3.html#a3610ca3205a6841d93318d220cc556cf",
-"classSnapRoundingTraits__2.html#a55c9ad615e1971cd5a67c78e47372878",
-"classSphericalKernel_1_1DoIntersect__3.html#a08cadf5688b66c6a789512bcff6e82c9",
-"classSurfaceMeshShortestPathTraits.html#af2132e94f1646dffb150f743ee90bdfc",
-"classTriangulationDataStructure.html#ad799774e182438424e0495bed32af1e0",
-"classTriangulationDataStructure__3.html#ad6076fbc62d2df3e7ff80f10477e45e7",
-"classYMonotonePartitionTraits__2.html#aa771acc3a61ebba917ef15efcf1fc2fa",
-"packages.html#PkgPoissonSurfaceReconstructionSummary"
+"classCGAL_1_1Periodic__3__triangulation__3.html#a0a16f90d58400ee80b3776c9a6f60f61",
+"classCGAL_1_1Triangulation.html#a37330515770a3ceff69d7003622f0e8a",
+"classCircularKernel_1_1ConstructCircularArcPoint__2.html",
+"classDelaunayGraph__2.html#a6a5a812bf657fc40924e1f420acb0787",
+"classEnvelopeDiagram__1.html#ab351bfe52412d9816ed813a4608b3aa5",
+"classGenericMap.html#a2497c281eb66b2c8f7388fa91514b9dd",
+"classHalfedgeDSVertex.html#a6de79a8e5af016014996c3a44352ad79",
+"classKernel.html#a670e64f1f02972b431acaa512e9b4ddb",
+"classKernel_1_1CompareDihedralAngle__3.html",
+"classKernel_1_1ConstructBbox__2.html#abe2627faa77bfc13a76137bde93ef671",
+"classKernel_1_1ConstructTarget__2.html",
+"classKernel_1_1PowerSideOfBoundedPowerSphere__3.html",
+"classLinearCellComplexTraits.html#a67efd2c69ee049817bbf1dcc9e934727",
+"classMeshDomain__3.html#a6e9137af1d710bd6fe157c9958641a92",
+"classOverlayTraits.html#a8ab679f5e84bb2ee44f02fdb781ac309",
+"classPolygonOffsetBuilderTraits__2.html#aef54bae77d982763ec4c7db1943534f2",
+"classPolynomialTraits__d_1_1Shift.html#a5e45bff1811853cffd15ac27f0396188",
+"classRegularTriangulationTraits__3.html#aa48139f6580e103ceedde2995ddbff0f",
+"classShapeDetectionTraits.html#ab3cc1bb1f1f755967ad472fe4de637e2",
+"classSphericalKernel_1_1ComputeCircularX__3.html",
+"classSurfaceMeshShortestPathTraits.html#a07ebfc805a886000063b03b75b7b9876",
+"classTriangulationDataStructure.html#a064d946b7ad17a2d99b1ca56de49cd5f",
+"classTriangulationDataStructure__3.html#a6a21ee61cf45df8c86f61b5d31720d0e",
+"classVisibility__2.html#a362d6338ae90b5203242186830cfa9e5",
+"packages.html#PkgAlphaShapes3Summary"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

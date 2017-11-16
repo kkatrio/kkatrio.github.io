@@ -6,6 +6,7 @@ var searchData=
   ['dimension_20handling_20tools',['Dimension Handling Tools',['../../Kernel_23/group__kernel__dimension.html',1,'']]],
   ['dcel_20concepts',['DCEL Concepts',['../../Arrangement_on_surface_2/group__PkgArrangement2ConceptsDCEL.html',1,'']]],
   ['dcel',['DCEL',['../../Arrangement_on_surface_2/group__PkgArrangement2DCEL.html',1,'']]],
+  ['data_20structures',['Data Structures',['../../Classification/group__PkgClassificationDataStructures.html',1,'']]],
   ['dd_20convex_20hulls_20and_20delaunay_20triangulations_20reference',['dD Convex Hulls and Delaunay Triangulations Reference',['../../Convex_hull_d/group__PkgConvexHullD.html',1,'']]],
   ['decorators',['Decorators',['../../HalfedgeDS/group__PkgHDS__Decorators.html',1,'']]],
   ['delaunay_20triangulation_20in_202d',['Delaunay Triangulation in 2D',['../../Kinetic_data_structures/group__PkgKdsTri2.html',1,'']]],

@@ -10,8 +10,6 @@ var classPeriodic__3DelaunayTriangulationTraits__3 =
     [ "construct_circumcenter_3_object", "../Periodic_3_triangulation_3/classPeriodic__3DelaunayTriangulationTraits__3.html#af9a603fe09e95c6204f77a849f5d8c9c", null ],
     [ "coplanar_3_orientation_3_object", "../Periodic_3_triangulation_3/classPeriodic__3DelaunayTriangulationTraits__3.html#ac9be24d712f99b7312f53350ecda3206", null ],
     [ "coplanar_side_of_bounded_circle_3_object", "../Periodic_3_triangulation_3/classPeriodic__3DelaunayTriangulationTraits__3.html#a90438980bc67783cc6f5fc3979fcc844", null ],
-    [ "Periodic_3_Delaunay_triangulation_traits_3", "../Periodic_3_triangulation_3/classPeriodic__3DelaunayTriangulationTraits__3.html#a466f0344f2c93c6e495065abe63c356c", null ],
-    [ "Periodic_3_Delaunay_triangulation_traits_3", "../Periodic_3_triangulation_3/classPeriodic__3DelaunayTriangulationTraits__3.html#a2dd75933ccfa29b35c773a8d2e258e24", null ],
     [ "side_of_bounded_sphere_3_object", "../Periodic_3_triangulation_3/classPeriodic__3DelaunayTriangulationTraits__3.html#a2cf38cfe30e3b320197fece2c11e3243", null ],
     [ "side_of_oriented_sphere_3_object", "../Periodic_3_triangulation_3/classPeriodic__3DelaunayTriangulationTraits__3.html#ac3e2f4329866d050df1fa3daed97f041", null ]
 ];

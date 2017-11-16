@@ -1,24 +1,24 @@
+<!-- HTML header for doxygen 1.8.13-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="canonical" href="http://doc.cgal.org/latest/Manual/devman_intro.html"/>
-
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=9" />
-<meta name="generator" content="Doxygen 1.8.13" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>CGAL 4.11 - Manual: Introduction</title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CGAL 4.12 - Manual: Introduction</title>
 <!-- <link href="../Manual/tabs.css" rel="stylesheet" type="text/css"/> -->
 <script type="text/javascript" src="../Manual/jquery.js"></script>
 <script type="text/javascript" src="../Manual/dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css" />
+<script src="../Manual/hacks.js" type="text/javascript"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
-<link href="search/search.css" rel="stylesheet" type="text/css" />
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -59,10 +59,16 @@
   </ul>
           <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
-          <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt="" /></a>
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
           </span>
         </div>
 </div>
@@ -71,7 +77,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CGAL 4.11 - Manual
+   <div id="projectname">CGAL 4.12 - Manual
    </div>
   </td>
   <!-- We disable the search box because we have added it in the
@@ -104,10 +110,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync" style="display: none"></div>
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
@@ -115,12 +122,16 @@ $(document).ready(function(){initNavTree('devman_intro.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 
@@ -135,7 +146,7 @@ Menelaos Karavelas (<code><a href="#" onclick="location.href='mai'+'lto:'+'mka'+
 <dd>
 Stefan Schirra</dd></dl>
 <center> <div class="image">
-<img src="cgal_small.png" alt="cgal_small.png" />
+<img src="cgal_small.png" alt="cgal_small.png"/>
 </div>
   </center> <center><span class="textsc">Computational Geometry Algorithms Library</span></center><blockquote class="doxtable">
 <p><em>The goal of the <span style="font-variant: small-caps;">CGAL</span> Open Source Project is to provide easy access to efficient and reliable geometric algorithms in the form of a <span style="font-variant: small-caps;">C++</span> library. <span style="font-variant: small-caps;">CGAL</span> is used in various areas needing geometric computation, such as: computer graphics, scientific visualization, computer aided design and modeling, geographic information systems, molecular biology, medical imaging, robotics and motion planning, mesh generation, numerical methods... </em> </p>
@@ -180,16 +191,16 @@ Ease of Use</h2>
 <p>In those cases where handling of degeneracies turns out to be inefficient, special variants that are more efficient but less general should be provided in the library in addition to the general algorithms handling all degeneracies. Of course, it needs to be clearly documented which degeneracies are handled and which are not.</p>
 <h2><a class="anchor" id="Developer_manualEfficiency"></a>
 Efficiency</h2>
-<p>For most geometric algorithms theoretical results for the time and space complexity are known. Also, the theoretic interest in efficiency for realistic inputs, as opposed to worst-case situations, is growing <a class="el" href="citelist.html#CITEREF_v-ffrim-97">[10]</a>. For practical purposes, insight into the constant factors hidden in the \( O\)-notation is necessary, especially if there are several competing algorithms.</p>
+<p>For most geometric algorithms theoretical results for the time and space complexity are known. Also, the theoretic interest in efficiency for realistic inputs, as opposed to worst-case situations, is growing <a class="el" href="citelist.html#CITEREF_v-ffrim-97">[11]</a>. For practical purposes, insight into the constant factors hidden in the \( O\)-notation is necessary, especially if there are several competing algorithms.</p>
 <p>Therefore, different implementations should be supplied if there is not one best solution, as, for example, when there is a tradeoff between time and space or a more efficient implementation when there are no or few degeneracies.</p>
 <h1><a class="anchor" id="secoverall_design"></a>
 The overall design</h1>
-<p>The design goals, especially flexibility and efficient robust computation, have led us to opt for the generic programming paradigm using templates in <span style="font-variant: small-caps;">C++</span>.<span class="footnote">In appropriate places, however, <span style="font-variant: small-caps;">CGAL</span> does and should make use of object-oriented solutions and design patterns, as well.</span> In the overall design of <span style="font-variant: small-caps;">CGAL</span> three major layers can be identified, the layer of algorithms and data structures, the kernel layer and the arithmetic and algebra layer. (<a class="el" href="devman_intro.html#fig__figgenericCGAL">Figure 0.1</a> ).</p>
+<p>The design goals, especially flexibility and efficient robust computation, have led us to opt for the generic programming paradigm using templates in <span style="font-variant: small-caps;">C++</span>.<span class="footnote">In appropriate places, however, <span style="font-variant: small-caps;">CGAL</span> does and should make use of object-oriented solutions and design patterns, as well.</span> In the overall design of <span style="font-variant: small-caps;">CGAL</span> three major layers can be identified, the layer of algorithms and data structures, the kernel layer and the arithmetic and algebra layer. (<a class="el" href="devman_intro.html#fig__figgenericCGAL">fig__figgenericCGAL</a> ).</p>
 <p><a class="anchor" id="fig__figgenericCGAL"></a></p><div class="image">
-<img src="generic_cgal.png" alt="generic_cgal.png" />
+<img src="generic_cgal.png" alt="generic_cgal.png"/>
 </div>
-   <div class="cgal_figure_caption">  <a class="el" href="devman_intro.html#fig__figgenericCGAL">Figure 0.1</a> The generic design of <span style="font-variant: small-caps;">CGAL</span>.  </div>  <br />
-
+   <div class="cgal_figure_caption">  <a class="el" href="devman_intro.html#fig__figgenericCGAL">fig__figgenericCGAL</a> The generic design of <span style="font-variant: small-caps;">CGAL</span>.  </div>  <br />
+</p>
 <p>Algorithms and data structures in <span style="font-variant: small-caps;">CGAL</span> are parameterized by the types of objects and operations they use. They work with any concrete template arguments that fulfill certain syntactical as well as semantic requirements. In order to avoid long parameter lists, the parameter types are collected into a single class, called the traits class in <span style="font-variant: small-caps;">CGAL</span> (Chapter <a class="el" href="devman_traits_classes.html">Traits Classes</a> ). A <em>concept</em> is an abstraction of a type defined by a set of requirements. Any concrete type is called a <em>model</em> for a concept if it fulfills the set of requirements corresponding to the concept. Using this terminology, we can say a <span style="font-variant: small-caps;">CGAL</span> algorithm or data structure comes with a traits concept and can be used with any concrete traits model for this concept. Further contributions to <span style="font-variant: small-caps;">CGAL</span> should continue the current high level of genericity.</p>
 <p><span style="font-variant: small-caps;">CGAL</span> defines the concept of a geometry kernel. Ideally, any model for this concept can be used with any <span style="font-variant: small-caps;">CGAL</span> algorithm. This holds, of course, only if the requirements of an algorithm or data structure on its traits class are subsumed by the kernel concepts, <em>i.e.</em>, if an algorithm or data structure has no special requirements not covered in the definition of the kernel concept. Currently, <span style="font-variant: small-caps;">CGAL</span> offers a concept for a fundamental geometry kernel, that defines various geometric objects such as points, line segments, lines, circles, and operations on them, as well as two additional concepts, the circular and the spherical kernel. The goal of the last two kernels is to specify a large set of functionalities on circles and circular arcs on the plane (circular kernel), and analogous functionalities for circles, circular arcs living on a 3D sphere (spherical kernel).</p>
 <p><span style="font-variant: small-caps;">CGAL</span> currently provides several models for the <span style="font-variant: small-caps;">CGAL</span> 2D and 3D kernel concept, and one model for the 2D circular and the 3D spherical kernel concepts.. Those are again parameterized and differ in their representation of the geometric objects and the exchangeability of the types involved. In the first four cases the kernels are parameterized by a number type, which is used to store coordinates and which determines the basic arithmetic of the kernel primitives.</p>
@@ -204,13 +215,11 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Aug 27 2017 15:49:02 for CGAL 4.11 - Manual by
+    <li class="footer">Generated on Wed Nov 15 2017 15:41:18 for CGAL 4.12 - Manual by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </div>
 </body>
-
-
 </html>

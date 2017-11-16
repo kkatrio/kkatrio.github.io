@@ -6,6 +6,7 @@ var searchData=
   ['nef_5fpolyhedron_5f3',['Nef_polyhedron_3',['../../Nef_3/classCGAL_1_1Nef__polyhedron__3.html',1,'CGAL']]],
   ['nef_5fpolyhedron_5fs2',['Nef_polyhedron_S2',['../../Nef_S2/classCGAL_1_1Nef__polyhedron__S2.html',1,'CGAL']]],
   ['negate',['Negate',['../../Polynomial/classPolynomialTraits__d_1_1Negate.html',1,'PolynomialTraits_d']]],
+  ['neighborquery',['NeighborQuery',['../../Classification/classCGAL_1_1Classification_1_1NeighborQuery.html',1,'CGAL::Classification']]],
   ['no_5fintersection_5ftag',['No_intersection_tag',['../../Triangulation_2/structCGAL_1_1No__intersection__tag.html',1,'CGAL']]],
   ['non_5fmanifold_5ftag',['Non_manifold_tag',['../../Surface_mesher/classCGAL_1_1Non__manifold__tag.html',1,'CGAL']]],
   ['nonnegative_5flinear_5fprogram_5ffrom_5fiterators',['Nonnegative_linear_program_from_iterators',['../../QP_solver/classCGAL_1_1Nonnegative__linear__program__from__iterators.html',1,'CGAL']]],

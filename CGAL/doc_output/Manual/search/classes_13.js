@@ -23,12 +23,11 @@ var searchData=
   ['triangular_5fexpansion_5fvisibility_5f2',['Triangular_expansion_visibility_2',['../../Visibility_2/classCGAL_1_1Triangular__expansion__visibility__2.html',1,'CGAL']]],
   ['triangular_5ffield_5f2',['Triangular_field_2',['../../Stream_lines_2/classCGAL_1_1Triangular__field__2.html',1,'CGAL']]],
   ['triangulation',['Triangulation',['../../Triangulation/classCGAL_1_1Triangulation.html',1,'CGAL']]],
-  ['triangulation_3c_20delaunaytriangulationtraits_2c_20triangulationdatastructure_20_3e',['Triangulation&lt; DelaunayTriangulationTraits, TriangulationDataStructure &gt;',['../../Triangulation/classCGAL_1_1Triangulation.html',1,'']]],
+  ['triangulation_3c_20delaunaytriangulationtraits_5f_2c_20triangulationdatastructure_5f_20_3e',['Triangulation&lt; DelaunayTriangulationTraits_, TriangulationDataStructure_ &gt;',['../../Triangulation/classCGAL_1_1Triangulation.html',1,'']]],
+  ['triangulation_3c_20regular_5ftriangulation_5ftraits_5fadapter_3c_20regulartriangulationtraits_5f_20_3e_2c_20triangulationdatastructure_5f_20_3e',['Triangulation&lt; Regular_triangulation_traits_adapter&lt; RegularTriangulationTraits_ &gt;, TriangulationDataStructure_ &gt;',['../../Triangulation/classCGAL_1_1Triangulation.html',1,'']]],
   ['triangulation_5f2',['Triangulation_2',['../../Triangulation_2/classCGAL_1_1Triangulation__2.html',1,'CGAL']]],
-  ['triangulation_5f2_3c_20weighted_5fpoint_5fmapper_5f2_3c_20traits_20_3e_2c_20tds_20_3e',['Triangulation_2&lt; Weighted_point_mapper_2&lt; Traits &gt;, Tds &gt;',['../../Triangulation_2/classCGAL_1_1Triangulation__2.html',1,'']]],
   ['triangulation_5f3',['Triangulation_3',['../../Triangulation_3/classCGAL_1_1Triangulation__3.html',1,'CGAL']]],
-  ['triangulation_5f3_3c_20delaunaytriangulationtraits_5f3_2c_20delaunay_5ftriangulation_5f3_3c_20delaunaytriangulationtraits_5f3_2c_20triangulationdatastructure_5f3_2c_20locationpolicy_20_3e_3a_3atriangulation_5fdata_5fstructure_2c_20surjectivelockdatastructure_20_3e',['Triangulation_3&lt; DelaunayTriangulationTraits_3, Delaunay_triangulation_3&lt; DelaunayTriangulationTraits_3, TriangulationDataStructure_3, LocationPolicy &gt;::Triangulation_data_structure, SurjectiveLockDataStructure &gt;',['../../Triangulation_3/classCGAL_1_1Triangulation__3.html',1,'']]],
-  ['triangulation_5f3_3c_20weighted_5fpoint_5fmapper_3c_20regulartriangulationtraits_5f3_20_3e_2c_20triangulationdatastructure_5f3_2c_20surjectivelockdatastructure_20_3e',['Triangulation_3&lt; Weighted_point_mapper&lt; RegularTriangulationTraits_3 &gt;, TriangulationDataStructure_3, SurjectiveLockDataStructure &gt;',['../../Triangulation_3/classCGAL_1_1Triangulation__3.html',1,'']]],
+  ['triangulation_5f3_3c_20traits_2c_20delaunay_5ftriangulation_5f3_3c_20traits_2c_20tds_2c_20lp_20_3e_3a_3atriangulation_5fdata_5fstructure_2c_20slds_20_3e',['Triangulation_3&lt; Traits, Delaunay_triangulation_3&lt; Traits, TDS, LP &gt;::Triangulation_data_structure, SLDS &gt;',['../../Triangulation_3/classCGAL_1_1Triangulation__3.html',1,'']]],
   ['triangulation_5fcell_5fbase_5f3',['Triangulation_cell_base_3',['../../Triangulation_3/classCGAL_1_1Triangulation__cell__base__3.html',1,'CGAL']]],
   ['triangulation_5fcell_5fbase_5fwith_5fcircumcenter_5f3',['Triangulation_cell_base_with_circumcenter_3',['../../Triangulation_3/classCGAL_1_1Triangulation__cell__base__with__circumcenter__3.html',1,'CGAL']]],
   ['triangulation_5fcell_5fbase_5fwith_5finfo_5f3',['Triangulation_cell_base_with_info_3',['../../Triangulation_3/classCGAL_1_1Triangulation__cell__base__with__info__3.html',1,'CGAL']]],
@@ -85,6 +84,6 @@ var searchData=
   ['trim_5f2',['Trim_2',['../../Arrangement_on_surface_2/classCGAL_1_1Arr__polycurve__traits__2_1_1Trim__2.html',1,'CGAL::Arr_polycurve_traits_2']]],
   ['triple',['Triple',['../../STL_Extension/classCGAL_1_1Triple.html',1,'CGAL']]],
   ['tuple',['tuple',['../../STL_Extension/classCGAL_1_1cpp11_1_1tuple.html',1,'CGAL::cpp11']]],
-  ['two_5fvertices_5fparameterizer_5f3',['Two_vertices_parameterizer_3',['../../Surface_mesh_parameterization/classCGAL_1_1Two__vertices__parameterizer__3.html',1,'CGAL']]],
+  ['two_5fvertices_5fparameterizer_5f3',['Two_vertices_parameterizer_3',['../../Surface_mesh_parameterization/classCGAL_1_1Surface__mesh__parameterization_1_1Two__vertices__parameterizer__3.html',1,'CGAL::Surface_mesh_parameterization']]],
   ['twotuple',['Twotuple',['../../STL_Extension/classCGAL_1_1Twotuple.html',1,'CGAL']]]
 ];

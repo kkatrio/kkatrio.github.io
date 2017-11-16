@@ -1,13 +1,12 @@
+<!-- HTML header for doxygen 1.8.13-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="canonical" href="http://doc.cgal.org/latest/Polygon_mesh_processing/group__keep__connected__components__grp.html"/>
-
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=9" />
-<meta name="generator" content="Doxygen 1.8.13" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>CGAL 4.11 - Polygon Mesh Processing: Connected Components</title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CGAL 4.12 - Polygon Mesh Processing: Connected Components</title>
 <!-- <link href="../Manual/tabs.css" rel="stylesheet" type="text/css"/> -->
 <script type="text/javascript" src="../Manual/jquery.js"></script>
 <script type="text/javascript" src="../Manual/dynsections.js"></script>
@@ -15,7 +14,7 @@
      paths to the directory Manual . -->
 <!-- $.treeview -->
 <!-- $.search -->
-<link href="navtree.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
@@ -23,13 +22,13 @@
   $(document).ready(initResizable);
   $(window).load(resizeHeight);
 </script>
-<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
 <script type="text/javascript" src="../Manual/search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
-<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/search.js"></script>
 <!-- Manually done below. -->
 <link href="../Manual/stylesheet.css" rel="stylesheet" type="text/css" />
@@ -77,10 +76,16 @@ MathJax.Hub.Config({
        that we also take pngs from the Manual. -->
   <div id="MSearchBox" class="MSearchBoxInactive">
     <span class="left">
-      <img id="MSearchSelect" src="../Manual/search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
-      <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
+      <img id="MSearchSelect" src="../Manual/search/mag_sel.png"
+           onmouseover="return searchBox.OnSearchSelectShow()"
+           onmouseout="return searchBox.OnSearchSelectHide()"
+           alt=""/>
+      <input type="text" id="MSearchField" value="Search" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)"
+             onblur="searchBox.OnSearchFieldFocus(false)"
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
     </span><span class="right">
-      <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt="" /></a>
+      <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt=""/></a>
     </span>
   </div>
 </div>
@@ -89,7 +94,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CGAL 4.11 - Polygon Mesh Processing
+   <div id="projectname">CGAL 4.12 - Polygon Mesh Processing
    </div>
   </td>
  </tr>
@@ -103,11 +108,15 @@ MathJax.Hub.Config({
 var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 </script>
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+<iframe src="javascript:void(0)" frameborder="0"
+        name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 <!-- end header part -->
@@ -116,10 +125,11 @@ var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync" style="display: none"></div>
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
@@ -136,44 +146,44 @@ $(document).ready(function(){initNavTree('group__keep__connected__components__gr
 <a name="details" id="details"></a><h2 class="groupheader"> </h2>
 <p>Two faces are in the same <em>connected component</em> if there is a path of adjacent faces such that all edges between two consecutive faces of the path are not marked as constrained. </p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members" id="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gad2546bc14c00bac66d87161a4044f871"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , typename FaceOutputIterator , typename NamedParameters &gt; </td></tr>
-<tr class="memitem:gad2546bc14c00bac66d87161a4044f871"><td class="memTemplItemLeft" align="right" valign="top">FaceOutputIterator </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#gad2546bc14c00bac66d87161a4044f871">CGAL::Polygon_mesh_processing::connected_component</a> (typename boost::graph_traits&lt; PolygonMesh &gt;::face_descriptor seed_face, const PolygonMesh &amp;pmesh, FaceOutputIterator out, const NamedParameters &amp;np)</td></tr>
-<tr class="memdesc:gad2546bc14c00bac66d87161a4044f871"><td class="mdescLeft"> </td><td class="mdescRight">discovers all the faces in the same connected component as <code>seed_face</code> and records them in <code>out</code>.  <a href="group__keep__connected__components__grp.html#gad2546bc14c00bac66d87161a4044f871">More...</a><br /></td></tr>
-<tr class="separator:gad2546bc14c00bac66d87161a4044f871"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:gad2546bc14c00bac66d87161a4044f871"><td class="memTemplItemLeft" align="right" valign="top">FaceOutputIterator&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#gad2546bc14c00bac66d87161a4044f871">CGAL::Polygon_mesh_processing::connected_component</a> (typename boost::graph_traits&lt; PolygonMesh &gt;::face_descriptor seed_face, const PolygonMesh &amp;pmesh, FaceOutputIterator out, const NamedParameters &amp;np)</td></tr>
+<tr class="memdesc:gad2546bc14c00bac66d87161a4044f871"><td class="mdescLeft">&#160;</td><td class="mdescRight">discovers all the faces in the same connected component as <code>seed_face</code> and records them in <code>out</code>.  <a href="group__keep__connected__components__grp.html#gad2546bc14c00bac66d87161a4044f871">More...</a><br /></td></tr>
+<tr class="separator:gad2546bc14c00bac66d87161a4044f871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe2052b2281e1e628e68d8fea94be2d9"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , typename FaceComponentMap , typename NamedParameters &gt; </td></tr>
-<tr class="memitem:gabe2052b2281e1e628e68d8fea94be2d9"><td class="memTemplItemLeft" align="right" valign="top">boost::property_traits&lt; FaceComponentMap &gt;::value_type </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#gabe2052b2281e1e628e68d8fea94be2d9">CGAL::Polygon_mesh_processing::connected_components</a> (const PolygonMesh &amp;pmesh, FaceComponentMap fcm, const NamedParameters &amp;np)</td></tr>
-<tr class="memdesc:gabe2052b2281e1e628e68d8fea94be2d9"><td class="mdescLeft"> </td><td class="mdescRight">computes for each face the index of the corresponding connected component.  <a href="group__keep__connected__components__grp.html#gabe2052b2281e1e628e68d8fea94be2d9">More...</a><br /></td></tr>
-<tr class="separator:gabe2052b2281e1e628e68d8fea94be2d9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:gabe2052b2281e1e628e68d8fea94be2d9"><td class="memTemplItemLeft" align="right" valign="top">boost::property_traits&lt; FaceComponentMap &gt;::value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#gabe2052b2281e1e628e68d8fea94be2d9">CGAL::Polygon_mesh_processing::connected_components</a> (const PolygonMesh &amp;pmesh, FaceComponentMap fcm, const NamedParameters &amp;np)</td></tr>
+<tr class="memdesc:gabe2052b2281e1e628e68d8fea94be2d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes for each face the index of the corresponding connected component.  <a href="group__keep__connected__components__grp.html#gabe2052b2281e1e628e68d8fea94be2d9">More...</a><br /></td></tr>
+<tr class="separator:gabe2052b2281e1e628e68d8fea94be2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga68c6c29dfc6a26a6a2f8befe6944f19d"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , typename NamedParameters &gt; </td></tr>
-<tr class="memitem:ga68c6c29dfc6a26a6a2f8befe6944f19d"><td class="memTemplItemLeft" align="right" valign="top">std::size_t </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#ga68c6c29dfc6a26a6a2f8befe6944f19d">CGAL::Polygon_mesh_processing::keep_largest_connected_components</a> (PolygonMesh &amp;pmesh, std::size_t nb_components_to_keep, const NamedParameters &amp;np)</td></tr>
-<tr class="memdesc:ga68c6c29dfc6a26a6a2f8befe6944f19d"><td class="mdescLeft"> </td><td class="mdescRight">removes the small connected components and all isolated vertices.  <a href="group__keep__connected__components__grp.html#ga68c6c29dfc6a26a6a2f8befe6944f19d">More...</a><br /></td></tr>
-<tr class="separator:ga68c6c29dfc6a26a6a2f8befe6944f19d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ga68c6c29dfc6a26a6a2f8befe6944f19d"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#ga68c6c29dfc6a26a6a2f8befe6944f19d">CGAL::Polygon_mesh_processing::keep_largest_connected_components</a> (PolygonMesh &amp;pmesh, std::size_t nb_components_to_keep, const NamedParameters &amp;np)</td></tr>
+<tr class="memdesc:ga68c6c29dfc6a26a6a2f8befe6944f19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes the small connected components and all isolated vertices.  <a href="group__keep__connected__components__grp.html#ga68c6c29dfc6a26a6a2f8befe6944f19d">More...</a><br /></td></tr>
+<tr class="separator:ga68c6c29dfc6a26a6a2f8befe6944f19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6de4710f16947ea7817a0365c2fb72f1"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , typename NamedParameters &gt; </td></tr>
-<tr class="memitem:ga6de4710f16947ea7817a0365c2fb72f1"><td class="memTemplItemLeft" align="right" valign="top">std::size_t </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#ga6de4710f16947ea7817a0365c2fb72f1">CGAL::Polygon_mesh_processing::keep_large_connected_components</a> (PolygonMesh &amp;pmesh, std::size_t threshold_components_to_keep, const NamedParameters &amp;np)</td></tr>
-<tr class="memdesc:ga6de4710f16947ea7817a0365c2fb72f1"><td class="mdescLeft"> </td><td class="mdescRight">removes connected components with less than a given number of faces.  <a href="group__keep__connected__components__grp.html#ga6de4710f16947ea7817a0365c2fb72f1">More...</a><br /></td></tr>
-<tr class="separator:ga6de4710f16947ea7817a0365c2fb72f1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ga6de4710f16947ea7817a0365c2fb72f1"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#ga6de4710f16947ea7817a0365c2fb72f1">CGAL::Polygon_mesh_processing::keep_large_connected_components</a> (PolygonMesh &amp;pmesh, std::size_t threshold_components_to_keep, const NamedParameters &amp;np)</td></tr>
+<tr class="memdesc:ga6de4710f16947ea7817a0365c2fb72f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes connected components with less than a given number of faces.  <a href="group__keep__connected__components__grp.html#ga6de4710f16947ea7817a0365c2fb72f1">More...</a><br /></td></tr>
+<tr class="separator:ga6de4710f16947ea7817a0365c2fb72f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7dd1414e9366fed26c1f12c12c376b39"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , typename ComponentRange , typename FaceComponentMap , typename NamedParameters &gt; </td></tr>
-<tr class="memitem:ga7dd1414e9366fed26c1f12c12c376b39"><td class="memTemplItemLeft" align="right" valign="top">void </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#ga7dd1414e9366fed26c1f12c12c376b39">CGAL::Polygon_mesh_processing::keep_connected_components</a> (PolygonMesh &amp;pmesh, const ComponentRange &amp;components_to_keep, const FaceComponentMap &amp;fcm, const NamedParameters &amp;np)</td></tr>
-<tr class="memdesc:ga7dd1414e9366fed26c1f12c12c376b39"><td class="mdescLeft"> </td><td class="mdescRight">keeps the connected components designated by theirs ids in <code>components_to_keep</code>, and removes the other connected components as well as all isolated vertices.  <a href="group__keep__connected__components__grp.html#ga7dd1414e9366fed26c1f12c12c376b39">More...</a><br /></td></tr>
-<tr class="separator:ga7dd1414e9366fed26c1f12c12c376b39"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ga7dd1414e9366fed26c1f12c12c376b39"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#ga7dd1414e9366fed26c1f12c12c376b39">CGAL::Polygon_mesh_processing::keep_connected_components</a> (PolygonMesh &amp;pmesh, const ComponentRange &amp;components_to_keep, const FaceComponentMap &amp;fcm, const NamedParameters &amp;np)</td></tr>
+<tr class="memdesc:ga7dd1414e9366fed26c1f12c12c376b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">keeps the connected components designated by theirs ids in <code>components_to_keep</code>, and removes the other connected components as well as all isolated vertices.  <a href="group__keep__connected__components__grp.html#ga7dd1414e9366fed26c1f12c12c376b39">More...</a><br /></td></tr>
+<tr class="separator:ga7dd1414e9366fed26c1f12c12c376b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17cb532198888791f2ceb00666f4c1d4"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , typename ComponentRange , typename FaceComponentMap , typename NamedParameters &gt; </td></tr>
-<tr class="memitem:ga17cb532198888791f2ceb00666f4c1d4"><td class="memTemplItemLeft" align="right" valign="top">void </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#ga17cb532198888791f2ceb00666f4c1d4">CGAL::Polygon_mesh_processing::remove_connected_components</a> (PolygonMesh &amp;pmesh, const ComponentRange &amp;components_to_remove, const FaceComponentMap &amp;fcm, const NamedParameters &amp;np)</td></tr>
-<tr class="memdesc:ga17cb532198888791f2ceb00666f4c1d4"><td class="mdescLeft"> </td><td class="mdescRight">Removes in <code>pmesh</code> the connected components designated by theirs ids in <code>components_to_remove</code> as well as all isolated vertices.  <a href="group__keep__connected__components__grp.html#ga17cb532198888791f2ceb00666f4c1d4">More...</a><br /></td></tr>
-<tr class="separator:ga17cb532198888791f2ceb00666f4c1d4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ga17cb532198888791f2ceb00666f4c1d4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#ga17cb532198888791f2ceb00666f4c1d4">CGAL::Polygon_mesh_processing::remove_connected_components</a> (PolygonMesh &amp;pmesh, const ComponentRange &amp;components_to_remove, const FaceComponentMap &amp;fcm, const NamedParameters &amp;np)</td></tr>
+<tr class="memdesc:ga17cb532198888791f2ceb00666f4c1d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes in <code>pmesh</code> the connected components designated by theirs ids in <code>components_to_remove</code> as well as all isolated vertices.  <a href="group__keep__connected__components__grp.html#ga17cb532198888791f2ceb00666f4c1d4">More...</a><br /></td></tr>
+<tr class="separator:ga17cb532198888791f2ceb00666f4c1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b7d6fb132789998695d855f326a0fba"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters &gt; </td></tr>
-<tr class="memitem:ga4b7d6fb132789998695d855f326a0fba"><td class="memTemplItemLeft" align="right" valign="top">void </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#ga4b7d6fb132789998695d855f326a0fba">CGAL::Polygon_mesh_processing::remove_connected_components</a> (PolygonMesh &amp;pmesh, const FaceRange &amp;components_to_remove, const NamedParameters &amp;np)</td></tr>
-<tr class="memdesc:ga4b7d6fb132789998695d855f326a0fba"><td class="mdescLeft"> </td><td class="mdescRight">keeps the connected components not designated by the faces in <code>components_to_remove</code>, and removes the other connected components and all isolated vertices.  <a href="group__keep__connected__components__grp.html#ga4b7d6fb132789998695d855f326a0fba">More...</a><br /></td></tr>
-<tr class="separator:ga4b7d6fb132789998695d855f326a0fba"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ga4b7d6fb132789998695d855f326a0fba"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#ga4b7d6fb132789998695d855f326a0fba">CGAL::Polygon_mesh_processing::remove_connected_components</a> (PolygonMesh &amp;pmesh, const FaceRange &amp;components_to_remove, const NamedParameters &amp;np)</td></tr>
+<tr class="memdesc:ga4b7d6fb132789998695d855f326a0fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">keeps the connected components not designated by the faces in <code>components_to_remove</code>, and removes the other connected components and all isolated vertices.  <a href="group__keep__connected__components__grp.html#ga4b7d6fb132789998695d855f326a0fba">More...</a><br /></td></tr>
+<tr class="separator:ga4b7d6fb132789998695d855f326a0fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab238ffa71187b8fdcdeef48e71ee4b28"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters &gt; </td></tr>
-<tr class="memitem:gab238ffa71187b8fdcdeef48e71ee4b28"><td class="memTemplItemLeft" align="right" valign="top">void </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#gab238ffa71187b8fdcdeef48e71ee4b28">CGAL::Polygon_mesh_processing::keep_connected_components</a> (PolygonMesh &amp;pmesh, const FaceRange &amp;components_to_keep, const NamedParameters &amp;np)</td></tr>
-<tr class="memdesc:gab238ffa71187b8fdcdeef48e71ee4b28"><td class="mdescLeft"> </td><td class="mdescRight">keeps the connected components designated by the faces in <code>components_to_keep</code>, and removes the other connected components and all isolated vertices.  <a href="group__keep__connected__components__grp.html#gab238ffa71187b8fdcdeef48e71ee4b28">More...</a><br /></td></tr>
-<tr class="separator:gab238ffa71187b8fdcdeef48e71ee4b28"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:gab238ffa71187b8fdcdeef48e71ee4b28"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__keep__connected__components__grp.html#gab238ffa71187b8fdcdeef48e71ee4b28">CGAL::Polygon_mesh_processing::keep_connected_components</a> (PolygonMesh &amp;pmesh, const FaceRange &amp;components_to_keep, const NamedParameters &amp;np)</td></tr>
+<tr class="memdesc:gab238ffa71187b8fdcdeef48e71ee4b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">keeps the connected components designated by the faces in <code>components_to_keep</code>, and removes the other connected components and all isolated vertices.  <a href="group__keep__connected__components__grp.html#gab238ffa71187b8fdcdeef48e71ee4b28">More...</a><br /></td></tr>
+<tr class="separator:gab238ffa71187b8fdcdeef48e71ee4b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gad2546bc14c00bac66d87161a4044f871"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad2546bc14c00bac66d87161a4044f871">◆ </a></span>connected_component()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2546bc14c00bac66d87161a4044f871">&#9670;&nbsp;</a></span>connected_component()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,26 +193,26 @@ template&lt;typename PolygonMesh , typename FaceOutputIterator , typename NamedP
         <tr>
           <td class="memname">FaceOutputIterator CGAL::Polygon_mesh_processing::connected_component </td>
           <td>(</td>
-          <td class="paramtype">typename boost::graph_traits&lt; PolygonMesh &gt;::face_descriptor </td>
+          <td class="paramtype">typename boost::graph_traits&lt; PolygonMesh &gt;::face_descriptor&#160;</td>
           <td class="paramname"><em>seed_face</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const PolygonMesh &amp; </td>
+          <td class="paramtype">const PolygonMesh &amp;&#160;</td>
           <td class="paramname"><em>pmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FaceOutputIterator </td>
+          <td class="paramtype">FaceOutputIterator&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters &amp; </td>
-          <td class="paramname"><em>np</em> </td>
+          <td class="paramtype">const NamedParameters &amp;&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -218,8 +228,8 @@ template&lt;typename PolygonMesh , typename FaceOutputIterator , typename NamedP
 <p><code>seed_face</code> will also be added in <code>out</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">FaceOutputIterator</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> that accepts faces of type <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>. </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">FaceOutputIterator</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> that accepts faces of type <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>. </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -247,7 +257,7 @@ template&lt;typename PolygonMesh , typename FaceOutputIterator , typename NamedP
 </div>
 </div>
 <a id="gabe2052b2281e1e628e68d8fea94be2d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabe2052b2281e1e628e68d8fea94be2d9">◆ </a></span>connected_components()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe2052b2281e1e628e68d8fea94be2d9">&#9670;&nbsp;</a></span>connected_components()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,20 +267,20 @@ template&lt;typename PolygonMesh , typename FaceComponentMap , typename NamedPar
         <tr>
           <td class="memname">boost::property_traits&lt;FaceComponentMap&gt;::value_type CGAL::Polygon_mesh_processing::connected_components </td>
           <td>(</td>
-          <td class="paramtype">const PolygonMesh &amp; </td>
+          <td class="paramtype">const PolygonMesh &amp;&#160;</td>
           <td class="paramname"><em>pmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FaceComponentMap </td>
+          <td class="paramtype">FaceComponentMap&#160;</td>
           <td class="paramname"><em>fcm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters &amp; </td>
-          <td class="paramname"><em>np</em> </td>
+          <td class="paramtype">const NamedParameters &amp;&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -286,8 +296,8 @@ template&lt;typename PolygonMesh , typename FaceComponentMap , typename NamedPar
 <p>A property map for <code>CGAL::face_index_t</code> should be either available as an internal property map to <code>pmesh</code> or provided as one of the <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classWritablePropertyMap.html">WritablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type. </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classWritablePropertyMap.html">WritablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type. </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -311,12 +321,12 @@ template&lt;typename PolygonMesh , typename FaceComponentMap , typename NamedPar
 </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the number of connected components. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="Polygon_mesh_processing_2connected_components_example_8cpp-example.html#a8">Polygon_mesh_processing/connected_components_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="Polygon_mesh_processing_2connected_components_example_8cpp-example.html#a8">Polygon_mesh_processing/connected_components_example.cpp</a>, and <a class="el" href="Polygon_mesh_processing_2face_filtered_graph_example_8cpp-example.html#a4">Polygon_mesh_processing/face_filtered_graph_example.cpp</a>.</dd>
 </dl>
 </div>
 </div>
 <a id="ga7dd1414e9366fed26c1f12c12c376b39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7dd1414e9366fed26c1f12c12c376b39">◆ </a></span>keep_connected_components() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7dd1414e9366fed26c1f12c12c376b39">&#9670;&nbsp;</a></span>keep_connected_components() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,26 +336,26 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
         <tr>
           <td class="memname">void CGAL::Polygon_mesh_processing::keep_connected_components </td>
           <td>(</td>
-          <td class="paramtype">PolygonMesh &amp; </td>
+          <td class="paramtype">PolygonMesh &amp;&#160;</td>
           <td class="paramname"><em>pmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ComponentRange &amp; </td>
+          <td class="paramtype">const ComponentRange &amp;&#160;</td>
           <td class="paramname"><em>components_to_keep</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const FaceComponentMap &amp; </td>
+          <td class="paramtype">const FaceComponentMap &amp;&#160;</td>
           <td class="paramname"><em>fcm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters &amp; </td>
-          <td class="paramname"><em>np</em> </td>
+          <td class="paramtype">const NamedParameters &amp;&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -363,10 +373,10 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
 <p>Property maps for <code>CGAL::vertex_index_t</code> should be either available as internal property map to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">ComponentRange</td><td>a range of ids convertible to <code>std::size</code> </td></tr>
-    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
+    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
   </table>
   </dd>
 </dl>
@@ -391,7 +401,7 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
 </div>
 </div>
 <a id="gab238ffa71187b8fdcdeef48e71ee4b28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab238ffa71187b8fdcdeef48e71ee4b28">◆ </a></span>keep_connected_components() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab238ffa71187b8fdcdeef48e71ee4b28">&#9670;&nbsp;</a></span>keep_connected_components() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,20 +411,20 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
         <tr>
           <td class="memname">void CGAL::Polygon_mesh_processing::keep_connected_components </td>
           <td>(</td>
-          <td class="paramtype">PolygonMesh &amp; </td>
+          <td class="paramtype">PolygonMesh &amp;&#160;</td>
           <td class="paramname"><em>pmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const FaceRange &amp; </td>
+          <td class="paramtype">const FaceRange &amp;&#160;</td>
           <td class="paramname"><em>components_to_keep</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters &amp; </td>
-          <td class="paramname"><em>np</em> </td>
+          <td class="paramtype">const NamedParameters &amp;&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -431,7 +441,7 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <dl class="section note"><dt>Note</dt><dd>If the removal of the connected components makes <code>pmesh</code> a non-manifold surface, then the behavior of this function is undefined.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">FaceRange</td><td>a range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> indicating the connected components to be kept.</td></tr>
   </table>
@@ -461,7 +471,7 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 </div>
 </div>
 <a id="ga6de4710f16947ea7817a0365c2fb72f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6de4710f16947ea7817a0365c2fb72f1">◆ </a></span>keep_large_connected_components()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6de4710f16947ea7817a0365c2fb72f1">&#9670;&nbsp;</a></span>keep_large_connected_components()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,20 +481,20 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
         <tr>
           <td class="memname">std::size_t CGAL::Polygon_mesh_processing::keep_large_connected_components </td>
           <td>(</td>
-          <td class="paramtype">PolygonMesh &amp; </td>
+          <td class="paramtype">PolygonMesh &amp;&#160;</td>
           <td class="paramname"><em>pmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::size_t </td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>threshold_components_to_keep</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters &amp; </td>
-          <td class="paramname"><em>np</em> </td>
+          <td class="paramtype">const NamedParameters &amp;&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -500,7 +510,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -531,7 +541,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 </div>
 </div>
 <a id="ga68c6c29dfc6a26a6a2f8befe6944f19d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga68c6c29dfc6a26a6a2f8befe6944f19d">◆ </a></span>keep_largest_connected_components()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68c6c29dfc6a26a6a2f8befe6944f19d">&#9670;&nbsp;</a></span>keep_largest_connected_components()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -541,20 +551,20 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
         <tr>
           <td class="memname">std::size_t CGAL::Polygon_mesh_processing::keep_largest_connected_components </td>
           <td>(</td>
-          <td class="paramtype">PolygonMesh &amp; </td>
+          <td class="paramtype">PolygonMesh &amp;&#160;</td>
           <td class="paramname"><em>pmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::size_t </td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>nb_components_to_keep</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters &amp; </td>
-          <td class="paramname"><em>np</em> </td>
+          <td class="paramtype">const NamedParameters &amp;&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -571,7 +581,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -602,7 +612,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 </div>
 </div>
 <a id="ga17cb532198888791f2ceb00666f4c1d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga17cb532198888791f2ceb00666f4c1d4">◆ </a></span>remove_connected_components() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17cb532198888791f2ceb00666f4c1d4">&#9670;&nbsp;</a></span>remove_connected_components() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -612,26 +622,26 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
         <tr>
           <td class="memname">void CGAL::Polygon_mesh_processing::remove_connected_components </td>
           <td>(</td>
-          <td class="paramtype">PolygonMesh &amp; </td>
+          <td class="paramtype">PolygonMesh &amp;&#160;</td>
           <td class="paramname"><em>pmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ComponentRange &amp; </td>
+          <td class="paramtype">const ComponentRange &amp;&#160;</td>
           <td class="paramname"><em>components_to_remove</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const FaceComponentMap &amp; </td>
+          <td class="paramtype">const FaceComponentMap &amp;&#160;</td>
           <td class="paramname"><em>fcm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters &amp; </td>
-          <td class="paramname"><em>np</em> </td>
+          <td class="paramtype">const NamedParameters &amp;&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -649,10 +659,10 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
 <p>Property maps for <code>CGAL::vertex_index_t</code> should be either available as internal property map to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">ComponentRange</td><td>a range of ids convertible to <code>std::size</code> </td></tr>
-    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
+    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
   </table>
   </dd>
 </dl>
@@ -677,7 +687,7 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
 </div>
 </div>
 <a id="ga4b7d6fb132789998695d855f326a0fba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4b7d6fb132789998695d855f326a0fba">◆ </a></span>remove_connected_components() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b7d6fb132789998695d855f326a0fba">&#9670;&nbsp;</a></span>remove_connected_components() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -687,20 +697,20 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
         <tr>
           <td class="memname">void CGAL::Polygon_mesh_processing::remove_connected_components </td>
           <td>(</td>
-          <td class="paramtype">PolygonMesh &amp; </td>
+          <td class="paramtype">PolygonMesh &amp;&#160;</td>
           <td class="paramname"><em>pmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const FaceRange &amp; </td>
+          <td class="paramtype">const FaceRange &amp;&#160;</td>
           <td class="paramname"><em>components_to_remove</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const NamedParameters &amp; </td>
-          <td class="paramname"><em>np</em> </td>
+          <td class="paramtype">const NamedParameters &amp;&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -717,7 +727,7 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <dl class="section note"><dt>Note</dt><dd>If the removal of the connected components makes <code>pmesh</code> a non-manifold surface, then the behavior of this function is undefined.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">FaceRange</td><td>a range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> indicating the connected components to be removed.</td></tr>
   </table>
@@ -755,12 +765,11 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Aug 27 2017 15:49:34 for CGAL 4.11 - Polygon Mesh Processing by
+    <li class="footer">Generated on Thu Nov 16 2017 16:13:57 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </div>
 </body>
-
 </html>

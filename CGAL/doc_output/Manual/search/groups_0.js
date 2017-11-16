@@ -23,6 +23,7 @@ var searchData=
   ['2d_20polygon_20partitioning_20reference',['2D Polygon Partitioning Reference',['../../Partition_2/group__PkgPolygonPartitioning2.html',1,'']]],
   ['2d_20polyline_20simplification_20reference',['2D Polyline Simplification Reference',['../../Polyline_simplification_2/group__PkgPolylineSimplification2.html',1,'']]],
   ['2d_20segment_20delaunay_20graphs_20reference',['2D Segment Delaunay Graphs Reference',['../../Segment_Delaunay_graph_2/group__PkgSegmentDelaunayGraph2.html',1,'']]],
+  ['2d_20movable_20separability_20of_20sets_20reference',['2D Movable Separability of Sets Reference',['../../Set_movable_separability_2/group__PkgSetMovableSeparability2.html',1,'']]],
   ['2d_20snap_20rounding_20reference',['2D Snap Rounding Reference',['../../Snap_rounding_2/group__PkgSnapRounding2.html',1,'']]],
   ['2d_20straight_20skeleton_20and_20polygon_20offsetting_20reference',['2D Straight Skeleton and Polygon Offsetting Reference',['../../Straight_skeleton_2/group__PkgStraightSkeleton2.html',1,'']]],
   ['2d_20triangulation_20data_20structure_20reference',['2D Triangulation Data Structure Reference',['../../TDS_2/group__PkgTDS2.html',1,'']]],

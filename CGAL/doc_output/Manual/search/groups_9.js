@@ -6,6 +6,5 @@ var searchData=
   ['hull_20subsequence_20functions',['Hull Subsequence Functions',['../../Convex_hull_2/group__PkgConvexHull2Subsequence.html',1,'']]],
   ['handles_20and_20circulators_20reference',['Handles and Circulators Reference',['../../Circulator/group__PkgHandlesAndCirculators.html',1,'']]],
   ['halfedge_20data_20structures_20reference',['Halfedge Data Structures Reference',['../../HalfedgeDS/group__PkgHDS.html',1,'']]],
-  ['halfedge_20data_20structures',['Halfedge Data Structures',['../../HalfedgeDS/group__PkgHDS__HDS.html',1,'']]],
-  ['helper_20class',['Helper Class',['../../Surface_mesh_parameterization/group__PkgSurfaceParameterizationHelper.html',1,'']]]
+  ['halfedge_20data_20structures',['Halfedge Data Structures',['../../HalfedgeDS/group__PkgHDS__HDS.html',1,'']]]
 ];

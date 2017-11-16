@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['k_5fneighbor_5fquery',['K_neighbor_query',['../../Classification/classCGAL_1_1Classification_1_1Point__set__neighborhood_1_1K__neighbor__query.html',1,'CGAL::Classification::Point_set_neighborhood']]],
   ['k_5fneighbor_5fsearch',['K_neighbor_search',['../../Spatial_searching/classCGAL_1_1K__neighbor__search.html',1,'CGAL']]],
   ['kd_5ftree',['Kd_tree',['../../Spatial_searching/classCGAL_1_1Kd__tree.html',1,'CGAL']]],
   ['kd_5ftree_5finternal_5fnode',['Kd_tree_internal_node',['../../Spatial_searching/classCGAL_1_1Kd__tree__internal__node.html',1,'CGAL']]],

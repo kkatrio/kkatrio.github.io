@@ -17,8 +17,9 @@ var classPeriodic__3TriangulationTraits__3 =
     [ "construct_segment_3_object", "../Periodic_3_triangulation_3/classPeriodic__3TriangulationTraits__3.html#a623203cd74b41af8d2b55d6b867e87b1", null ],
     [ "construct_tetrahedron_3_object", "../Periodic_3_triangulation_3/classPeriodic__3TriangulationTraits__3.html#a85c9897b2c3f1e7b95d800f0419d0bca", null ],
     [ "construct_triangle_3_object", "../Periodic_3_triangulation_3/classPeriodic__3TriangulationTraits__3.html#aa06713a10e0f3e888d30678928b9bf5b", null ],
+    [ "get_domain", "../Periodic_3_triangulation_3/classPeriodic__3TriangulationTraits__3.html#a49cd91b87a0374551ec02c81ffa2e06e", null ],
     [ "orientation_3_object", "../Periodic_3_triangulation_3/classPeriodic__3TriangulationTraits__3.html#a6d335215df68aab1273d9dfeccf90f7a", null ],
     [ "Periodic_3_triangulation_traits_3", "../Periodic_3_triangulation_3/classPeriodic__3TriangulationTraits__3.html#a34f6f23511e44e280793b0f3cae10f33", null ],
     [ "Periodic_3_triangulation_traits_3", "../Periodic_3_triangulation_3/classPeriodic__3TriangulationTraits__3.html#a1089565c23dc2a7211d273182190d057", null ],
-    [ "set_domain", "../Periodic_3_triangulation_3/classPeriodic__3TriangulationTraits__3.html#a847020a2e0af54f0a781182a4c128e35", null ]
+    [ "set_domain", "../Periodic_3_triangulation_3/classPeriodic__3TriangulationTraits__3.html#a94debc5129a47166efc597b6f88ce0e0", null ]
 ];

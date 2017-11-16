@@ -8,5 +8,6 @@ var searchData=
   ['enumerations',['Enumerations',['../../Mesh_2/group__PkgMesh2Enum.html',1,'']]],
   ['enumerations',['Enumerations',['../../Mesh_3/group__PkgMesh__3Enum.html',1,'']]],
   ['enums',['Enums',['../../Periodic_2_triangulation_2/group__PkgPeriodic2Triangulation2Enums.html',1,'']]],
-  ['enums',['Enums',['../../Ridges_3/group__PkgRidges__3Enums.html',1,'']]]
+  ['enums',['Enums',['../../Ridges_3/group__PkgRidges__3Enums.html',1,'']]],
+  ['enums',['Enums',['../../Surface_mesh_parameterization/group__PkgSurfaceParameterizationEnums.html',1,'']]]
 ];

@@ -1,13 +1,12 @@
+<!-- HTML header for doxygen 1.8.13-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="canonical" href="http://doc.cgal.org/latest/Polygon_mesh_processing/group__namedparameters.html"/>
-
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=9" />
-<meta name="generator" content="Doxygen 1.8.13" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>CGAL 4.11 - Polygon Mesh Processing: Named Parameters</title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CGAL 4.12 - Polygon Mesh Processing: Named Parameters</title>
 <!-- <link href="../Manual/tabs.css" rel="stylesheet" type="text/css"/> -->
 <script type="text/javascript" src="../Manual/jquery.js"></script>
 <script type="text/javascript" src="../Manual/dynsections.js"></script>
@@ -15,7 +14,7 @@
      paths to the directory Manual . -->
 <!-- $.treeview -->
 <!-- $.search -->
-<link href="navtree.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
@@ -23,13 +22,13 @@
   $(document).ready(initResizable);
   $(window).load(resizeHeight);
 </script>
-<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
 <script type="text/javascript" src="../Manual/search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
-<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/search.js"></script>
 <!-- Manually done below. -->
 <link href="../Manual/stylesheet.css" rel="stylesheet" type="text/css" />
@@ -77,10 +76,16 @@ MathJax.Hub.Config({
        that we also take pngs from the Manual. -->
   <div id="MSearchBox" class="MSearchBoxInactive">
     <span class="left">
-      <img id="MSearchSelect" src="../Manual/search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
-      <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
+      <img id="MSearchSelect" src="../Manual/search/mag_sel.png"
+           onmouseover="return searchBox.OnSearchSelectShow()"
+           onmouseout="return searchBox.OnSearchSelectHide()"
+           alt=""/>
+      <input type="text" id="MSearchField" value="Search" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)"
+             onblur="searchBox.OnSearchFieldFocus(false)"
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
     </span><span class="right">
-      <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt="" /></a>
+      <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt=""/></a>
     </span>
   </div>
 </div>
@@ -89,7 +94,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CGAL 4.11 - Polygon Mesh Processing
+   <div id="projectname">CGAL 4.12 - Polygon Mesh Processing
    </div>
   </td>
  </tr>
@@ -103,11 +108,15 @@ MathJax.Hub.Config({
 var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 </script>
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+<iframe src="javascript:void(0)" frameborder="0"
+        name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 <!-- end header part -->
@@ -116,10 +125,11 @@ var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync" style="display: none"></div>
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
@@ -152,9 +162,9 @@ $(document).ready(function(){initNavTree('group__namedparameters.html','');});
 <p>In the following, we assume that the following types are provided as template parameters of polygon mesh processing functions and classes. Note that, for some of these functions, the type is more specific.</p>
 <ul>
 <li>
-<code>PolygonMesh</code> implements a <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> </li>
+<code>PolygonMesh</code> implements a <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> </li>
 <li>
-<code>GeomTraits</code> a geometric traits class in which constructions are performed and predicates evaluated. Everywhere in this package, a <span style="font-variant: small-caps;">CGAL</span> <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> fulfills the requirements. </li>
+<code>GeomTraits</code> a geometric traits class in which constructions are performed and predicates evaluated. Everywhere in this package, a <span style="font-variant: small-caps;">CGAL</span> <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> fulfills the requirements. </li>
 </ul>
 <p>Here is the list of the named parameters available in this package:</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>reorder this list, maybe</dd></dl>
@@ -163,7 +173,7 @@ $(document).ready(function(){initNavTree('group__namedparameters.html','');});
 <dd><table class="params">
 <tr>
 <td class="paramname">vertex_point_map </td><td><p class="starttd"><a class="anchor" id="PMP_vertex_point_map"></a> is the property map with the points associated to the vertices of the polygon mesh <code>pmesh</code>.<br />
-<b>Type:</b> a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadablePropertyMap.html">ReadablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::vertex_descriptor</code> as key type and <code>GeomTraits::Point_3</code> as value type. <br />
+<b>Type:</b> a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadablePropertyMap.html">ReadablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::vertex_descriptor</code> as key type and <code>GeomTraits::Point_3</code> as value type. <br />
 <b>Default</b> value is</p><div class="fragment"><div class="line">boost::get(CGAL::vertex_point, pmesh)</div></div><!-- fragment --> <p class="endtd"></p>
 </td></tr>
 <tr>
@@ -186,23 +196,23 @@ $(document).ready(function(){initNavTree('group__namedparameters.html','');});
 </td></tr>
 <tr>
 <td class="paramname">sparse_linear_solver </td><td><p class="starttd"><a class="anchor" id="PMP_sparse_linear_solver"></a> is the solver used for fairing of polygon meshes.<br />
-<b>Type:</b> a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Solver_interface.tag:../Solver_interface/" href="../Solver_interface/classSparseLinearAlgebraWithFactorTraits__d.html">SparseLinearAlgebraWithFactorTraits_d</a></code>.<br />
-<b>Default:</b> if <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/installation.html#thirdpartyEigen">Eigen</a> 3.2 (or greater) is available and <code>CGAL_EIGEN3_ENABLED</code> is defined, then the following overload of <code>Eigen_solver_traits</code> is provided as default value<br />
-</p><div class="fragment"><div class="line"><a class="codeRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Solver_interface.tag:../Solver_interface/" href="../Solver_interface/classCGAL_1_1Eigen__solver__traits.html">CGAL::Eigen_solver_traits</a>&lt;</div><div class="line">  Eigen::SparseLU&lt;</div><div class="line">    <a class="codeRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">CGAL::Eigen_sparse_matrix&lt;double&gt;::EigenType</a>,</div><div class="line">      Eigen::COLAMDOrdering&lt;int&gt; &gt;  &gt;</div></div><!-- fragment --> <p class="endtd"></p>
+<b>Type:</b> a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Solver_interface.tag:../Solver_interface/" href="../Solver_interface/classSparseLinearAlgebraWithFactorTraits__d.html">SparseLinearAlgebraWithFactorTraits_d</a></code>.<br />
+<b>Default:</b> if <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/installation.html#thirdpartyEigen">Eigen</a> 3.2 (or greater) is available and <code>CGAL_EIGEN3_ENABLED</code> is defined, then the following overload of <code>Eigen_solver_traits</code> is provided as default value<br />
+</p><div class="fragment"><div class="line"><a class="codeRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Solver_interface.tag:../Solver_interface/" href="../Solver_interface/classCGAL_1_1Eigen__solver__traits.html">CGAL::Eigen_solver_traits</a>&lt;</div><div class="line">  Eigen::SparseLU&lt;</div><div class="line">    <a class="codeRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Solver_interface.tag:../Solver_interface/" href="../Solver_interface/structCGAL_1_1Eigen__sparse__matrix.html#a4b43cacc467d285c11a39f4eef7a55ae">CGAL::Eigen_sparse_matrix&lt;double&gt;::EigenType</a>,</div><div class="line">      Eigen::COLAMDOrdering&lt;int&gt; &gt;  &gt;</div></div><!-- fragment --> <p class="endtd"></p>
 </td></tr>
 <tr>
 <td class="paramname">geom_traits </td><td><p class="starttd"><a class="anchor" id="PMP_geom_traits"></a> the geometric traits instance in which the mesh processing operation should be performed.<br />
 <b>Type:</b> a Geometric traits class.<br />
-<b>Default</b> type is </p><div class="fragment"><div class="line"><span class="keyword">typename</span> <a class="codeRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Kernel__traits.html">CGAL::Kernel_traits</a>&lt;</div><div class="line">  <span class="keyword">typename</span> boost::property_traits&lt;</div><div class="line">    <span class="keyword">typename</span> boost::property_map&lt;PolygonMesh, CGAL::vertex_point_t&gt;::type&gt;::value_type&gt;<a class="codeRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">::Kernel</a></div></div><!-- fragment --> <p class="endtd"></p>
+<b>Default</b> type is </p><div class="fragment"><div class="line"><span class="keyword">typename</span> <a class="codeRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Kernel__traits.html">CGAL::Kernel_traits</a>&lt;</div><div class="line">  <span class="keyword">typename</span> boost::property_traits&lt;</div><div class="line">    <span class="keyword">typename</span> boost::property_map&lt;PolygonMesh, CGAL::vertex_point_t&gt;::type&gt;::value_type&gt;<a class="codeRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">::Kernel</a></div></div><!-- fragment --> <p class="endtd"></p>
 </td></tr>
 <tr>
 <td class="paramname">face_index_map </td><td><p class="starttd"><a class="anchor" id="PMP_face_index_map"></a> the property map containing the index of each face of the input polygon mesh.<br />
-<b>Type:</b> a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadablePropertyMap.html">ReadablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and the value type </p><div class="fragment"><div class="line"><span class="keyword">typename</span> boost::property_traits&lt;</div><div class="line">   <span class="keyword">typename</span> boost::property_map&lt;PolygonMesh, CGAL::face_index_t&gt;::type&gt;::value_type</div></div><!-- fragment --><p> <b>Default</b> value is</p><div class="fragment"><div class="line">boost::get(CGAL::face_index, pmesh)</div></div><!-- fragment --><p> If this internal property map exists, its values should be initialized </p>
+<b>Type:</b> a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadablePropertyMap.html">ReadablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and the value type </p><div class="fragment"><div class="line"><span class="keyword">typename</span> boost::property_traits&lt;</div><div class="line">   <span class="keyword">typename</span> boost::property_map&lt;PolygonMesh, CGAL::face_index_t&gt;::type&gt;::value_type</div></div><!-- fragment --><p> <b>Default</b> value is</p><div class="fragment"><div class="line">boost::get(CGAL::face_index, pmesh)</div></div><!-- fragment --><p> If this internal property map exists, its values should be initialized </p>
 <p class="endtd"></p>
 </td></tr>
 <tr>
 <td class="paramname">vertex_index_map </td><td><p class="starttd"><a class="anchor" id="PMP_vertex_index_map"></a> the property map containing the index of each vertex of the input polygon mesh.<br />
-<b>Type:</b> a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadablePropertyMap.html">ReadablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::vertex_descriptor</code> as key type and the value type </p><div class="fragment"><div class="line"><span class="keyword">typename</span> boost::property_traits&lt;</div><div class="line">   <span class="keyword">typename</span> boost::property_map&lt;PolygonMesh, CGAL::vertex_index_t&gt;::type&gt;::value_type</div></div><!-- fragment --><p> <b>Default</b> value is</p><div class="fragment"><div class="line">boost::get(CGAL::vertex_index, pmesh)</div></div><!-- fragment --> <p class="endtd"></p>
+<b>Type:</b> a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadablePropertyMap.html">ReadablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::vertex_descriptor</code> as key type and the value type </p><div class="fragment"><div class="line"><span class="keyword">typename</span> boost::property_traits&lt;</div><div class="line">   <span class="keyword">typename</span> boost::property_map&lt;PolygonMesh, CGAL::vertex_index_t&gt;::type&gt;::value_type</div></div><!-- fragment --><p> <b>Default</b> value is</p><div class="fragment"><div class="line">boost::get(CGAL::vertex_index, pmesh)</div></div><!-- fragment --> <p class="endtd"></p>
 </td></tr>
 <tr>
 <td class="paramname">number_of_iterations </td><td><p class="starttd"><a class="anchor" id="PMP_number_of_iterations"></a>the number of iterations of the sequence of iterations performed by the isotropic remeshing algorithm.<br />
@@ -211,14 +221,31 @@ $(document).ready(function(){initNavTree('group__namedparameters.html','');});
 <p class="endtd"></p>
 </td></tr>
 <tr>
-<td class="paramname">edge_is_constrained_map </td><td><p class="starttd"><a class="anchor" id="PMP_edge_is_constrained_map"></a>the property map containing information about edges of the input polygon mesh being constrained or not.<br />
-<b>Type</b> : a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::edge_descriptor</code> as key type and <code>bool</code> as value type. It should be default constructible.<br />
+<td class="paramname">edge_is_constrained_map </td><td><p class="starttd"><a class="anchor" id="PMP_edge_is_constrained_map"></a>the property map containing information about edges of the input polygon mesh being marked or not.<br />
+In <code><a class="el" href="group__PMP__meshing__grp.html#gad3d03890515ae8103bd32a30a3486412" title="remeshes a triangulated region of a polygon mesh. ">CGAL::Polygon_mesh_processing::isotropic_remeshing()</a></code> and <code><a class="el" href="group__keep__connected__components__grp.html#gabe2052b2281e1e628e68d8fea94be2d9" title="computes for each face the index of the corresponding connected component. ">CGAL::Polygon_mesh_processing::connected_components()</a></code>, the marked edges are constrained.<br />
+<b>Type</b> : a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::edge_descriptor</code> as key type and <code>bool</code> as value type. It should be default constructible.<br />
 <b>Default</b> : if this parameter is omitted, a default property map where no edge is constrained is provided. </p>
 <p class="endtd"></p>
 </td></tr>
 <tr>
+<td class="paramname">vertex_incident_patches_map </td><td><p class="starttd"><a class="anchor" id="PMP_vertex_incident_patches_map"></a>the property map containing the surface patches incident to each vertex of the input polygon mesh.<br />
+<b>Type</b> : a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classLvaluePropertyMap.html">LvaluePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::vertex_descriptor</code> as key type. Its value type must be a container of <code>boost::property_traits&lt;PatchIdMap&gt;::value_type</code> and have a function <code>insert()</code>. A <code>std::set</code> or a <code>boost::unordered_set</code> are recommended, as a patch index may be inserted several times.<br />
+<b>Default</b> value is</p><div class="fragment"><div class="line">boost::get(CGAL::vertex_incident_patches_t, pmesh)</div></div><!-- fragment --> <p class="endtd"></p>
+</td></tr>
+<tr>
+<td class="paramname">first_index </td><td><p class="starttd"><a class="anchor" id="PMP_first_index"></a>The index of the first surface patch.<br />
+<b>Type</b> : <code>std::size_t</code><br />
+<b>Default</b> : 1 </p>
+<p class="endtd"></p>
+</td></tr>
+<tr>
+<td class="paramname">vertex_feature_degree_map </td><td><p class="starttd"><a class="anchor" id="PMP_vertex_feature_degree_map"></a>the property map containing the number of feature edges being incident to the vertices of the polygon mesh <code>pmesh</code>.<br />
+<b>Type</b> : a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::vertex_descriptor</code> as key type and <code>int</code> as value type. It should be default constructible.<br />
+<b>Default</b> value is</p><div class="fragment"><div class="line">boost::get(CGAL::vertex_feature_degree_t(), pmesh)</div></div><!-- fragment --> <p class="endtd"></p>
+</td></tr>
+<tr>
 <td class="paramname">vertex_is_constrained_map </td><td><p class="starttd"><a class="anchor" id="PMP_vertex_is_constrained_map"></a>the property map containing information about vertices of the input polygon mesh being constrained or not. Constrained vertices may be replaced by new vertices, but the number and location of vertices remain unchanged.<br />
-<b>Type</b> : a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::vertex_descriptor</code> as key type and <code>bool</code> as value type. It should be default constructible.<br />
+<b>Type</b> : a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::vertex_descriptor</code> as key type and <code>bool</code> as value type. It should be default constructible.<br />
 <b>Default</b> : if this parameter is omitted, a default property map where no vertex is constrained is provided. </p>
 <p class="endtd"></p>
 </td></tr>
@@ -230,7 +257,7 @@ $(document).ready(function(){initNavTree('group__namedparameters.html','');});
 </td></tr>
 <tr>
 <td class="paramname">face_patch_map </td><td><p class="starttd"><a class="anchor" id="PMP_face_patch_map"></a>a property map containing information about faces. It is particularly well-suited for preserving surface patch IDs, or face colors. The edges at the interface between surface patches are treated similarly to the ones of <code>edge_is_constrained_map</code> <br />
-<b>Type</b> : a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and the desired property, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classCopyConstructible.html">CopyConstructible</a></code> as value type.<br />
+<b>Type</b> : a class model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and the desired property, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classCopyConstructible.html">CopyConstructible</a></code> as value type.<br />
 <b>Default</b> : if this parameter is omitted, a default property map where each face is associated with the ID of the connected component it belongs to. Connected components are computed with respect to the constrained edges listed in the property map <code>edge_is_constrained_map</code> </p>
 <p class="endtd"></p>
 </td></tr>
@@ -343,6 +370,12 @@ $(document).ready(function(){initNavTree('group__namedparameters.html','');});
 <p class="endtd"></p>
 </td></tr>
 <tr>
+<td class="paramname">avoid_singularities </td><td><p class="starttd"><a class="anchor" id="PMP_avoid_singularities"></a>Parameter used in <code>shape_remeshing()</code> to indicate convergence to a sphere. <br />
+<b>Type</b> : <code>bool</code> <br />
+<b>Default</b> is <code>false</code> </p>
+<p class="endtd"></p>
+</td></tr>
+<tr>
 <td class="paramname">gradient_descent_precision </td><td><p class="starttd"><a class="anchor" id="PMP_gradient_descent_precision"></a>Parameter used in <code>area_remeshing()</code> to set precision to be met while the relative energy between iterations of each triagle is minimized. Triangle energy is defined based on its area compared to the average area of all triagnles adjacent to the vertex that is being moved. <br />
 <b>Type</b> : <code>double</code> <br />
 <b>Default</b> is <code>0.001</code> </p>
@@ -358,21 +391,21 @@ $(document).ready(function(){initNavTree('group__namedparameters.html','');});
 </dd>
 </dl>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members" id="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaee6e37c8d14cbf0847daa8a6bfeb69e6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="group__namedparameters.html#gaee6e37c8d14cbf0847daa8a6bfeb69e6">CGAL::Polygon_mesh_processing::parameters::all_default</a> ()</td></tr>
-<tr class="memdesc:gaee6e37c8d14cbf0847daa8a6bfeb69e6"><td class="mdescLeft"> </td><td class="mdescRight">This function can be used to indicate that all optional named parameters to be used are the default ones.  <a href="group__namedparameters.html#gaee6e37c8d14cbf0847daa8a6bfeb69e6">More...</a><br /></td></tr>
-<tr class="separator:gaee6e37c8d14cbf0847daa8a6bfeb69e6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:gaee6e37c8d14cbf0847daa8a6bfeb69e6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__namedparameters.html#gaee6e37c8d14cbf0847daa8a6bfeb69e6">CGAL::Polygon_mesh_processing::parameters::all_default</a> ()</td></tr>
+<tr class="memdesc:gaee6e37c8d14cbf0847daa8a6bfeb69e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function can be used to indicate that all optional named parameters to be used are the default ones.  <a href="group__namedparameters.html#gaee6e37c8d14cbf0847daa8a6bfeb69e6">More...</a><br /></td></tr>
+<tr class="separator:gaee6e37c8d14cbf0847daa8a6bfeb69e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaee6e37c8d14cbf0847daa8a6bfeb69e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaee6e37c8d14cbf0847daa8a6bfeb69e6">◆ </a></span>all_default()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaee6e37c8d14cbf0847daa8a6bfeb69e6">&#9670;&nbsp;</a></span>all_default()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/debug/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> CGAL::Polygon_mesh_processing::parameters::all_default </td>
+          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> CGAL::Polygon_mesh_processing::parameters::all_default </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -397,12 +430,11 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Aug 27 2017 15:49:34 for CGAL 4.11 - Polygon Mesh Processing by
+    <li class="footer">Generated on Thu Nov 16 2017 16:13:57 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </div>
 </body>
-
 </html>

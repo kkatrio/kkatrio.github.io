@@ -1,7 +1,7 @@
 var searchData=
 [
   ['backinsertionsequence',['BackInsertionSequence',['../classBackInsertionSequence.html',1,'']]],
-  ['barycentric_5fmapping_5fparameterizer_5f3',['Barycentric_mapping_parameterizer_3',['../../Surface_mesh_parameterization/classCGAL_1_1Barycentric__mapping__parameterizer__3.html',1,'CGAL']]],
+  ['barycentric_5fmapping_5fparameterizer_5f3',['Barycentric_mapping_parameterizer_3',['../../Surface_mesh_parameterization/classCGAL_1_1Surface__mesh__parameterization_1_1Barycentric__mapping__parameterizer__3.html',1,'CGAL::Surface_mesh_parameterization']]],
   ['barycentriccoordinates_5f2',['BarycentricCoordinates_2',['../../Barycentric_coordinates_2/classBarycentricCoordinates__2.html',1,'']]],
   ['barycentrictraits_5f2',['BarycentricTraits_2',['../../Barycentric_coordinates_2/classBarycentricTraits__2.html',1,'']]],
   ['basicmatrix',['BasicMatrix',['../../Matrix_search/classBasicMatrix.html',1,'']]],
@@ -15,12 +15,13 @@ var searchData=
   ['bigfloat',['BigFloat',['../../Number_types/classCORE_1_1BigFloat.html',1,'CORE']]],
   ['bigint',['BigInt',['../../Number_types/classCORE_1_1BigInt.html',1,'CORE']]],
   ['bigrat',['BigRat',['../../Number_types/classCORE_1_1BigRat.html',1,'CORE']]],
+  ['binary_5ffunction',['binary_function',['../../STL_Extension/structCGAL_1_1binary__function.html',1,'CGAL']]],
   ['bisectiongeometrictraits_5f3',['BisectionGeometricTraits_3',['../../Mesh_3/classBisectionGeometricTraits__3.html',1,'']]],
   ['boolean_5ftag',['Boolean_tag',['../../STL_Extension/classCGAL_1_1Boolean__tag.html',1,'CGAL']]],
-  ['borderparameterizer_5f3',['BorderParameterizer_3',['../../Surface_mesh_parameterization/classBorderParameterizer__3.html',1,'']]],
   ['boundbetween_5f1',['BoundBetween_1',['../../Algebraic_kernel_d/classAlgebraicKernel__d__1_1_1BoundBetween__1.html',1,'AlgebraicKernel_d_1']]],
   ['boundbetweenx_5f2',['BoundBetweenX_2',['../../Algebraic_kernel_d/classAlgebraicKernel__d__2_1_1BoundBetweenX__2.html',1,'AlgebraicKernel_d_2']]],
   ['boundbetweeny_5f2',['BoundBetweenY_2',['../../Algebraic_kernel_d/classAlgebraicKernel__d__2_1_1BoundBetweenY__2.html',1,'AlgebraicKernel_d_2']]],
+  ['bounded_5fnormal_5fchange_5fplacement',['Bounded_normal_change_placement',['../../Surface_mesh_simplification/classCGAL_1_1Surface__mesh__simplification_1_1Bounded__normal__change__placement.html',1,'CGAL::Surface_mesh_simplification']]],
   ['boundedside_5f2',['BoundedSide_2',['../../Circular_kernel_2/classCircularKernel_1_1BoundedSide__2.html',1,'CircularKernel::BoundedSide_2'],['../../Kernel_23/classKernel_1_1BoundedSide__2.html',1,'Kernel::BoundedSide_2']]],
   ['boundedside_5f3',['BoundedSide_3',['../../Kernel_23/classKernel_1_1BoundedSide__3.html',1,'Kernel::BoundedSide_3'],['../../Circular_kernel_3/classSphericalKernel_1_1BoundedSide__3.html',1,'SphericalKernel::BoundedSide_3']]],
   ['box_5fd',['Box_d',['../../Box_intersection_d/classCGAL_1_1Box__intersection__d_1_1Box__d.html',1,'CGAL::Box_intersection_d']]],

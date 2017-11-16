@@ -21,5 +21,7 @@ var searchData=
   ['triangulation_20classes',['Triangulation Classes',['../../Triangulation_2/group__PkgTriangulation2TriangulationClasses.html',1,'']]],
   ['traits_20classes',['Traits Classes',['../../Triangulation_3/group__PkgTriangulation3TraitsClasses.html',1,'']]],
   ['triangulation_20classes',['Triangulation Classes',['../../Triangulation_3/group__PkgTriangulation3TriangulationClasses.html',1,'']]],
-  ['triangulation_20classes',['Triangulation Classes',['../../Triangulation/group__PkgTriangulationsTriangulationClasses.html',1,'']]]
+  ['traits_20classes',['Traits Classes',['../../Triangulation/group__PkgTriangulationsTraitsClasses.html',1,'']]],
+  ['triangulation_20classes',['Triangulation Classes',['../../Triangulation/group__PkgTriangulationsTriangulationClasses.html',1,'']]],
+  ['top_20edges',['Top Edges',['../../Set_movable_separability_2/group__top__edges__grp.html',1,'']]]
 ];
