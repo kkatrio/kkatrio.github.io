@@ -161,7 +161,7 @@ class CGAL::Polygon_mesh_slicer&lt; TriangleMesh, Traits, VertexPointMap, AABBTr
   </table>
   </dd>
 </dl>
-<p>The implemenation of this class depends on the package <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgAABB_treeSummary">3D Fast Intersection and Distance Computation</a>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Shall we document more in details what is required? <code>Traits</code> must provide:<ul>
+<p>The implemenation of this class depends on the package <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgAABB_treeSummary">3D Fast Intersection and Distance Computation</a>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>Shall we document more in details what is required? <code>Traits</code> must provide:<ul>
 <li><code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Plane__3.html">Plane_3</a></code></li>
 <li><code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code></li>
 <li><code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Segment__3.html">Segment_3</a></code></li>
@@ -170,14 +170,14 @@ class CGAL::Polygon_mesh_slicer&lt; TriangleMesh, Traits, VertexPointMap, AABBTr
 <li><code>Do_intersect_3</code> with <code>bool operator()(Plane_3, Bbox_3)</code></li>
 </ul>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>If we keep the traits for plane orthogonal to a frame axis, <code>Traits</code> must also provide:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>If we keep the traits for plane orthogonal to a frame axis, <code>Traits</code> must also provide:<ul>
 <li><code>FT</code></li>
 <li><code>Construct_cartesian_const_iterator_3</code> with <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classIterator.html">Iterator</a> operator()(Point_3)</code> <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classIterator.html">Iterator</a></code> being a random access iterator with <code>FT</code> as value type</li>
 <li><code>Construct_point_3</code> with <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a> operator()(FT,FT,FT)</code>; <code>Construct_source_3</code> with <code>const <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>&amp; operator()(Segment_3)</code></li>
 <li><code>Construct_target_3</code> with <code>const <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>&amp; operator()(Segment_3)</code></li>
 </ul>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd><code>_object()</code> functions must also be provided </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd><code>_object()</code> functions must also be provided </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="Polygon_mesh_processing_2mesh_slicer_example_8cpp-example.html#_a6">Polygon_mesh_processing/mesh_slicer_example.cpp</a>.</dd>
 </dl></div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -442,7 +442,7 @@ move the footer to the bottom of the page. -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>CGAL</b></li><li class="navelem"><a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html">Polygon_mesh_slicer</a></li>
-    <li class="footer">Generated on Thu Nov 16 2017 16:13:57 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Fri Nov 17 2017 16:20:40 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
