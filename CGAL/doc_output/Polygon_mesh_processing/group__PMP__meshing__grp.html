@@ -173,10 +173,10 @@ template&lt;typename TriangleMesh , typename NamedParameters &gt; </td></tr>
 <tr class="memitem:gaafd017f4424c3942bfdcc93874c8f596"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__meshing__grp.html#gaafd017f4424c3942bfdcc93874c8f596">CGAL::Polygon_mesh_processing::split_long_edges</a> (const EdgeRange &amp;edges, const double &amp;max_length, PolygonMesh &amp;pmesh, const NamedParameters &amp;np)</td></tr>
 <tr class="memdesc:gaafd017f4424c3942bfdcc93874c8f596"><td class="mdescLeft">&#160;</td><td class="mdescRight">splits the edges listed in <code>edges</code> into sub-edges that are not longer than the given threshold <code>max_length</code>.  <a href="group__PMP__meshing__grp.html#gaafd017f4424c3942bfdcc93874c8f596">More...</a><br /></td></tr>
 <tr class="separator:gaafd017f4424c3942bfdcc93874c8f596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad48a6a3a292384dda8bba3db2d25dee0"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh &gt; </td></tr>
-<tr class="memitem:gad48a6a3a292384dda8bba3db2d25dee0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__meshing__grp.html#gad48a6a3a292384dda8bba3db2d25dee0">CGAL::Polygon_mesh_processing::smooth_modified_curvature_flow</a> (PolygonMesh &amp;mesh, const double &amp;time, std::size_t nb_iter)</td></tr>
-<tr class="memdesc:gad48a6a3a292384dda8bba3db2d25dee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">smooths the overall shape of the mesh by using a modified algorithm based on the mean curvature flow.  <a href="group__PMP__meshing__grp.html#gad48a6a3a292384dda8bba3db2d25dee0">More...</a><br /></td></tr>
-<tr class="separator:gad48a6a3a292384dda8bba3db2d25dee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1579cbc64d1f8333ee6e2ef85cb4b4ee"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters &gt; </td></tr>
+<tr class="memitem:ga1579cbc64d1f8333ee6e2ef85cb4b4ee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__meshing__grp.html#ga1579cbc64d1f8333ee6e2ef85cb4b4ee">CGAL::Polygon_mesh_processing::smooth_modified_curvature_flow</a> (const FaceRange &amp;faces, PolygonMesh &amp;pmesh, const NamedParameters &amp;np)</td></tr>
+<tr class="memdesc:ga1579cbc64d1f8333ee6e2ef85cb4b4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">smooths the overall shape of the mesh by using a modified algorithm based on the mean curvature flow.  <a href="group__PMP__meshing__grp.html#ga1579cbc64d1f8333ee6e2ef85cb4b4ee">More...</a><br /></td></tr>
+<tr class="separator:ga1579cbc64d1f8333ee6e2ef85cb4b4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga34ac2571e89a2cf2ecd4e222d4c3a6a9"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters &gt; </td></tr>
 <tr class="memitem:ga34ac2571e89a2cf2ecd4e222d4c3a6a9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__meshing__grp.html#ga34ac2571e89a2cf2ecd4e222d4c3a6a9">CGAL::Polygon_mesh_processing::smooth_angles</a> (const FaceRange &amp;faces, PolygonMesh &amp;pmesh, const NamedParameters &amp;np)</td></tr>
 <tr class="memdesc:ga34ac2571e89a2cf2ecd4e222d4c3a6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">smoothes a triangulated region of a polygon mesh using angle based criteria.  <a href="group__PMP__meshing__grp.html#ga34ac2571e89a2cf2ecd4e222d4c3a6a9">More...</a><br /></td></tr>
@@ -856,31 +856,31 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 
 </div>
 </div>
-<a id="gad48a6a3a292384dda8bba3db2d25dee0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad48a6a3a292384dda8bba3db2d25dee0">&#9670;&nbsp;</a></span>smooth_modified_curvature_flow()</h2>
+<a id="ga1579cbc64d1f8333ee6e2ef85cb4b4ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1579cbc64d1f8333ee6e2ef85cb4b4ee">&#9670;&nbsp;</a></span>smooth_modified_curvature_flow()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PolygonMesh &gt; </div>
+template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void CGAL::Polygon_mesh_processing::smooth_modified_curvature_flow </td>
           <td>(</td>
+          <td class="paramtype">const FaceRange &amp;&#160;</td>
+          <td class="paramname"><em>faces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">PolygonMesh &amp;&#160;</td>
-          <td class="paramname"><em>mesh</em>, </td>
+          <td class="paramname"><em>pmesh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double &amp;&#160;</td>
-          <td class="paramname"><em>time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>nb_iter</em>&#160;</td>
+          <td class="paramtype">const NamedParameters &amp;&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -894,7 +894,7 @@ template&lt;typename PolygonMesh &gt; </div>
 
 <p>smooths the overall shape of the mesh by using a modified algorithm based on the mean curvature flow. </p>
 <p>The effect depends only on the curvature of each area and the convergence is achieved to a conformal map of the initial surface to a sphere.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>modify the time parameter and elaborate on the number of iterations. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>add time parameter. </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">PolygonMesh</td><td>model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. The descriptor types <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> and <code>boost::graph_traits&lt;PolygonMesh&gt;::halfedge_descriptor</code> must be models of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/classHashable.html">Hashable</a></code>. If <code>PolygonMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, and no <code>face_index_map</code> is given as a named parameter, then the internal one should be initialized </td></tr>
@@ -1211,7 +1211,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 17 2017 16:20:40 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Fri Nov 17 2017 20:22:11 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
