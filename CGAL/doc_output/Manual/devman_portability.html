@@ -219,7 +219,7 @@ Identifying compilers and architectures</h1>
 </table>
 <h1><a class="anchor" id="secproblems_and_workarounds"></a>
 Known problems and workarounds</h1>
-<p>For (good) reasons that will not be discussed here, it was decided to use <span style="font-variant: small-caps;">C++</span> for the development of <span style="font-variant: small-caps;">CGAL</span>. An international standard for <span style="font-variant: small-caps;">C++</span> has been sanctioned in 1998 <a class="el" href="citelist.html#CITEREF_cgal:ansi-is14882-98">[3]</a> and the level of compliance varies widely between different compilers, let alone bugs.</p>
+<p>For (good) reasons that will not be discussed here, it was decided to use <span style="font-variant: small-caps;">C++</span> for the development of <span style="font-variant: small-caps;">CGAL</span>. An international standard for <span style="font-variant: small-caps;">C++</span> has been sanctioned in 1998 <b>[cgal:ansi-is14882-98]</b> and the level of compliance varies widely between different compilers, let alone bugs.</p>
 <h2><a class="anchor" id="secworkaround_flags"></a>
 Workaround flags</h2>
 <p>In order to provide a uniform development environment for <span style="font-variant: small-caps;">CGAL</span> that looks more standard compliant than what the compilers provide, a number of workaround flags and macros have been created. Some of the workaround macros are set in <code>&lt;CGAL/config.h&gt;</code>.</p>
@@ -296,7 +296,7 @@ Macros connected to workarounds/compilers</h2>
 Various other problems and solutions</h2>
 <dl>
 <dt><b><b>min and max</b></b></dt>
-<dd><p class="startdd">Visual <span style="font-variant: small-caps;">C++</span> headers (and others) sometimes define <code>min</code> and <code>max</code> as macros. If you write <code>max</code> followed by an opening parenthesis, this can lead to unwanted substitutions. In order to work around it, you should use one of the following tricks: </p><div class="fragment"><div class="line"><a class="codeRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Number_types.tag:../Number_types/" href="../Number_types/group__nt__util.html#gad7dbfa919e255b52f36ea1512a92cb78">max</a> BOOST_PREVENT_MACRO_SUBSTITUTION (a, b);</div><div class="line">(<a class="codeRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Number_types.tag:../Number_types/" href="../Number_types/group__nt__util.html#gad7dbfa919e255b52f36ea1512a92cb78">max</a>) (a, b);</div></div><!-- fragment --><p class="enddd"></p>
+<dd><p class="startdd">Visual <span style="font-variant: small-caps;">C++</span> headers (and others) sometimes define <code>min</code> and <code>max</code> as macros. If you write <code>max</code> followed by an opening parenthesis, this can lead to unwanted substitutions. In order to work around it, you should use one of the following tricks: </p><div class="fragment"><div class="line"><a class="codeRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Number_types.tag:../Number_types/" href="../Number_types/group__nt__util.html#gad7dbfa919e255b52f36ea1512a92cb78">max</a> BOOST_PREVENT_MACRO_SUBSTITUTION (a, b);</div><div class="line">(<a class="codeRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Number_types.tag:../Number_types/" href="../Number_types/group__nt__util.html#gad7dbfa919e255b52f36ea1512a92cb78">max</a>) (a, b);</div></div><!-- fragment --><p class="enddd"></p>
 </dd>
 <dt><b><b>Templated member functions</b></b></dt>
 <dd><p class="startdd"></p>
@@ -326,7 +326,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Dec 15 2017 20:33:33 for CGAL 4.12 - Manual by
+    <li class="footer">Generated on Mon Jan 15 2018 11:14:20 for CGAL 4.12 - Manual by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

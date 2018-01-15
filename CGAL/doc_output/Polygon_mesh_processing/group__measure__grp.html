@@ -217,8 +217,8 @@ template&lt;typename FaceRange , typename TriangleMesh , typename NamedParameter
 <p>computes the area of a range of faces of a given triangulated surface mesh. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
+    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -237,12 +237,12 @@ template&lt;typename FaceRange , typename TriangleMesh , typename NamedParameter
 <tr>
 <td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>  </td></tr>
+<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>  </td></tr>
 </table>
 </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>sum of face areas of <code>faces</code>. The return type <code>FT</code> is a number type. It is either deduced from the <code>geom_traits</code> <a class="el" href="group__namedparameters.html">Named Parameters</a> if provided, or the geometric traits class deduced from the point property map of <code>tmesh</code>.</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This function involves a square root computation. If <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html#a55e83f5a9f8ca43588b02ae8256a8fbd">Kernel::FT</a></code> does not have a <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/group__PkgAlgebraicFoundations.html#gab922269072ee9ee99ba8c541418b2e11">sqrt()</a></code> operation, the square root computation will be done approximately.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function involves a square root computation. If <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html#a55e83f5a9f8ca43588b02ae8256a8fbd">Kernel::FT</a></code> does not have a <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/group__PkgAlgebraicFoundations.html#gab922269072ee9ee99ba8c541418b2e11">sqrt()</a></code> operation, the square root computation will be done approximately.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__measure__grp.html#ga6a1d7a825c09490b1e6613295343482b" title="computes the area of a face of a given triangulated surface mesh. ">face_area()</a></code> </dd></dl>
 
 </div>
@@ -280,7 +280,7 @@ template&lt;typename TriangleMesh , typename NamedParameters &gt; </div>
 <p>computes the surface area of a triangulated surface mesh. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -298,12 +298,12 @@ template&lt;typename TriangleMesh , typename NamedParameters &gt; </div>
 <tr>
 <td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
+<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
 </table>
 </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the surface area of <code>tmesh</code>. The return type <code>FT</code> is a number type. It is either deduced from the <code>geom_traits</code> <a class="el" href="group__namedparameters.html">Named Parameters</a> if provided, or the geometric traits class deduced from the point property map of <code>tmesh</code>.</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This function involves a square root computation. If <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html#a55e83f5a9f8ca43588b02ae8256a8fbd">Kernel::FT</a></code> does not have a <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/group__PkgAlgebraicFoundations.html#gab922269072ee9ee99ba8c541418b2e11">sqrt()</a></code> operation, the square root computation will be done approximately.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function involves a square root computation. If <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html#a55e83f5a9f8ca43588b02ae8256a8fbd">Kernel::FT</a></code> does not have a <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/group__PkgAlgebraicFoundations.html#gab922269072ee9ee99ba8c541418b2e11">sqrt()</a></code> operation, the square root computation will be done approximately.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__measure__grp.html#ga6a1d7a825c09490b1e6613295343482b" title="computes the area of a face of a given triangulated surface mesh. ">face_area()</a></code> </dd></dl>
 
 </div>
@@ -348,7 +348,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <p>The edge is given by one of its halfedges, or the edge itself.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -367,12 +367,12 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <tr>
 <td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
+<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
 </table>
 </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the length of <code>h</code>. The return type <code>FT</code> is a number type. It is either deduced from the <code>geom_traits</code> <a class="el" href="group__namedparameters.html">Named Parameters</a> if provided, or the geometric traits class deduced from the point property map of <code>pmesh</code>.</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This function involves a square root computation. If <code>FT</code> does not have a <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/group__PkgAlgebraicFoundations.html#gab922269072ee9ee99ba8c541418b2e11">sqrt()</a></code> operation, the square root computation will be done approximately.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function involves a square root computation. If <code>FT</code> does not have a <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/group__PkgAlgebraicFoundations.html#gab922269072ee9ee99ba8c541418b2e11">sqrt()</a></code> operation, the square root computation will be done approximately.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__measure__grp.html#ga8e778962db8e41dc145d70c5c4790e41" title="computes the length of the border polyline that contains a given halfedge. ">face_border_length()</a></code> </dd></dl>
 
 </div>
@@ -416,7 +416,7 @@ template&lt;typename TriangleMesh , typename NamedParameters &gt; </div>
 <p>computes the area of a face of a given triangulated surface mesh. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -435,13 +435,13 @@ template&lt;typename TriangleMesh , typename NamedParameters &gt; </div>
 <tr>
 <td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
+<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
 </table>
 </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>f != boost::graph_traits&lt;TriangleMesh&gt;::null_face()</code></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>the area of <code>f</code>. The return type <code>FT</code> is a number type. It is either deduced from the <code>geom_traits</code> <a class="el" href="group__namedparameters.html">Named Parameters</a> if provided, or the geometric traits class deduced from the point property map of <code>tmesh</code>.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__area__grp.html#gad5b975e731751609655f88d287f7385a">area()</a></code> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__area__grp.html#gad5b975e731751609655f88d287f7385a">area()</a></code> </dd></dl>
 
 </div>
 </div>
@@ -484,7 +484,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <p>computes the length of the border polyline that contains a given halfedge. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -503,12 +503,12 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <tr>
 <td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
+<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
 </table>
 </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the length of the sequence of border edges of <code>face(h, pmesh)</code>. The return type <code>FT</code> is a number type. It is either deduced from the <code>geom_traits</code> <a class="el" href="group__namedparameters.html">Named Parameters</a> if provided, or the geometric traits class deduced from the point property map of <code>pmesh</code>.</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This function involves a square root computation. If <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html#a55e83f5a9f8ca43588b02ae8256a8fbd">Kernel::FT</a></code> does not have a <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/group__PkgAlgebraicFoundations.html#gab922269072ee9ee99ba8c541418b2e11">sqrt()</a></code> operation, the square root computation will be done approximately.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function involves a square root computation. If <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html#a55e83f5a9f8ca43588b02ae8256a8fbd">Kernel::FT</a></code> does not have a <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/group__PkgAlgebraicFoundations.html#gab922269072ee9ee99ba8c541418b2e11">sqrt()</a></code> operation, the square root computation will be done approximately.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__measure__grp.html#gae1674775d9fecada7f25710f425cff3a" title="computes the length of an edge of a given polygon mesh. ">edge_length()</a></code> </dd></dl>
 
 </div>
@@ -546,7 +546,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <p>finds the longest border of a given triangulated surface and returns a halfedge that is part of this border and the length of this border. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -564,7 +564,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <tr>
 <td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
+<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
 </table>
 </dd>
 </dl>
@@ -609,7 +609,7 @@ template&lt;typename TriangleMesh , typename NamedParameters &gt; </div>
 <p>computes the volume of the domain bounded by a closed triangulated surface mesh. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeGraph.html">HalfedgeGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -628,7 +628,7 @@ template&lt;typename TriangleMesh , typename NamedParameters &gt; </div>
 <tr>
 <td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
+<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
 </table>
 </dd>
 </dl>
@@ -645,7 +645,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Dec 22 2017 14:04:37 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

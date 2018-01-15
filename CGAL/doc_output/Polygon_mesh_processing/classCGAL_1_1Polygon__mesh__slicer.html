@@ -153,49 +153,49 @@ class CGAL::Polygon_mesh_slicer&lt; TriangleMesh, Traits, VertexPointMap, AABBTr
 <p>Function object that computes the intersection of a plane with a triangulated surface mesh. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a triangulated surface mesh, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> </td></tr>
-    <tr><td class="paramname">Traits</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classAABBGeomTraits.html">AABBGeomTraits</a></code> </td></tr>
-    <tr><td class="paramname">VertexPointMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadablePropertyMap.html">ReadablePropertyMap</a></code> with <code>boost::graph_traits&lt;TriangleMesh&gt;::vertex_descriptor</code> as key and <code>Traits::Point_3</code> as value type. The default is <code>typename boost::property_map&lt; TriangleMesh, vertex_point_t&gt;::type</code>. </td></tr>
-    <tr><td class="paramname">AABBTree</td><td>must be an instantiation of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">CGAL::AABB_tree</a></code> able to handle the edges of <code>TriangleMesh</code>, having its <code>edge_descriptor</code> as primitive id. The default is <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">CGAL::AABB_tree</a>&lt;<a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__traits.html">CGAL::AABB_traits</a>&lt; Traits, <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__halfedge__graph__segment__primitive.html">CGAL::AABB_halfedge_graph_segment_primitive</a>&lt;TriangleMesh&gt; &gt; &gt;</code> </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a triangulated surface mesh, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> </td></tr>
+    <tr><td class="paramname">Traits</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classAABBGeomTraits.html">AABBGeomTraits</a></code> </td></tr>
+    <tr><td class="paramname">VertexPointMap</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadablePropertyMap.html">ReadablePropertyMap</a></code> with <code>boost::graph_traits&lt;TriangleMesh&gt;::vertex_descriptor</code> as key and <code>Traits::Point_3</code> as value type. The default is <code>typename boost::property_map&lt; TriangleMesh, vertex_point_t&gt;::type</code>. </td></tr>
+    <tr><td class="paramname">AABBTree</td><td>must be an instantiation of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">CGAL::AABB_tree</a></code> able to handle the edges of <code>TriangleMesh</code>, having its <code>edge_descriptor</code> as primitive id. The default is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">CGAL::AABB_tree</a>&lt;<a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__traits.html">CGAL::AABB_traits</a>&lt; Traits, <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__halfedge__graph__segment__primitive.html">CGAL::AABB_halfedge_graph_segment_primitive</a>&lt;TriangleMesh&gt; &gt; &gt;</code> </td></tr>
     <tr><td class="paramname">UseParallelPlaneOptimization</td><td>if <code>true</code>, the code will use specific predicates and constructions in case the functor is called with a plane orthogonal to a frame axis, the non-null coefficient being 1 or -1. The default is <code>true</code>.</td></tr>
   </table>
   </dd>
 </dl>
-<p>The implemenation of this class depends on the package <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgAABB_treeSummary">3D Fast Intersection and Distance Computation</a>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Shall we document more in details what is required? <code>Traits</code> must provide:<ul>
-<li><code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Plane__3.html">Plane_3</a></code></li>
-<li><code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code></li>
-<li><code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Segment__3.html">Segment_3</a></code></li>
+<p>The implemenation of this class depends on the package <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgAABB_treeSummary">3D Fast Intersection and Distance Computation</a>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Shall we document more in details what is required? <code>Traits</code> must provide:<ul>
+<li><code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Plane__3.html">Plane_3</a></code></li>
+<li><code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code></li>
+<li><code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Segment__3.html">Segment_3</a></code></li>
 <li><code>Oriented_side_3</code> with <code>Oriented_side operator()(Plane_3, Point_3)</code></li>
-<li><code>Do_intersect_3</code> with <code>boost::optional&lt;variant&lt;<a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>,<a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Segment__3.html">Segment_3</a>&gt; operator()(Plane_3,Segment_3)</code></li>
+<li><code>Do_intersect_3</code> with <code>boost::optional&lt;variant&lt;<a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>,<a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Segment__3.html">Segment_3</a>&gt; operator()(Plane_3,Segment_3)</code></li>
 <li><code>Do_intersect_3</code> with <code>bool operator()(Plane_3, Bbox_3)</code></li>
 </ul>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>If we keep the traits for plane orthogonal to a frame axis, <code>Traits</code> must also provide:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>If we keep the traits for plane orthogonal to a frame axis, <code>Traits</code> must also provide:<ul>
 <li><code>FT</code></li>
-<li><code>Construct_cartesian_const_iterator_3</code> with <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classIterator.html">Iterator</a> operator()(Point_3)</code> <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classIterator.html">Iterator</a></code> being a random access iterator with <code>FT</code> as value type</li>
-<li><code>Construct_point_3</code> with <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a> operator()(FT,FT,FT)</code>; <code>Construct_source_3</code> with <code>const <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>&amp; operator()(Segment_3)</code></li>
-<li><code>Construct_target_3</code> with <code>const <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>&amp; operator()(Segment_3)</code></li>
+<li><code>Construct_cartesian_const_iterator_3</code> with <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classIterator.html">Iterator</a> operator()(Point_3)</code> <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classIterator.html">Iterator</a></code> being a random access iterator with <code>FT</code> as value type</li>
+<li><code>Construct_point_3</code> with <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a> operator()(FT,FT,FT)</code>; <code>Construct_source_3</code> with <code>const <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>&amp; operator()(Segment_3)</code></li>
+<li><code>Construct_target_3</code> with <code>const <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>&amp; operator()(Segment_3)</code></li>
 </ul>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd><code>_object()</code> functions must also be provided </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd><code>_object()</code> functions must also be provided </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="Polygon_mesh_processing_2mesh_slicer_example_8cpp-example.html#_a6">Polygon_mesh_processing/mesh_slicer_example.cpp</a>.</dd>
 </dl></div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aad9b168fa99f09b4f865293842a4c3e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html#aad9b168fa99f09b4f865293842a4c3e0">Polygon_mesh_slicer</a> (const TriangleMesh &amp;tmesh, VertexPointMap vpmap, const Traits &amp;traits=Traits())</td></tr>
-<tr class="memdesc:aad9b168fa99f09b4f865293842a4c3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor using <code>edges(tmesh)</code> to initialize the internal <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code>.  <a href="#aad9b168fa99f09b4f865293842a4c3e0">More...</a><br /></td></tr>
+<tr class="memdesc:aad9b168fa99f09b4f865293842a4c3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor using <code>edges(tmesh)</code> to initialize the internal <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code>.  <a href="#aad9b168fa99f09b4f865293842a4c3e0">More...</a><br /></td></tr>
 <tr class="separator:aad9b168fa99f09b4f865293842a4c3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a2a410eac503ccfb636ff4f97cac74d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html#a6a2a410eac503ccfb636ff4f97cac74d">Polygon_mesh_slicer</a> (const TriangleMesh &amp;tmesh, const AABBTree &amp;tree, VertexPointMap vpmap, const Traits &amp;traits=Traits())</td></tr>
-<tr class="memdesc:a6a2a410eac503ccfb636ff4f97cac74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor using a pre-built <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> of edges provided by the user.  <a href="#a6a2a410eac503ccfb636ff4f97cac74d">More...</a><br /></td></tr>
+<tr class="memdesc:a6a2a410eac503ccfb636ff4f97cac74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor using a pre-built <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> of edges provided by the user.  <a href="#a6a2a410eac503ccfb636ff4f97cac74d">More...</a><br /></td></tr>
 <tr class="separator:a6a2a410eac503ccfb636ff4f97cac74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd67ea7ecab1e4bdaafe490f0d8e0324"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html#abd67ea7ecab1e4bdaafe490f0d8e0324">Polygon_mesh_slicer</a> (const TriangleMesh &amp;tmesh, const Traits &amp;traits=Traits())</td></tr>
-<tr class="memdesc:abd67ea7ecab1e4bdaafe490f0d8e0324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor using <code>edges(tmesh)</code> to initialize the internal <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code>.  <a href="#abd67ea7ecab1e4bdaafe490f0d8e0324">More...</a><br /></td></tr>
+<tr class="memdesc:abd67ea7ecab1e4bdaafe490f0d8e0324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor using <code>edges(tmesh)</code> to initialize the internal <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code>.  <a href="#abd67ea7ecab1e4bdaafe490f0d8e0324">More...</a><br /></td></tr>
 <tr class="separator:abd67ea7ecab1e4bdaafe490f0d8e0324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a316370a17f840d75088893b0893c87b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html#a316370a17f840d75088893b0893c87b0">Polygon_mesh_slicer</a> (const TriangleMesh &amp;tmesh, const AABBTree &amp;tree, const Traits &amp;traits=Traits())</td></tr>
-<tr class="memdesc:a316370a17f840d75088893b0893c87b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor using a <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> provided by the user.  <a href="#a316370a17f840d75088893b0893c87b0">More...</a><br /></td></tr>
+<tr class="memdesc:a316370a17f840d75088893b0893c87b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor using a <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> provided by the user.  <a href="#a316370a17f840d75088893b0893c87b0">More...</a><br /></td></tr>
 <tr class="separator:a316370a17f840d75088893b0893c87b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ccb40298bed1b68ffdad07c43f3c04e"><td class="memTemplParams" colspan="2">template&lt;class OutputIterator &gt; </td></tr>
-<tr class="memitem:a2ccb40298bed1b68ffdad07c43f3c04e"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html#a2ccb40298bed1b68ffdad07c43f3c04e">operator()</a> (const Plane_3 &amp;plane, <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out) const</td></tr>
+<tr class="memitem:a2ccb40298bed1b68ffdad07c43f3c04e"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html#a2ccb40298bed1b68ffdad07c43f3c04e">operator()</a> (const Plane_3 &amp;plane, <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out) const</td></tr>
 <tr class="memdesc:a2ccb40298bed1b68ffdad07c43f3c04e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the intersecting polylines of <code>plane</code> with the input triangulated surface mesh.  <a href="#a2ccb40298bed1b68ffdad07c43f3c04e">More...</a><br /></td></tr>
 <tr class="separator:a2ccb40298bed1b68ffdad07c43f3c04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -234,7 +234,7 @@ template&lt;class TriangleMesh, class Traits, class VertexPointMap = typename bo
       </table>
 </div><div class="memdoc">
 
-<p>Constructor using <code>edges(tmesh)</code> to initialize the internal <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code>. </p>
+<p>Constructor using <code>edges(tmesh)</code> to initialize the internal <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tmesh</td><td>the triangulated surface mesh to be sliced. It must be valid and non modified as long as the functor is used. </td></tr>
@@ -286,7 +286,7 @@ template&lt;class TriangleMesh, class Traits, class VertexPointMap = typename bo
       </table>
 </div><div class="memdoc">
 
-<p>Constructor using a pre-built <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> of edges provided by the user. </p>
+<p>Constructor using a pre-built <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> of edges provided by the user. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tmesh</td><td>the triangulated surface mesh to be sliced. It must be valid and non modified as long as the functor is used. </td></tr>
@@ -327,7 +327,7 @@ template&lt;class TriangleMesh, class Traits, class VertexPointMap = typename bo
       </table>
 </div><div class="memdoc">
 
-<p>Constructor using <code>edges(tmesh)</code> to initialize the internal <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code>. </p>
+<p>Constructor using <code>edges(tmesh)</code> to initialize the internal <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code>. </p>
 <p>The vertex point property map used is <code>get(CGAL::vertex_point, tmesh)</code> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tmesh</td><td>the triangulated surface mesh to be sliced. It must be valid and non modified as long as the functor is used. </td></tr>
@@ -372,7 +372,7 @@ template&lt;class TriangleMesh, class Traits, class VertexPointMap = typename bo
       </table>
 </div><div class="memdoc">
 
-<p>Constructor using a <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> provided by the user. </p>
+<p>Constructor using a <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> provided by the user. </p>
 <p>The vertex point property map used is <code>get(CGAL::vertex_point, tmesh)</code> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tmesh</td><td>the triangulated surface mesh to be sliced. It must be valid and non modified as long as the functor is used. </td></tr>
@@ -396,7 +396,7 @@ template&lt;class TriangleMesh, class Traits, class VertexPointMap = typename bo
 template&lt;class OutputIterator &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> <a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html">CGAL::Polygon_mesh_slicer</a>&lt; TriangleMesh, Traits, VertexPointMap, AABBTree, UseParallelPlaneOptimization &gt;::operator() </td>
+          <td class="memname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> <a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html">CGAL::Polygon_mesh_slicer</a>&lt; TriangleMesh, Traits, VertexPointMap, AABBTree, UseParallelPlaneOptimization &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">const Plane_3 &amp;&#160;</td>
           <td class="paramname"><em>plane</em>, </td>
@@ -404,7 +404,7 @@ template&lt;class OutputIterator &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
           <td class="paramname"><em>out</em>&#160;</td>
         </tr>
         <tr>
@@ -418,7 +418,7 @@ template&lt;class OutputIterator &gt; </div>
 <p>Constructs the intersecting polylines of <code>plane</code> with the input triangulated surface mesh. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>an output iterator accepting polylines. A polyline is provided as <code>std::vector&lt;Traits::Point_3&gt;</code>. A polyline is closed if its first and last point are identical. </td></tr>
+    <tr><td class="paramname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>an output iterator accepting polylines. A polyline is provided as <code>std::vector&lt;Traits::Point_3&gt;</code>. A polyline is closed if its first and last point are identical. </td></tr>
   </table>
   </dd>
 </dl>
@@ -442,7 +442,7 @@ move the footer to the bottom of the page. -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>CGAL</b></li><li class="navelem"><a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html">Polygon_mesh_slicer</a></li>
-    <li class="footer">Generated on Fri Dec 22 2017 14:04:37 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

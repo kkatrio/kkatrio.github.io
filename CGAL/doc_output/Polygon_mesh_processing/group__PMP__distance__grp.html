@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('group__PMP__distance__grp.html','');})
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga7874c0f16badf7b7939039cf979ad16d"><td class="memTemplParams" colspan="2">template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &gt; </td></tr>
-<tr class="memitem:ga7874c0f16badf7b7939039cf979ad16d"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d">CGAL::Polygon_mesh_processing::sample_triangle_mesh</a> (const TriangleMesh &amp;tm, <a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, NamedParameters np)</td></tr>
+<tr class="memitem:ga7874c0f16badf7b7939039cf979ad16d"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d">CGAL::Polygon_mesh_processing::sample_triangle_mesh</a> (const TriangleMesh &amp;tm, <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, NamedParameters np)</td></tr>
 <tr class="memdesc:ga7874c0f16badf7b7939039cf979ad16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates points taken on <code>tm</code> and outputs them to <code>out</code>, the sampling method is selected using named parameters.  <a href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d">More...</a><br /></td></tr>
 <tr class="separator:ga7874c0f16badf7b7939039cf979ad16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b28867dc150931b2f12d17b77d15266"><td class="memTemplParams" colspan="2">template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 , class NamedParameters2 &gt; </td></tr>
@@ -216,8 +216,8 @@ template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 
 <p>A parallel version is provided and requires the executable to be linked against the <a href="http://www.threadingbuildingblocks.org">Intel TBB library</a>. To control the number of threads used, the user may use the <code>tbb::task_scheduler_init</code> class. See the <a href="http://www.threadingbuildingblocks.org/documentation">TBB documentation</a> for more details.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Concurrency_tag</td><td>enables sequential versus parallel algorithm. Possible values are <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Sequential__tag.html">Sequential_tag</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Parallel__tag.html">Parallel_tag</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">Concurrency_tag</td><td>enables sequential versus parallel algorithm. Possible values are <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Sequential__tag.html">Sequential_tag</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Parallel__tag.html">Parallel_tag</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> for <code>tm1</code> </td></tr>
     <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> for <code>tm2</code></td></tr>
   </table>
@@ -290,8 +290,8 @@ template&lt;class TriangleMesh , class PointRange , class NamedParameters &gt; <
 <p>returns an approximation of the distance between <code>points</code> and the point lying on <code>tm</code> that is the farthest from <code>points</code> </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
   </table>
   </dd>
@@ -405,8 +405,8 @@ template&lt;class Concurrency_tag , class TriangleMesh , class PointRange , clas
 <p>returns the distance to <code>tm</code> of the point from <code>points</code> that is the furthest from <code>tm</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
   </table>
   </dd>
@@ -441,7 +441,7 @@ template&lt;class Concurrency_tag , class TriangleMesh , class PointRange , clas
 template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::sample_triangle_mesh </td>
+          <td class="memname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::sample_triangle_mesh </td>
           <td>(</td>
           <td class="paramtype">const TriangleMesh &amp;&#160;</td>
           <td class="paramname"><em>tm</em>, </td>
@@ -449,7 +449,7 @@ template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &g
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
@@ -471,8 +471,8 @@ template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &g
 <p>generates points taken on <code>tm</code> and outputs them to <code>out</code>, the sampling method is selected using named parameters. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname"><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding objects of the same point type as the value type of the internal vertex point map of <code>tm</code></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding objects of the same point type as the value type of the internal vertex point map of <code>tm</code></td></tr>
   </table>
   </dd>
 </dl>
@@ -532,7 +532,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Dec 22 2017 14:04:37 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

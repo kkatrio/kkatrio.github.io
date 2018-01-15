@@ -228,8 +228,8 @@ template&lt;typename PolygonMesh , typename FaceOutputIterator , typename NamedP
 <p><code>seed_face</code> will also be added in <code>out</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">FaceOutputIterator</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> that accepts faces of type <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>. </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">FaceOutputIterator</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> that accepts faces of type <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>. </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -296,8 +296,8 @@ template&lt;typename PolygonMesh , typename FaceComponentMap , typename NamedPar
 <p>A property map for <code>CGAL::face_index_t</code> should be either available as an internal property map to <code>pmesh</code> or provided as one of the <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classWritablePropertyMap.html">WritablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type. </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classWritablePropertyMap.html">WritablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type. </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -373,10 +373,10 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
 <p>Property maps for <code>CGAL::vertex_index_t</code> should be either available as internal property map to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">ComponentRange</td><td>a range of ids convertible to <code>std::size</code> </td></tr>
-    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
+    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
   </table>
   </dd>
 </dl>
@@ -441,7 +441,7 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <dl class="section note"><dt>Note</dt><dd>If the removal of the connected components makes <code>pmesh</code> a non-manifold surface, then the behavior of this function is undefined.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">FaceRange</td><td>a range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> indicating the connected components to be kept.</td></tr>
   </table>
@@ -510,7 +510,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -581,7 +581,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
@@ -659,10 +659,10 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
 <p>Property maps for <code>CGAL::vertex_index_t</code> should be either available as internal property map to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">ComponentRange</td><td>a range of ids convertible to <code>std::size</code> </td></tr>
-    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
+    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
   </table>
   </dd>
 </dl>
@@ -727,7 +727,7 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <dl class="section note"><dt>Note</dt><dd>If the removal of the connected components makes <code>pmesh</code> a non-manifold surface, then the behavior of this function is undefined.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal-public-dev/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
     <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">FaceRange</td><td>a range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> indicating the connected components to be removed.</td></tr>
   </table>
@@ -765,7 +765,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Dec 22 2017 14:04:37 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

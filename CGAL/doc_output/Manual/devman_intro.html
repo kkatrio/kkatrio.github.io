@@ -154,7 +154,7 @@ Stefan Schirra</dd></dl>
 <p>Work on <span style="font-variant: small-caps;">CGAL</span> has been supported in the past by <span class="textsc">esprit iv</span> projects 21957 (<a class="el" href="namespaceCGAL.html">CGAL</a>) and 28155 (GALIA).</p>
 <h1><a class="anchor" id="secdesign_goals"></a>
 Primary design goals</h1>
-<p>The primary design goals of <span style="font-variant: small-caps;">CGAL</span> are described in <a class="el" href="citelist.html#CITEREF_fgkss-dccga-00">[4]</a></p>
+<p>The primary design goals of <span style="font-variant: small-caps;">CGAL</span> are described in <b>[fgkss-dccga-00]</b></p>
 <h2><a class="anchor" id="Developer_manualCorrectness"></a>
 Correctness</h2>
 <p>A library component is correct if it behaves according to its specification. Basically, correctness is therefore a matter of verification that documentation and implementation coincide. In a modularized program the correctness of a module is determined by its own correctness and the correctness of all the modules it depends on. Clearly, in order to get correct results, correct algorithms and data structures must be used.</p>
@@ -172,7 +172,7 @@ Flexibility</h2>
 <p><b>Extensibility.</b></p>
 <p>Not all wishes can be fulfilled with <span style="font-variant: small-caps;">CGAL</span>. Users may want to extend the library. It should be possible, and in fact desirable, to integrate new classes and algorithms into <span style="font-variant: small-caps;">CGAL</span>.</p>
 <p><b>Openness.</b></p>
-<p><span style="font-variant: small-caps;">CGAL</span> should be open to coexist with other libraries, or better, to work together with other libraries and programs. The <span style="font-variant: small-caps;">C++</span> Standard <a class="el" href="citelist.html#CITEREF_cgal:ansi-is14882-98">[3]</a></p>
+<p><span style="font-variant: small-caps;">CGAL</span> should be open to coexist with other libraries, or better, to work together with other libraries and programs. The <span style="font-variant: small-caps;">C++</span> Standard <b>[cgal:ansi-is14882-98]</b></p>
 <p>defines with the <span style="font-variant: small-caps;">C++</span> Standard Library a common foundation for all <span style="font-variant: small-caps;">C++</span> platforms. So it is easy and natural to gain openness by following this standard. There are important libraries outside the standard, and <span style="font-variant: small-caps;">CGAL</span> should be easily adaptable to them as well.</p>
 <h2><a class="anchor" id="Developer_manualEaseofUse"></a>
 Ease of Use</h2>
@@ -183,7 +183,7 @@ Ease of Use</h2>
 <p><span style="font-variant: small-caps;">CGAL</span> is based in many places on concepts borrowed from <span style="font-variant: small-caps;">STL</span> (Standard Template Library) or the other parts of the <span style="font-variant: small-caps;">C++</span> Standard Library. An example is the use of streams and stream operators in <span style="font-variant: small-caps;">CGAL</span>. Another example is the use of container classes and algorithms from the <span style="font-variant: small-caps;">STL</span>. So these concepts should be used uniformly.</p>
 <p>During the past few years, <span style="font-variant: small-caps;">CGAL</span> has moved towards using on concepts and ideas from the boost libraries, as well as providing interfaces towards boost libraries. These include the boost graph library and the boost property maps library.</p>
 <p><b>Complete and Minimal Interfaces.</b></p>
-<p>A goal with similar implications as uniformity is a design with complete and minimal interfaces, see for example Item 18 in Ref. <a class="el" href="citelist.html#CITEREF_cgal:m-ec-97">[7]</a>. An object or module should be complete in its functionality, but should not provide additional decorating functionality. Even if a certain function might look like it contributes to the ease of use for a certain class, in a more global picture it might hinder the understanding of similarities and differences among classes, and make it harder to learn and memorize.</p>
+<p>A goal with similar implications as uniformity is a design with complete and minimal interfaces, see for example Item 18 in Ref. <b>[cgal:m-ec-97]</b>. An object or module should be complete in its functionality, but should not provide additional decorating functionality. Even if a certain function might look like it contributes to the ease of use for a certain class, in a more global picture it might hinder the understanding of similarities and differences among classes, and make it harder to learn and memorize.</p>
 <p><b>Rich and Complete Functionality.</b></p>
 <p>We aim for a useful and rich collection of geometric classes, data structures and algorithms. <span style="font-variant: small-caps;">CGAL</span> is supposed to be a foundation for algorithmic research in computational geometry and therefore needs a certain breadth and depth. The standard techniques in the field are supposed to appear in <span style="font-variant: small-caps;">CGAL</span>.</p>
 <p>Completeness is also related to robustness.</p>
@@ -191,7 +191,7 @@ Ease of Use</h2>
 <p>In those cases where handling of degeneracies turns out to be inefficient, special variants that are more efficient but less general should be provided in the library in addition to the general algorithms handling all degeneracies. Of course, it needs to be clearly documented which degeneracies are handled and which are not.</p>
 <h2><a class="anchor" id="Developer_manualEfficiency"></a>
 Efficiency</h2>
-<p>For most geometric algorithms theoretical results for the time and space complexity are known. Also, the theoretic interest in efficiency for realistic inputs, as opposed to worst-case situations, is growing <a class="el" href="citelist.html#CITEREF_v-ffrim-97">[11]</a>. For practical purposes, insight into the constant factors hidden in the \( O\)-notation is necessary, especially if there are several competing algorithms.</p>
+<p>For most geometric algorithms theoretical results for the time and space complexity are known. Also, the theoretic interest in efficiency for realistic inputs, as opposed to worst-case situations, is growing <b>[v-ffrim-97]</b>. For practical purposes, insight into the constant factors hidden in the \( O\)-notation is necessary, especially if there are several competing algorithms.</p>
 <p>Therefore, different implementations should be supplied if there is not one best solution, as, for example, when there is a tradeoff between time and space or a more efficient implementation when there are no or few degeneracies.</p>
 <h1><a class="anchor" id="secoverall_design"></a>
 The overall design</h1>
@@ -215,7 +215,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Dec 15 2017 20:33:33 for CGAL 4.12 - Manual by
+    <li class="footer">Generated on Mon Jan 15 2018 11:14:20 for CGAL 4.12 - Manual by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
