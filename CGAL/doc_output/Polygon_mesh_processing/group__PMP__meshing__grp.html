@@ -20,7 +20,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
@@ -44,7 +43,7 @@ MathJax.Hub.Config({
     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <script src="../Manual/hacks.js" type="text/javascript"></script>
 <script src="modules.js" type="text/javascript"></script>
 </head>
@@ -242,9 +241,9 @@ template&lt;typename TriangleMesh , typename VertexRange , typename NamedParamet
 <p>Note that if the vertex range to which fairing is applied contains all the vertices of the triangle mesh, fairing does not fail, but the mesh gets shrinked to <code>CGAL::ORIGIN</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">VertexRange</td><td>a range of vertex descriptors of <code>TriangleMesh</code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">VertexRange</td><td>a range of vertex descriptors of <code>TriangleMesh</code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -252,7 +251,7 @@ template&lt;typename TriangleMesh , typename VertexRange , typename NamedParamet
   <table class="params">
     <tr><td class="paramname">tmesh</td><td>the triangle mesh with patches to be faired </td></tr>
     <tr><td class="paramname">vertices</td><td>the vertices of the patches to be faired (the positions of only those vertices will be changed) </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -260,18 +259,18 @@ template&lt;typename TriangleMesh , typename VertexRange , typename NamedParamet
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_fairing_continuity">fairing_continuity</a></td><td>tangential continuity of the output surface patch. The larger <code>fairing_continuity</code> gets, the more fixed vertices are required  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_fairing_continuity">fairing_continuity</a></td><td>tangential continuity of the output surface patch. The larger <code>fairing_continuity</code> gets, the more fixed vertices are required  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_sparse_linear_solver">sparse_linear_solver</a></td><td>an instance of the sparse linear solver used for fairing  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_sparse_linear_solver">sparse_linear_solver</a></td><td>an instance of the sparse linear solver used for fairing  </td></tr>
 </table>
 </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if fairing is successful, otherwise no vertices are relocated</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>is_triangle_mesh(tmesh)</code></dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This function involves linear algebra, that is computed using a non-exact floating-point arithmetic.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>accuracy of solvers are not good, for example when there is no boundary condition pre_factor should fail, but it does not. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>accuracy of solvers are not good, for example when there is no boundary condition pre_factor should fail, but it does not. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="Polygon_mesh_processing_2refine_fair_example_8cpp-example.html#a4">Polygon_mesh_processing/refine_fair_example.cpp</a>.</dd>
 </dl>
 </div>
@@ -322,9 +321,9 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <p>This operation sequentially performs edge splits, edge collapses, edge flips, tangential relaxation and projection to the initial surface to generate a smooth mesh with a prescribed edge length.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. The descriptor types <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> and <code>boost::graph_traits&lt;PolygonMesh&gt;::halfedge_descriptor</code> must be models of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/classHashable.html">Hashable</a></code>. If <code>PolygonMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, and no <code>face_index_map</code> is given as a named parameter, then the internal one must be initialized </td></tr>
-    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classForwardIterator.html">ForwardIterator</a></code>. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. The descriptor types <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> and <code>boost::graph_traits&lt;PolygonMesh&gt;::halfedge_descriptor</code> must be models of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/classHashable.html">Hashable</a></code>. If <code>PolygonMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, and no <code>face_index_map</code> is given as a named parameter, then the internal one must be initialized </td></tr>
+    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classForwardIterator.html">ForwardIterator</a></code>. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -333,7 +332,7 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
     <tr><td class="paramname">pmesh</td><td>a polygon mesh with triangulated surface patches to be remeshed </td></tr>
     <tr><td class="paramname">faces</td><td>the range of triangular faces defining one or several surface patches to be remeshed </td></tr>
     <tr><td class="paramname">target_edge_length</td><td>the edge length that is targeted in the remeshed patch. If <code>0</code> is passed then only the edge-flip, tangential relaxation, and projection steps will be done. </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -342,31 +341,31 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>. Exact constructions kernels are not supported by this function.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>. Exact constructions kernels are not supported by this function.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_number_of_iterations">number_of_iterations</a></td><td>the number of iterations for the sequence of atomic operations performed (listed in the above description)  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_number_of_iterations">number_of_iterations</a></td><td>the number of iterations for the sequence of atomic operations performed (listed in the above description)  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>. A constrained edge can be split or collapsed, but not flipped, nor its endpoints moved by smoothing. Note that patch boundary edges (i.e. incident to only one face in the range) are always considered as constrained edges.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>. A constrained edge can be split or collapsed, but not flipped, nor its endpoints moved by smoothing. Note that patch boundary edges (i.e. incident to only one face in the range) are always considered as constrained edges.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_is_constrained_map">vertex_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each vertex of <code>pmesh</code>. A constrained vertex cannot be modified at all during remeshing  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_is_constrained_map">vertex_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each vertex of <code>pmesh</code>. A constrained vertex cannot be modified at all during remeshing  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_protect_constraints">protect_constraints</a></td><td>If <code>true</code>, the edges set as constrained in <code>edge_is_constrained_map</code> (or by default the boundary edges) are not split nor collapsed during remeshing. Note that around constrained edges that have their length higher than twice <code>target_edge_length</code>, remeshing will fail to provide good quality results. It can even fail to terminate because of cascading vertex insertions.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_protect_constraints">protect_constraints</a></td><td>If <code>true</code>, the edges set as constrained in <code>edge_is_constrained_map</code> (or by default the boundary edges) are not split nor collapsed during remeshing. Note that around constrained edges that have their length higher than twice <code>target_edge_length</code>, remeshing will fail to provide good quality results. It can even fail to terminate because of cascading vertex insertions.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_patch_map">face_patch_map</a></td><td>a property map with the patch id's associated to the faces of <code>faces</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>. It gets updated during the remeshing process while new faces are created.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_patch_map">face_patch_map</a></td><td>a property map with the patch id's associated to the faces of <code>faces</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>. It gets updated during the remeshing process while new faces are created.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_number_of_relaxation_steps">number_of_relaxation_steps</a></td><td>the number of iterations of tangential relaxation that are performed at each iteration of the remeshing process  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_number_of_relaxation_steps">number_of_relaxation_steps</a></td><td>the number of iterations of tangential relaxation that are performed at each iteration of the remeshing process  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_relax_constraints">relax_constraints</a></td><td>If <code>true</code>, the end vertices of the edges set as constrained in <code>edge_is_constrained_map</code> and boundary edges move along the constrained polylines they belong to.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_relax_constraints">relax_constraints</a></td><td>If <code>true</code>, the end vertices of the edges set as constrained in <code>edge_is_constrained_map</code> and boundary edges move along the constrained polylines they belong to.  </td></tr>
 </table>
 </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__PMP__meshing__grp.html#gaafd017f4424c3942bfdcc93874c8f596" title="splits the edges listed in edges into sub-edges that are not longer than the given threshold max_leng...">split_long_edges()</a></code></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd><p class="startdd">add possibility to provide a functor that projects to a prescribed surface </p>
-<p class="enddd">Deal with exact constructions <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a>. The only thing that makes sense is to guarantee that the output vertices are exactly on the input surface. To do so, we can do every construction in <code>double</code>, and use an exact process for projection. For each vertex, the <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> would be used in an inexact manner to find the triangle on which projection has to be done. Then, use <code>CGAL::intersection(triangle, line)</code> in the exact constructions kernel to get a point which is exactly on the surface.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd><p class="startdd">add possibility to provide a functor that projects to a prescribed surface </p>
+<p class="enddd">Deal with exact constructions <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a>. The only thing that makes sense is to guarantee that the output vertices are exactly on the input surface. To do so, we can do every construction in <code>double</code>, and use an exact process for projection. For each vertex, the <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> would be used in an inexact manner to find the triangle on which projection has to be done. Then, use <code>CGAL::intersection(triangle, line)</code> in the exact constructions kernel to get a point which is exactly on the surface.</p>
 </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="Polygon_mesh_processing_2corefinement_difference_remeshed_8cpp-example.html#a7">Polygon_mesh_processing/corefinement_difference_remeshed.cpp</a>, <a class="el" href="Polygon_mesh_processing_2hausdorff_distance_remeshing_example_8cpp-example.html#a3">Polygon_mesh_processing/hausdorff_distance_remeshing_example.cpp</a>, and <a class="el" href="Polygon_mesh_processing_2isotropic_remeshing_example_8cpp-example.html#a5">Polygon_mesh_processing/isotropic_remeshing_example.cpp</a>.</dd>
 </dl>
@@ -418,9 +417,9 @@ template&lt;typename VertexRange , typename TriangleMesh , typename NamedParamet
 <p>By default, the vertices are re-projected onto the input surface after perturbation. Note that no geometric checks are done after the perturbation (face orientation might become incorrect and self-intersections might be introduced).</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">VertexRange</td><td>model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>, holding vertices of type <code>boost::graph_traits&lt;TriangleMesh&gt;::vertex_descriptor</code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classForwardIterator.html">ForwardIterator</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">VertexRange</td><td>model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>, holding vertices of type <code>boost::graph_traits&lt;TriangleMesh&gt;::vertex_descriptor</code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classForwardIterator.html">ForwardIterator</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -429,7 +428,7 @@ template&lt;typename VertexRange , typename TriangleMesh , typename NamedParamet
     <tr><td class="paramname">vertices</td><td>the range of vertices to be perturbed </td></tr>
     <tr><td class="paramname">tmesh</td><td>the triangulated surface mesh </td></tr>
     <tr><td class="paramname">perturbation_max_size</td><td>the maximal length of moves that can be applied to vertices of <code>tmesh</code>. </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -437,15 +436,15 @@ template&lt;typename VertexRange , typename TriangleMesh , typename NamedParamet
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_is_constrained_map">vertex_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each vertex of <code>tmesh</code>. A constrained vertex cannot be modified at all during perturbation  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_is_constrained_map">vertex_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each vertex of <code>tmesh</code>. A constrained vertex cannot be modified at all during perturbation  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_do_project">do_project</a></td><td>a boolean that sets whether vertices should be reprojected on the input surface after their coordinates random perturbation  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_do_project">do_project</a></td><td>a boolean that sets whether vertices should be reprojected on the input surface after their coordinates random perturbation  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_random_seed">random_seed</a></td><td>a non-negative integer value to seed the random number generator, and make the perturbation deterministic  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_random_seed">random_seed</a></td><td>a non-negative integer value to seed the random number generator, and make the perturbation deterministic  </td></tr>
 </table>
 </dd>
 </dl>
@@ -503,11 +502,11 @@ template&lt;typename TriangleMesh , typename FaceRange , typename FaceOutputIter
 <p>refines a region of a triangle mesh </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">FaceRange</td><td>range of face descriptors, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>. </td></tr>
-    <tr><td class="paramname">FaceOutputIterator</td><td>model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding <code>boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor</code> for patch faces </td></tr>
-    <tr><td class="paramname">VertexOutputIterator</td><td>model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding <code>boost::graph_traits&lt;TriangleMesh&gt;::vertex_descriptor</code> for patch vertices </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">FaceRange</td><td>range of face descriptors, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>. </td></tr>
+    <tr><td class="paramname">FaceOutputIterator</td><td>model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding <code>boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor</code> for patch faces </td></tr>
+    <tr><td class="paramname">VertexOutputIterator</td><td>model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding <code>boost::graph_traits&lt;TriangleMesh&gt;::vertex_descriptor</code> for patch vertices </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -517,7 +516,7 @@ template&lt;typename TriangleMesh , typename FaceRange , typename FaceOutputIter
     <tr><td class="paramname">faces</td><td>the range of faces defining the patches to refine </td></tr>
     <tr><td class="paramname">faces_out</td><td>output iterator into which descriptors of new faces are recorded </td></tr>
     <tr><td class="paramname">vertices_out</td><td>output iterator into which descriptors of new vertices are recorded </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -525,15 +524,15 @@ template&lt;typename TriangleMesh , typename FaceRange , typename FaceOutputIter
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tmesh</code> Instance of a class model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tmesh</code> Instance of a class model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_density_control_factor">density_control_factor</a></td><td>factor to control density of the output mesh, where larger values lead to denser refinements. The density of vertices of <code>faces_out</code> is this factor times higher than the vertices of <code>faces.</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_density_control_factor">density_control_factor</a></td><td>factor to control density of the output mesh, where larger values lead to denser refinements. The density of vertices of <code>faces_out</code> is this factor times higher than the vertices of <code>faces.</code>  </td></tr>
 </table>
 </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pair of <code>faces_out</code> and <code>vertices_out</code></dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>is_triangle_mesh(tmesh)</code></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>current algorithm iterates 10 times at most, since (I guess) there is no termination proof. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>current algorithm iterates 10 times at most, since (I guess) there is no termination proof. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="Polygon_mesh_processing_2refine_fair_example_8cpp-example.html#a3">Polygon_mesh_processing/refine_fair_example.cpp</a>.</dd>
 </dl>
 </div>
@@ -581,12 +580,12 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/shape_smoothing.h&gt;</code></p>
 
 <p>smooths the overall shape of the mesh by using the mean curvature flow. </p>
-<p>The effect depends on the curvature of each area and on a time step which represents the amount by which vertices are allowed to move. Convergence is achieved at a conformal map of the initial surface to a sphere.</p>
+<p>The effect depends on the curvature of each area and on a time step which represents the amount by which vertices are allowed to move. The result is a conformal map of the initial surface and converges to a sphere.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. The descriptor types <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> and <code>boost::graph_traits&lt;PolygonMesh&gt;::halfedge_descriptor</code> must be models of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/classHashable.html">Hashable</a></code>. If <code>PolygonMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, and no <code>face_index_map</code> is given as a named parameter, then the internal one should be initialized. </td></tr>
-    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classForwardIterator.html">ForwardIterator</a></code>. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. If <code>PolygonMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, and no <code>face_index_map</code> is given as a named parameter, then the internal one should be initialized. </td></tr>
+    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classForwardIterator.html">ForwardIterator</a></code>. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -594,8 +593,8 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
   <table class="params">
     <tr><td class="paramname">pmesh</td><td>a polygon mesh with triangulated surface patches to be smoothed. </td></tr>
     <tr><td class="paramname">faces</td><td>the range of triangular faces defining one or several surface patches to be smoothed. </td></tr>
-    <tr><td class="paramname">time</td><td>a time step that corresponds to the amount by which the surface is smoothed. </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below.</td></tr>
+    <tr><td class="paramname">time</td><td>a time step that corresponds to the speed by which the surface is smoothed. A larger time step results in faster convergence but details may be distorted to a greater effect compared to more iterations with a smaller step. Typical values scale at the region (1e-6, 1). </td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below.</td></tr>
   </table>
   </dd>
 </dl>
@@ -603,15 +602,15 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>. Kernels with exact constructions are not supported by this function.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>. Kernels with exact constructions are not supported by this function.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_is_constrained_map">vertex_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each vertex of <code>pmesh</code>. A constrained vertex cannot be modified at all during smoothing.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_is_constrained_map">vertex_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each vertex of <code>pmesh</code>. A constrained vertex cannot be modified at all during smoothing.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_number_of_iterations">number_of_iterations</a></td><td>the number of iterations for the sequence of the smoothing iterations performed. Each iteration is performed with the given time step.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_number_of_iterations">number_of_iterations</a></td><td>the number of iterations for the sequence of the smoothing iterations performed. Each iteration is performed with the given time step.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_use_explicit_scheme">use_explicit_scheme</a></td><td>a normalized explicit scheme for smoothing along the curvature flow. It is not dependent on the time step parameter. Each vertex is moved sequentially without solving a linear system.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_use_explicit_scheme">use_explicit_scheme</a></td><td>a normalized explicit scheme for smoothing along the curvature flow. It is not dependent on the time step parameter. Each vertex is moved sequentially without solving a linear system. It can be useful for subtle noise removal and the result does not converge to a sphere.  </td></tr>
 </table>
 </dd>
 </dl>
@@ -656,12 +655,12 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/mesh_smoothing.h&gt;</code></p>
 
 <p>smoothes a triangulated region of a polygon mesh using angle based criteria. </p>
-<p>This function improves the angles of triangle faces by iteratively moving non constrained vertices. A weighted scheme is also proposed to favorise the removal of small angles. Optionally, the points are reprojected after each iteration.</p>
+<p>This function improves the angles of triangle faces by iteratively moving non constrained vertices. Optionally, the points are reprojected after each iteration.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. If <code>PolygonMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, and no <code>face_index_map</code> is given as a named parameter, then the internal one should be initialized. </td></tr>
-    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classForwardIterator.html">ForwardIterator</a></code>. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a>.</td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. If <code>PolygonMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, and no <code>face_index_map</code> is given as a named parameter, then the internal one should be initialized. </td></tr>
+    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classForwardIterator.html">ForwardIterator</a></code>. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -669,7 +668,7 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
   <table class="params">
     <tr><td class="paramname">pmesh</td><td>a polygon mesh with triangulated surface patches to be smoothed. </td></tr>
     <tr><td class="paramname">faces</td><td>the range of triangular faces defining one or several surface patches to be smoothed. </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below.</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below.</td></tr>
   </table>
   </dd>
 </dl>
@@ -677,15 +676,15 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>. Exact constructions kernels are not supported by this function.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>. Exact constructions kernels are not supported by this function.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_number_of_iterations">number_of_iterations</a></td><td>the number of iterations for the sequence of the smoothing iterations performed.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_number_of_iterations">number_of_iterations</a></td><td>the number of iterations for the sequence of the smoothing iterations performed.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_is_constrained_map">vertex_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each vertex of <code>pmesh</code>. A constrained vertex cannot be modified at all during smoothing.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_is_constrained_map">vertex_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each vertex of <code>pmesh</code>. A constrained vertex cannot be modified at all during smoothing.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_do_project">do_project</a></td><td>If <code>true</code>, points are projected to the initial surface after each iteration.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_do_project">do_project</a></td><td>if <code>true</code> (default value), points are projected to the initial surface after each iteration.  </td></tr>
 </table>
 </dd>
 </dl>
@@ -730,12 +729,12 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/mesh_smoothing.h&gt;</code></p>
 
 <p>smoothes a triangulated region of a polygon mesh using area based criteria. </p>
-<p>This function tries to make the area distribution of triangle as uniform as possible by moving non constrained vertices. Optionally, the points are reprojected after each iteration.</p>
+<p>This function tries to make the triangle area distribution as uniform as possible by moving non constrained vertices. Optionally, the points are reprojected after each iteration.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. If <code>PolygonMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, and no <code>face_index_map</code> is given as a named parameter, then the internal one should be initialized. </td></tr>
-    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classForwardIterator.html">ForwardIterator</a></code>. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. If <code>PolygonMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, and no <code>face_index_map</code> is given as a named parameter, then the internal one should be initialized. </td></tr>
+    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classForwardIterator.html">ForwardIterator</a></code>. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -743,7 +742,7 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
   <table class="params">
     <tr><td class="paramname">pmesh</td><td>a polygon mesh with triangulated surface patches to be smoothed. </td></tr>
     <tr><td class="paramname">faces</td><td>the range of triangular faces defining one or several surface patches to be smoothed. </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below.</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below.</td></tr>
   </table>
   </dd>
 </dl>
@@ -751,17 +750,17 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>. Exact constructions kernels are not supported by this function.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code>. Exact constructions kernels are not supported by this function.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_number_of_iterations">number_of_iterations</a></td><td>the number of iterations for the sequence of the smoothing iterations performed.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_number_of_iterations">number_of_iterations</a></td><td>the number of iterations for the sequence of the smoothing iterations performed.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_is_constrained_map">vertex_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each vertex of <code>pmesh</code>. A constrained vertex cannot be modified at all during smoothing.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_is_constrained_map">vertex_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each vertex of <code>pmesh</code>. A constrained vertex cannot be modified at all during smoothing.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_gradient_descent_tolerance">gradient_descent_tolerance</a></td><td>Tolerance under which the energy of each triangle is being minimized. Triangle energy is defined based on its area compared to the average area of all triangles adjacent to the vertex that is being moved. The tolerance corresponds to the relative energy of triangles between iterations. Defaults to 1e-5.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_gradient_descent_precision">gradient_descent_precision</a></td><td>precision which is achieved by minimizing the energy of each triangle. Triangle energy is defined based on its area compared to the average area of all triangles adjacent to the vertex that is being moved. The precision refers to the relative energy of triangles between the previous and the current iteration. A small value corresponds to high precision and may result in slow gradient descent. On the contrary, a larger value implies less precision, thus gradient descent may not move the vertices enough. The higher the precision, the more equal the areas around each vertex are. Defaults to 1e-5.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_do_project">do_project</a></td><td>If <code>true</code>, points are projected to the initial surface after each iteration.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_do_project">do_project</a></td><td>if <code>true</code> (default value), points are projected to the initial surface after each iteration.  </td></tr>
 </table>
 </dd>
 </dl>
@@ -815,9 +814,9 @@ template&lt;typename PolygonMesh , typename EdgeRange , typename NamedParameters
 <p>Note this function is useful to split constrained edges before calling <code><a class="el" href="group__PMP__meshing__grp.html#gad3d03890515ae8103bd32a30a3486412" title="remeshes a triangulated region of a polygon mesh. ">isotropic_remeshing()</a></code> with protection of constraints activated (to match the constrained edge length required by the remeshing algorithm to be guaranteed to terminate)</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> that has an internal property map for <code>CGAL::vertex_point_t</code>. </td></tr>
-    <tr><td class="paramname">EdgeRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::edge_descriptor</code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> that has an internal property map for <code>CGAL::vertex_point_t</code>. </td></tr>
+    <tr><td class="paramname">EdgeRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::edge_descriptor</code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -826,7 +825,7 @@ template&lt;typename PolygonMesh , typename EdgeRange , typename NamedParameters
     <tr><td class="paramname">pmesh</td><td>a polygon mesh </td></tr>
     <tr><td class="paramname">edges</td><td>the range of edges to be split if they are longer than given threshold </td></tr>
     <tr><td class="paramname">max_length</td><td>the edge length above which an edge from <code>edges</code> is split into to sub-edges </td></tr>
-    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__namedparameters.html">Named Parameters</a> described below</td></tr>
+    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> described below</td></tr>
   </table>
   </dd>
 </dl>
@@ -834,7 +833,7 @@ template&lt;typename PolygonMesh , typename EdgeRange , typename NamedParameters
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. Instance of a class model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code>.  </td></tr>
 </table>
 </dd>
 </dl>
@@ -880,10 +879,10 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/triangulate_faces.h&gt;</code></p>
 
 <p>triangulates a single face of a polygon mesh. </p>
-<p>This function depends on the package <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgTriangulation2Summary">2D Triangulation</a> </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>This function depends on the package <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgTriangulation2Summary">2D Triangulation</a> </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -891,7 +890,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
   <table class="params">
     <tr><td class="paramname">f</td><td>face to be triangulated </td></tr>
     <tr><td class="paramname">pmesh</td><td>the polygon mesh to which the face to be triangulated belongs </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -899,9 +898,9 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance  </td></tr>
 </table>
 </dd>
 </dl>
@@ -946,12 +945,12 @@ template&lt;typename FaceRange , typename PolygonMesh , typename NamedParameters
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/triangulate_faces.h&gt;</code></p>
 
 <p>triangulates given faces of a polygon mesh. </p>
-<p>This function depends on the package <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgTriangulation2Summary">2D Triangulation</a></p>
+<p>This function depends on the package <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgTriangulation2Summary">2D Triangulation</a></p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>. </td></tr>
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>. </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -959,7 +958,7 @@ template&lt;typename FaceRange , typename PolygonMesh , typename NamedParameters
   <table class="params">
     <tr><td class="paramname">face_range</td><td>the range of faces to be triangulated </td></tr>
     <tr><td class="paramname">pmesh</td><td>the polygon mesh to be triangulated </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -967,9 +966,9 @@ template&lt;typename FaceRange , typename PolygonMesh , typename NamedParameters
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance  </td></tr>
 </table>
 </dd>
 </dl>
@@ -1010,17 +1009,17 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/triangulate_faces.h&gt;</code></p>
 
 <p>triangulates all faces of a polygon mesh. </p>
-<p>This function depends on the package <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgTriangulation2Summary">2D Triangulation</a> </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>This function depends on the package <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgTriangulation2Summary">2D Triangulation</a> </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pmesh</td><td>the polygon mesh to be triangulated </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -1028,9 +1027,9 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a geometric traits class instance  </td></tr>
 </table>
 </dd>
 </dl>
@@ -1048,7 +1047,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Wed Mar 21 2018 18:09:34 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -44,7 +44,8 @@ var NAVTREE =
         ] ],
         [ "Side of Triangle Mesh", "index.html#PMPInsideTest", [
           [ "Inside Test Example", "index.html#InsideExample", null ]
-        ] ]
+        ] ],
+        [ "Intersections Detection", "index.html#PMPDoIntersect", null ]
       ] ],
       [ "Orientation", "index.html#PMPOrientation", null ],
       [ "Combinatorial Repairing", "index.html#PMPRepairing", [

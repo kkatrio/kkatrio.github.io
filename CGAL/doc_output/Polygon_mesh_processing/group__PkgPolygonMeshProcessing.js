@@ -1,6 +1,6 @@
 var group__PkgPolygonMeshProcessing =
 [
-    [ "Named Parameters", "group__namedparameters.html", "group__namedparameters" ],
+    [ "Named Parameters for Polygon Mesh Processing", "group__pmp__namedparameters.html", null ],
     [ "Concepts", "group__PkgPolygonMeshProcessingConcepts.html", "group__PkgPolygonMeshProcessingConcepts" ],
     [ "Connected Components", "group__keep__connected__components__grp.html", "group__keep__connected__components__grp" ],
     [ "Hole Filling", "group__hole__filling__grp.html", "group__hole__filling__grp" ],
@@ -13,6 +13,7 @@ var group__PkgPolygonMeshProcessing =
     [ "Distance Functions", "group__PMP__distance__grp.html", "group__PMP__distance__grp" ],
     [ "Corefinement and Boolean Operations", "group__PMP__corefinement__grp.html", "group__PMP__corefinement__grp" ],
     [ "Feature Detection Functions", "group__PMP__detect__features__grp.html", "group__PMP__detect__features__grp" ],
+    [ "Intersection Detection Functions", "group__PMP__predicates__grp.html", "group__PMP__predicates__grp" ],
     [ "polygon_mesh_processing.h", "polygon__mesh__processing_8h.html", null ],
     [ "Polygon_mesh_slicer", "classCGAL_1_1Polygon__mesh__slicer.html", [
       [ "Polygon_mesh_slicer", "classCGAL_1_1Polygon__mesh__slicer.html#aad9b168fa99f09b4f865293842a4c3e0", null ],

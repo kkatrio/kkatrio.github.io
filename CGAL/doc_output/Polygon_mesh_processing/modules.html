@@ -20,7 +20,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
@@ -44,7 +43,7 @@ MathJax.Hub.Config({
     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <script src="../Manual/hacks.js" type="text/javascript"></script>
 <script src="modules.js" type="text/javascript"></script>
 </head>
@@ -144,8 +143,7 @@ $(document).ready(function(){initNavTree('modules.html','');});
 <div class="textblock">Here is a list of all modules:</div><div class="directory">
 <div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span>]</div><table class="directory">
 <tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><a class="el" href="group__PkgPolygonMeshProcessing.html" target="_self">Polygon Mesh Processing Reference</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__namedparameters.html" target="_self">Named Parameters</a></td><td class="desc"><b>How to use BGL Optional Named Parameters</b><br />
- </td></tr>
+<tr id="row_0_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__pmp__namedparameters.html" target="_self">Named Parameters for Polygon Mesh Processing</a></td><td class="desc">In this package, all functions optional parameters are implemented as BGL optional named parameters (see <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/index.html#BGLNamedParameters">Named Parameters</a> for more information on how to use them) </td></tr>
 <tr id="row_0_1_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__PkgPolygonMeshProcessingConcepts.html" target="_self">Concepts</a></td><td class="desc"></td></tr>
 <tr id="row_0_2_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__keep__connected__components__grp.html" target="_self">Connected Components</a></td><td class="desc">Two faces are in the same <em>connected component</em> if there is a path of adjacent faces such that all edges between two consecutive faces of the path are not marked as constrained </td></tr>
 <tr id="row_0_3_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__hole__filling__grp.html" target="_self">Hole Filling</a></td><td class="desc">Functions to fill holes given as a range of halfedges or as range of points </td></tr>
@@ -158,6 +156,7 @@ $(document).ready(function(){initNavTree('modules.html','');});
 <tr id="row_0_10_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__PMP__distance__grp.html" target="_self">Distance Functions</a></td><td class="desc">Functions to compute the distance between meshes, between a mesh and a point set and between a point set and a mesh </td></tr>
 <tr id="row_0_11_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__PMP__corefinement__grp.html" target="_self">Corefinement and Boolean Operations</a></td><td class="desc">Functions to corefine triangulated surface meshes and compute triangulated surface meshes of the union, difference and intersection of the bounded volumes </td></tr>
 <tr id="row_0_12_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__PMP__detect__features__grp.html" target="_self">Feature Detection Functions</a></td><td class="desc">Functions to detect sharp edges and surface patches of polygon meshes </td></tr>
+<tr id="row_0_13_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__PMP__predicates__grp.html" target="_self">Intersection Detection Functions</a></td><td class="desc">Functions to detect intersections </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
@@ -169,7 +168,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Wed Mar 21 2018 18:09:35 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

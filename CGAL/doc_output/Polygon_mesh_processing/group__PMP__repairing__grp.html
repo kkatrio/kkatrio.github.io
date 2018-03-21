@@ -20,7 +20,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
@@ -44,7 +43,7 @@ MathJax.Hub.Config({
     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <script src="../Manual/hacks.js" type="text/javascript"></script>
 <script src="modules.js" type="text/javascript"></script>
 </head>
@@ -194,7 +193,7 @@ template&lt;class PolygonRange &gt; </div>
 <p>It checks that each edge has at most two incident faces and such an edge is visited in opposite direction along the two face boundaries, no polygon has twice the same vertex, and the polygon soup describes a manifold surface. This function does not require a range of points as an argument since the check is purely topological. To each vertex of the mesh is associated an index that is used in the description of the boundaries of the polygons provided in <code>polygons</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonRange</td><td>a model of the concept <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classRandomAccessContainer.html">RandomAccessContainer</a></code> whose value_type is a model of the concept <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classRandomAccessContainer.html">RandomAccessContainer</a></code> whose value_type is <code>std::size_t</code>.</td></tr>
+    <tr><td class="paramname">PolygonRange</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classRandomAccessContainer.html">RandomAccessContainer</a></code> whose value_type is a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classRandomAccessContainer.html">RandomAccessContainer</a></code> whose value_type is <code>std::size_t</code>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -248,7 +247,7 @@ template&lt;class PolygonMesh , class Point , class Polygon &gt; </div>
 <dl class="section pre"><dt>Precondition</dt><dd>the input polygon soup describes a consistently oriented polygon mesh.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> with an internal point property map </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> with an internal point property map </td></tr>
     <tr><td class="paramname">Point</td><td>a point type that has an operator <code>[]</code> to access coordinates </td></tr>
     <tr><td class="paramname">Polygon</td><td>a <code>std::vector&lt;std::size_t&gt;</code> containing the indices of the points of the face</td></tr>
   </table>
@@ -294,7 +293,7 @@ template&lt;class PolygonMesh &gt; </div>
 <p>A vertex is considered isolated if it is not incident to any simplex of higher dimension.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code></td></tr>
   </table>
   </dd>
 </dl>
@@ -342,8 +341,8 @@ template&lt;typename PolygonMesh , typename HalfedgePairsRange &gt; </div>
 <p>The halfedges to be stitched are provided in <code>hedge_pairs_to_stitch</code>. For each pair <code>p</code> in this vector, <code>p.second</code> and its opposite will be removed from <code>pmesh</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">HalfedgePairsRange</td><td>a range of <code>std::pair&lt;boost::graph_traits&lt;PolygonMesh&gt;::halfedge_descriptor, boost::graph_traits&lt;PolygonMesh&gt;::halfedge_descriptor&gt;</code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>.</td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">HalfedgePairsRange</td><td>a range of <code>std::pair&lt;boost::graph_traits&lt;PolygonMesh&gt;::halfedge_descriptor, boost::graph_traits&lt;PolygonMesh&gt;::halfedge_descriptor&gt;</code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -392,15 +391,15 @@ template&lt;typename PolygonMesh , class NamedParameters &gt; </div>
 <p>Two border halfedges <code>h1</code> and <code>h2</code> are set to be stitched if the points associated to the source and target vertices of <code>h1</code> are the same as those of the target and source vertices of <code>h2</code> respectively.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pmesh</td><td>the polygon mesh to be modified by stitching </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -408,7 +407,7 @@ template&lt;typename PolygonMesh , class NamedParameters &gt; </div>
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code> </td></tr>
 </table>
 </dd>
 </dl>
@@ -424,7 +423,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Wed Mar 21 2018 18:09:34 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

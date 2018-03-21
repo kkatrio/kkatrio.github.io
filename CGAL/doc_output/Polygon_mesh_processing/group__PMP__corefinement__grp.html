@@ -20,7 +20,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
@@ -44,7 +43,7 @@ MathJax.Hub.Config({
     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <script src="../Manual/hacks.js" type="text/javascript"></script>
 <script src="modules.js" type="text/javascript"></script>
 </head>
@@ -169,7 +168,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga697ccb186c6e2cc3216306f9b87392bb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="index.html#coref_def_subsec">corefines </a> <code>tm1</code> and <code>tm2</code>.  <a href="group__PMP__corefinement__grp.html#ga697ccb186c6e2cc3216306f9b87392bb">More...</a><br /></td></tr>
 <tr class="separator:ga697ccb186c6e2cc3216306f9b87392bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b48770829c58b2f35c4a545ef530574"><td class="memTemplParams" colspan="2">template&lt;class OutputIterator , class TriangleMesh , class NamedParameters1 , class NamedParameters2 &gt; </td></tr>
-<tr class="memitem:ga2b48770829c58b2f35c4a545ef530574"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__corefinement__grp.html#ga2b48770829c58b2f35c4a545ef530574">CGAL::Polygon_mesh_processing::surface_intersection</a> (const TriangleMesh &amp;tm1, const TriangleMesh &amp;tm2, <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> polyline_output, const NamedParameters1 &amp;np1, const NamedParameters2 &amp;np2, const bool throw_on_self_intersection=false)</td></tr>
+<tr class="memitem:ga2b48770829c58b2f35c4a545ef530574"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__corefinement__grp.html#ga2b48770829c58b2f35c4a545ef530574">CGAL::Polygon_mesh_processing::surface_intersection</a> (const TriangleMesh &amp;tm1, const TriangleMesh &amp;tm2, <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> polyline_output, const NamedParameters1 &amp;np1, const NamedParameters2 &amp;np2, const bool throw_on_self_intersection=false)</td></tr>
 <tr class="memdesc:ga2b48770829c58b2f35c4a545ef530574"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the intersection of triangles of <code>tm1</code> and <code>tm2</code>.  <a href="group__PMP__corefinement__grp.html#ga2b48770829c58b2f35c4a545ef530574">More...</a><br /></td></tr>
 <tr class="separator:ga2b48770829c58b2f35c4a545ef530574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -229,9 +228,9 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
 <a class="el" href="group__PMP__intersection__grp.html#ga0beba25d03a16010b20e2c9b6771cd12"><code>!CGAL::Polygon_mesh_processing::does_self_intersect(tm2)</code> </a></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
-    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -239,15 +238,15 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
   <table class="params">
     <tr><td class="paramname">tm1</td><td>first input triangulated surface mesh </td></tr>
     <tr><td class="paramname">tm2</td><td>second input triangulated surface mesh </td></tr>
-    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
-    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
+    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
+    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
     <tr><td class="paramname">throw_on_self_intersection</td><td>if <code>true</code>, for each input triangle mesh, the set of triangles closed to the intersection of <code>tm1</code> and <code>tm2</code> will be checked for self-intersection and <code>CGAL::Corefinement::Self_intersection_exception</code> will be thrown if at least one is found. <dl class="params">
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm1</code> (<code>tm2</code>). If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm1</code> (<code>tm2</code>). If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm1</code> (<code>tm2</code>)  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm1</code> (<code>tm2</code>)  </td></tr>
 </table>
 </dd>
 </dl>
@@ -322,10 +321,10 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
 <a class="el" href="group__PMP__corefinement__grp.html#ga808a0177bf30833d2c1e390e533fec7f"><code>CGAL::Polygon_mesh_processing::does_bound_a_volume(tm2)</code> </a></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code>. If <code>TriangleMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, as a named parameter, then it must be initialized.</td></tr>
-    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
-    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
-    <tr><td class="paramname">NamedParametersOut</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code>. If <code>TriangleMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, as a named parameter, then it must be initialized.</td></tr>
+    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">NamedParametersOut</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -334,8 +333,8 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
     <tr><td class="paramname">tm1</td><td>first input triangulated surface mesh </td></tr>
     <tr><td class="paramname">tm2</td><td>second input triangulated surface mesh </td></tr>
     <tr><td class="paramname">tm_out</td><td>output surface mesh </td></tr>
-    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
-    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
+    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -343,17 +342,17 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm1</code> (<code>tm2</code>). If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm1</code> (<code>tm2</code>). If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm1</code> (<code>tm2</code>).  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm1</code> (<code>tm2</code>).  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>tm1</code> (<code>tm2</code>). Note that if the property map is writable, the indices of the faces of <code>tm1</code> and <code>tm2</code> will be set after the corefinement is done.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>tm1</code> (<code>tm2</code>). Note that if the property map is writable, the indices of the faces of <code>tm1</code> and <code>tm2</code> will be set after the corefinement is done.  </td></tr>
 </table>
 </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">np_out</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np_out</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -361,9 +360,9 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm_out</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm_out</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm_out</code>. An edge of <code>tm_out</code> is constrained if it is on the intersection of <code>tm1</code> and <code>tm2</code>, or if the edge corresponds to a constrained edge in <code>tm1</code> or <code>tm2</code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm_out</code>. An edge of <code>tm_out</code> is constrained if it is on the intersection of <code>tm1</code> and <code>tm2</code>, or if the edge corresponds to a constrained edge in <code>tm1</code> or <code>tm2</code>.  </td></tr>
 </table>
 </dd>
 </dl>
@@ -436,10 +435,10 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
 <a class="el" href="group__PMP__corefinement__grp.html#ga808a0177bf30833d2c1e390e533fec7f"><code>CGAL::Polygon_mesh_processing::does_bound_a_volume(tm2)</code> </a></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code>. If <code>TriangleMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, as a named parameter, then it must be initialized.</td></tr>
-    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
-    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
-    <tr><td class="paramname">NamedParametersOut</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code>. If <code>TriangleMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, as a named parameter, then it must be initialized.</td></tr>
+    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">NamedParametersOut</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -448,8 +447,8 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
     <tr><td class="paramname">tm1</td><td>first input triangulated surface mesh </td></tr>
     <tr><td class="paramname">tm2</td><td>second input triangulated surface mesh </td></tr>
     <tr><td class="paramname">tm_out</td><td>output surface mesh </td></tr>
-    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
-    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
+    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -457,17 +456,17 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm1</code> (<code>tm2</code>). If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm1</code> (<code>tm2</code>). If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm1</code> (<code>tm2</code>).  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm1</code> (<code>tm2</code>).  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>tm1</code> (<code>tm2</code>). Note that if the property map is writable, the indices of the faces of <code>tm1</code> and <code>tm2</code> will be set after the corefinement is done.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>tm1</code> (<code>tm2</code>). Note that if the property map is writable, the indices of the faces of <code>tm1</code> and <code>tm2</code> will be set after the corefinement is done.  </td></tr>
 </table>
 </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">np_out</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np_out</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -475,9 +474,9 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm_out</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm_out</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm_out</code>. An edge of <code>tm_out</code> is constrained if it is on the intersection of <code>tm1</code> and <code>tm2</code>, or if the edge corresponds to a constrained edge in <code>tm1</code> or <code>tm2</code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm_out</code>. An edge of <code>tm_out</code> is constrained if it is on the intersection of <code>tm1</code> and <code>tm2</code>, or if the edge corresponds to a constrained edge in <code>tm1</code> or <code>tm2</code>.  </td></tr>
 </table>
 </dd>
 </dl>
@@ -550,10 +549,10 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
 <a class="el" href="group__PMP__corefinement__grp.html#ga808a0177bf30833d2c1e390e533fec7f"><code>CGAL::Polygon_mesh_processing::does_bound_a_volume(tm2)</code> </a></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code>. If <code>TriangleMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, as a named parameter, then it must be initialized.</td></tr>
-    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
-    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
-    <tr><td class="paramname">NamedParametersOut</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code>. If <code>TriangleMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, as a named parameter, then it must be initialized.</td></tr>
+    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">NamedParametersOut</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -562,8 +561,8 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
     <tr><td class="paramname">tm1</td><td>first input triangulated surface mesh </td></tr>
     <tr><td class="paramname">tm2</td><td>second input triangulated surface mesh </td></tr>
     <tr><td class="paramname">tm_out</td><td>output surface mesh </td></tr>
-    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
-    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
+    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -571,17 +570,17 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm1</code> (<code>tm2</code>). If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm1</code> (<code>tm2</code>). If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm1</code> (<code>tm2</code>).  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm1</code> (<code>tm2</code>).  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>tm1</code> (<code>tm2</code>). Note that if the property map is writable, the indices of the faces of <code>tm1</code> and <code>tm2</code> will be set after the corefinement is done.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>tm1</code> (<code>tm2</code>). Note that if the property map is writable, the indices of the faces of <code>tm1</code> and <code>tm2</code> will be set after the corefinement is done.  </td></tr>
 </table>
 </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">np_out</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np_out</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -589,9 +588,9 @@ template&lt;class TriangleMesh , class NamedParameters1 , class NamedParameters2
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm_out</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm_out</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm_out</code>. An edge of <code>tm_out</code> is constrained if it is on the intersection of <code>tm1</code> and <code>tm2</code>, or if the edge corresponds to a constrained edge in <code>tm1</code> or <code>tm2</code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>tm_out</code>. An edge of <code>tm_out</code> is constrained if it is on the intersection of <code>tm1</code> and <code>tm2</code>, or if the edge corresponds to a constrained edge in <code>tm1</code> or <code>tm2</code>.  </td></tr>
 </table>
 </dd>
 </dl>
@@ -634,15 +633,15 @@ template&lt;class TriangleMesh , class NamedParameters &gt; </div>
 <p>See <a class="el" href="index.html#coref_def_subsec">Definitions</a> for details.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code>. If <code>TriangleMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, as a named parameter, then it must be initialized. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code>. If <code>TriangleMesh</code> has an internal property map for <code>CGAL::face_index_t</code>, as a named parameter, then it must be initialized. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tm</td><td>a closed triangulated surface mesh </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -651,12 +650,13 @@ template&lt;class TriangleMesh , class NamedParameters &gt; </div>
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>tm</code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>tm</code>.  </td></tr>
 </table>
 </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__PMP__orientation__grp.html#gafdbc256d06536f6aca2558bc1a0156e2" title="orients the connected components of tm to make it bound a volume. ">CGAL::Polygon_mesh_processing::orient_to_bound_a_volume()</a></code> </dd></dl>
 
 </div>
 </div>
@@ -669,7 +669,7 @@ template&lt;class TriangleMesh , class NamedParameters &gt; </div>
 template&lt;class OutputIterator , class TriangleMesh , class NamedParameters1 , class NamedParameters2 &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::surface_intersection </td>
+          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::surface_intersection </td>
           <td>(</td>
           <td class="paramtype">const TriangleMesh &amp;&#160;</td>
           <td class="paramname"><em>tm1</em>, </td>
@@ -683,7 +683,7 @@ template&lt;class OutputIterator , class TriangleMesh , class NamedParameters1 ,
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
           <td class="paramname"><em>polyline_output</em>, </td>
         </tr>
         <tr>
@@ -721,10 +721,10 @@ template&lt;class OutputIterator , class TriangleMesh , class NamedParameters1 ,
 <a class="el" href="group__PMP__intersection__grp.html#ga0beba25d03a16010b20e2c9b6771cd12"><code>!CGAL::Polygon_mesh_processing::does_self_intersect(tm2)</code> </a></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
-    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
-    <tr><td class="paramname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>an output iterator in which <code>std::vector</code> of points can be put. The point type is the one from the vertex property map</td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>, <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>an output iterator in which <code>std::vector</code> of points can be put. The point type is the one from the vertex property map</td></tr>
   </table>
   </dd>
 </dl>
@@ -734,8 +734,8 @@ template&lt;class OutputIterator , class TriangleMesh , class NamedParameters1 ,
     <tr><td class="paramname">tm2</td><td>second input triangulated surface mesh </td></tr>
     <tr><td class="paramname">polyline_output</td><td>output iterator of polylines. Each polyline will be given as a vector of points </td></tr>
     <tr><td class="paramname">throw_on_self_intersection</td><td>if <code>true</code>, for each input triangle mesh, the set of triangles closed to the intersection of <code>tm1</code> and <code>tm2</code> will be checked for self-intersection and <code>CGAL::Corefinement::Self_intersection_exception</code> will be thrown if at least one is found. </td></tr>
-    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
-    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below </td></tr>
+    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -743,7 +743,7 @@ template&lt;class OutputIterator , class TriangleMesh , class NamedParameters1 ,
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>a property map with the points associated to the vertices of <code>tm1</code> (<code>tm2</code>). The two property map types must be the same.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>a property map with the points associated to the vertices of <code>tm1</code> (<code>tm2</code>). The two property map types must be the same.  </td></tr>
 </table>
 </dd>
 </dl>
@@ -759,7 +759,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Wed Mar 21 2018 18:09:34 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

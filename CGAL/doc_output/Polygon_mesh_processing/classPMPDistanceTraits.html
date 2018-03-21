@@ -20,7 +20,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
@@ -44,7 +43,7 @@ MathJax.Hub.Config({
     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <script src="../Manual/hacks.js" type="text/javascript"></script>
 <script src="modules.js" type="text/javascript"></script>
 </head>
@@ -147,41 +146,41 @@ $(document).ready(function(){initNavTree('classPMPDistanceTraits.html','');});
 
 <p><code>#include &lt;Concepts/PMPDistanceTraits.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Definition</h2>
-<div class="textblock"><p>The concept <code><a class="el" href="classPMPDistanceTraits.html" title="The concept PMPDistanceTraits is a refinement of the concepts AABBGeomTraits and SpatialSortingTraits...">PMPDistanceTraits</a></code> is a refinement of the concepts <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classAABBGeomTraits.html">AABBGeomTraits</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Spatial_sorting.tag:../Spatial_sorting/" href="../Spatial_sorting/classSpatialSortingTraits__3.html">SpatialSortingTraits_3</a></code>. In addition to the types required by those concepts, it also requires types and functors needed by the functions <code><a class="el" href="group__PMP__distance__grp.html#ga349ddbf7a4a44e820794dbe4680d0026" title="returns an approximation of the distance between points and the point lying on tm that is the farthes...">approximate_max_distance_to_point_set()</a></code>, <code><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d" title="generates points taken on tm and outputs them to out, the sampling method is selected using named par...">sample_triangle_mesh()</a></code>, <code><a class="el" href="group__PMP__distance__grp.html#ga2b28867dc150931b2f12d17b77d15266" title="computes the approximate Hausdorff distance from tm1 to tm2 by returning the distance of the farthest...">approximate_Hausdorff_distance()</a></code> and <code><a class="el" href="group__PMP__distance__grp.html#ga44609a1b94f1ede1c87b2cfdc441d966" title="returns the distance to tm of the point from points that is the furthest from tm. ...">max_distance_to_triangle_mesh()</a></code> </p>
-<div id="CGALConcept"></div> <dl class="refines"><dt><b><a class="el" href="refines.html#_refines000001">Refines:</a></b></dt><dd><p class="startdd"><code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classAABBGeomTraits.html">AABBGeomTraits</a></code> </p>
-<p class="enddd"><code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Spatial_sorting.tag:../Spatial_sorting/" href="../Spatial_sorting/classSpatialSortingTraits__3.html">SpatialSortingTraits_3</a></code> </p>
+<div class="textblock"><p>The concept <code><a class="el" href="classPMPDistanceTraits.html" title="The concept PMPDistanceTraits is a refinement of the concepts AABBGeomTraits and SpatialSortingTraits...">PMPDistanceTraits</a></code> is a refinement of the concepts <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classAABBGeomTraits.html">AABBGeomTraits</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Spatial_sorting.tag:../Spatial_sorting/" href="../Spatial_sorting/classSpatialSortingTraits__3.html">SpatialSortingTraits_3</a></code>. In addition to the types required by those concepts, it also requires types and functors needed by the functions <code><a class="el" href="group__PMP__distance__grp.html#ga349ddbf7a4a44e820794dbe4680d0026" title="returns an approximation of the distance between points and the point lying on tm that is the farthes...">approximate_max_distance_to_point_set()</a></code>, <code><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d" title="generates points taken on tm and outputs them to out, the sampling method is selected using named par...">sample_triangle_mesh()</a></code>, <code><a class="el" href="group__PMP__distance__grp.html#ga2b28867dc150931b2f12d17b77d15266" title="computes the approximate Hausdorff distance from tm1 to tm2 by returning the distance of the farthest...">approximate_Hausdorff_distance()</a></code> and <code><a class="el" href="group__PMP__distance__grp.html#ga44609a1b94f1ede1c87b2cfdc441d966" title="returns the distance to tm of the point from points that is the furthest from tm. ...">max_distance_to_triangle_mesh()</a></code> </p>
+<div id="CGALConcept"></div> <dl class="refines"><dt><b><a class="el" href="refines.html#_refines000001">Refines:</a></b></dt><dd><p class="startdd"><code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classAABBGeomTraits.html">AABBGeomTraits</a></code> </p>
+<p class="enddd"><code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Spatial_sorting.tag:../Spatial_sorting/" href="../Spatial_sorting/classSpatialSortingTraits__3.html">SpatialSortingTraits_3</a></code> </p>
 </dd></dl>
-<dl class="hasModels"><dt><b><a class="el" href="hasModels.html#_hasModels000001">Has Models:</a></b></dt><dd>Any 3D <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a> is a model of this concept. </dd></dl>
+<dl class="hasModels"><dt><b><a class="el" href="hasModels.html#_hasModels000001">Has Models:</a></b></dt><dd>Any 3D <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a> is a model of this concept. </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a9e64c7865a0e71ab722055b8c29c50f0"><td class="memItemLeft" align="right" valign="top"><a id="a9e64c7865a0e71ab722055b8c29c50f0"></a>
-typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#a9e64c7865a0e71ab722055b8c29c50f0">FT</a></td></tr>
-<tr class="memdesc:a9e64c7865a0e71ab722055b8c29c50f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A number type model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/classField.html">Field</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/classRealEmbeddable.html">RealEmbeddable</a></code> <br /></td></tr>
+typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#a9e64c7865a0e71ab722055b8c29c50f0">FT</a></td></tr>
+<tr class="memdesc:a9e64c7865a0e71ab722055b8c29c50f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A number type model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/classField.html">Field</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Algebraic_foundations.tag:../Algebraic_foundations/" href="../Algebraic_foundations/classRealEmbeddable.html">RealEmbeddable</a></code> <br /></td></tr>
 <tr class="separator:a9e64c7865a0e71ab722055b8c29c50f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a58e2b996d696ee50a92710848398e0"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#a0a58e2b996d696ee50a92710848398e0">Point_3</a></td></tr>
+<tr class="memitem:a0a58e2b996d696ee50a92710848398e0"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#a0a58e2b996d696ee50a92710848398e0">Point_3</a></td></tr>
 <tr class="memdesc:a0a58e2b996d696ee50a92710848398e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D point type It must be default constructible, and can be constructed from 3 objects of type <code>FT</code>.  <a href="#a0a58e2b996d696ee50a92710848398e0">More...</a><br /></td></tr>
 <tr class="separator:a0a58e2b996d696ee50a92710848398e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa94a729ff8bde9df89530b9e7bb6c722"><td class="memItemLeft" align="right" valign="top"><a id="aa94a729ff8bde9df89530b9e7bb6c722"></a>
-typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#aa94a729ff8bde9df89530b9e7bb6c722">Vector_3</a></td></tr>
+typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#aa94a729ff8bde9df89530b9e7bb6c722">Vector_3</a></td></tr>
 <tr class="memdesc:aa94a729ff8bde9df89530b9e7bb6c722"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D vector type <br /></td></tr>
 <tr class="separator:aa94a729ff8bde9df89530b9e7bb6c722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Functors</h2></td></tr>
-<tr class="memitem:a082fe010f412a3c1d5e05221d7227ae4"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#a082fe010f412a3c1d5e05221d7227ae4">Compute_squared_area_3</a></td></tr>
+<tr class="memitem:a082fe010f412a3c1d5e05221d7227ae4"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#a082fe010f412a3c1d5e05221d7227ae4">Compute_squared_area_3</a></td></tr>
 <tr class="memdesc:a082fe010f412a3c1d5e05221d7227ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for computing squared area of a triangle.  <a href="#a082fe010f412a3c1d5e05221d7227ae4">More...</a><br /></td></tr>
 <tr class="separator:a082fe010f412a3c1d5e05221d7227ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab86db55e6f27755dacb4d9f88107a82d"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#ab86db55e6f27755dacb4d9f88107a82d">Compute_squared_length_3</a></td></tr>
+<tr class="memitem:ab86db55e6f27755dacb4d9f88107a82d"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#ab86db55e6f27755dacb4d9f88107a82d">Compute_squared_length_3</a></td></tr>
 <tr class="memdesc:ab86db55e6f27755dacb4d9f88107a82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for computing squared length of a segment.  <a href="#ab86db55e6f27755dacb4d9f88107a82d">More...</a><br /></td></tr>
 <tr class="separator:ab86db55e6f27755dacb4d9f88107a82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace007a88453bcf18c2483e60a762859c"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#ace007a88453bcf18c2483e60a762859c">Construct_translated_point_3</a></td></tr>
+<tr class="memitem:ace007a88453bcf18c2483e60a762859c"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#ace007a88453bcf18c2483e60a762859c">Construct_translated_point_3</a></td></tr>
 <tr class="memdesc:ace007a88453bcf18c2483e60a762859c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for constructing translated points.  <a href="#ace007a88453bcf18c2483e60a762859c">More...</a><br /></td></tr>
 <tr class="separator:ace007a88453bcf18c2483e60a762859c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a704303a0d10efaa8a56a010d79346b25"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#a704303a0d10efaa8a56a010d79346b25">Construct_vector_3</a></td></tr>
+<tr class="memitem:a704303a0d10efaa8a56a010d79346b25"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#a704303a0d10efaa8a56a010d79346b25">Construct_vector_3</a></td></tr>
 <tr class="memdesc:a704303a0d10efaa8a56a010d79346b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for constructing vectors.  <a href="#a704303a0d10efaa8a56a010d79346b25">More...</a><br /></td></tr>
 <tr class="separator:a704303a0d10efaa8a56a010d79346b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c263c3c5b34f1053b024b9b8f78d7d"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#a06c263c3c5b34f1053b024b9b8f78d7d">Construct_scaled_vector_3</a></td></tr>
+<tr class="memitem:a06c263c3c5b34f1053b024b9b8f78d7d"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPMPDistanceTraits.html#a06c263c3c5b34f1053b024b9b8f78d7d">Construct_scaled_vector_3</a></td></tr>
 <tr class="memdesc:a06c263c3c5b34f1053b024b9b8f78d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for constructing scaled vectors.  <a href="#a06c263c3c5b34f1053b024b9b8f78d7d">More...</a><br /></td></tr>
 <tr class="separator:a06c263c3c5b34f1053b024b9b8f78d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -211,7 +210,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#a082fe010f412a3c1d5e05221d7227ae4">PMPDistanceTraits::Compute_squared_area_3</a></td>
+          <td class="memname">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#a082fe010f412a3c1d5e05221d7227ae4">PMPDistanceTraits::Compute_squared_area_3</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -228,7 +227,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#ab86db55e6f27755dacb4d9f88107a82d">PMPDistanceTraits::Compute_squared_length_3</a></td>
+          <td class="memname">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#ab86db55e6f27755dacb4d9f88107a82d">PMPDistanceTraits::Compute_squared_length_3</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,7 +244,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#a06c263c3c5b34f1053b024b9b8f78d7d">PMPDistanceTraits::Construct_scaled_vector_3</a></td>
+          <td class="memname">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#a06c263c3c5b34f1053b024b9b8f78d7d">PMPDistanceTraits::Construct_scaled_vector_3</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -262,7 +261,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#ace007a88453bcf18c2483e60a762859c">PMPDistanceTraits::Construct_translated_point_3</a></td>
+          <td class="memname">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#ace007a88453bcf18c2483e60a762859c">PMPDistanceTraits::Construct_translated_point_3</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -279,7 +278,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#a704303a0d10efaa8a56a010d79346b25">PMPDistanceTraits::Construct_vector_3</a></td>
+          <td class="memname">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#a704303a0d10efaa8a56a010d79346b25">PMPDistanceTraits::Construct_vector_3</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -296,14 +295,14 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#a0a58e2b996d696ee50a92710848398e0">PMPDistanceTraits::Point_3</a></td>
+          <td class="memname">typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPMPDistanceTraits.html#a0a58e2b996d696ee50a92710848398e0">PMPDistanceTraits::Point_3</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>3D point type It must be default constructible, and can be constructed from 3 objects of type <code>FT</code>. </p>
 <p><code>bool operator&lt;(Point_3, Point_3)</code> to lexicographically compare two points must be available. Access to Cartesian coordinates must be possible using <code>Point_3::x()</code>, <code>Point_3::y(), Point_3::z()</code> and <code>FT operator[](int i)</code> with <code>0 &lt;= i &lt; 3</code>.</p>
-<p>There must be a specialization of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Kernel__traits.html">CGAL::Kernel_traits</a></code> such that <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Kernel__traits.html">CGAL::Kernel_traits</a>&lt;Point_3&gt;::Kernel</code> is a model implementing this concept. </p>
+<p>There must be a specialization of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/structCGAL_1_1Kernel__traits.html">CGAL::Kernel_traits</a></code> such that <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/structCGAL_1_1Kernel__traits.html">CGAL::Kernel_traits</a>&lt;Point_3&gt;::Kernel</code> is a model implementing this concept. </p>
 
 </div>
 </div>
@@ -317,7 +316,7 @@ move the footer to the bottom of the page. -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classPMPDistanceTraits.html">PMPDistanceTraits</a></li>
-    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Wed Mar 21 2018 18:09:35 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
