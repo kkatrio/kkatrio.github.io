@@ -203,7 +203,7 @@ Smoothing</h3>
 <p><a class="anchor" id="fig__smooth_sphere"></a></p><div class="image">
 <img src="smooth_sphere.png" alt="smooth_sphere.png"/>
 </div>
-   <div class="cgal_figure_caption">  <a class="el" href="index.html#fig__smooth_sphere">fig__smooth_sphere</a> Mesh smoothing. (a) Input mesh. (b) Smoothing based on angles after 10 iterations. (c) Smoothing based on areas after 15 iterations. (d) Combination 5 iterations of smoothing based on angles followed by 1 iteration of smoothing based on areas. The combination is applied twice.  </div>  <br />
+   <div class="cgal_figure_caption">  <a class="el" href="index.html#fig__smooth_sphere">fig__smooth_sphere</a> Mesh smoothing. (a) Input mesh. (b) Smoothing based on angles after 10 iterations. (c) Smoothing based on areas after 15 iterations. (d) Applied twice a sequence of 5 iterations of smoothing based on angles followed by 1 iteration of smoothing based on areas.  </div>  <br />
 </p>
 <ul>
 <li>For shape smoothing: <code><a class="el" href="group__PMP__meshing__grp.html#gaadd32c3ef587b072ff786ade9dfe70c3" title="smooths the overall shape of the mesh by using the mean curvature flow. ">CGAL::Polygon_mesh_processing::smooth_along_curvature_flow()</a></code> moves vertices incrementally towards a weighted barycenter along the mean curvature flow. The curvature flow algorithm for shape smoothing is based on Desbrun et al <a class="el" href="citelist.html#CITEREF_cgal:dmsb-ifamdcf-99">[6]</a> and on Kazhdan et al <a class="el" href="citelist.html#CITEREF_kazhdan2012can">[7]</a>. The algorithm uses the mean curvature flow to calculate the translation of vertices along the surface normal with a speed equal to the mean curvature of the area that is being smoothed. This means that vertices on sharp corners slide faster. If the region around a vertex is flat, this vertex does not move (zero curvature). To avoid the formation of undesirable neck pinches the algorithm slows down the evolution in cylindrical regions. The smoothed surface converges to a conformal parameterization of the initial surface onto a sphere. (A simple example can be found in <code>Polygon_mesh_processing/shape_smoothing_example.cpp</code>).</li>
@@ -469,7 +469,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 22 2018 11:00:16 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Thu Mar 22 2018 11:11:31 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
