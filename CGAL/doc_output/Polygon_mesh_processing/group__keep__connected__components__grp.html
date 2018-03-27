@@ -20,7 +20,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
@@ -44,7 +43,7 @@ MathJax.Hub.Config({
     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <script src="../Manual/hacks.js" type="text/javascript"></script>
 <script src="modules.js" type="text/javascript"></script>
 </head>
@@ -228,9 +227,9 @@ template&lt;typename PolygonMesh , typename FaceOutputIterator , typename NamedP
 <p><code>seed_face</code> will also be added in <code>out</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">FaceOutputIterator</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> that accepts faces of type <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">FaceOutputIterator</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> that accepts faces of type <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code>. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -239,7 +238,7 @@ template&lt;typename PolygonMesh , typename FaceOutputIterator , typename NamedP
     <tr><td class="paramname">seed_face</td><td>a face of <code>pmesh</code> from which exploration starts to detect the connected component that contains it </td></tr>
     <tr><td class="paramname">pmesh</td><td>the polygon mesh </td></tr>
     <tr><td class="paramname">out</td><td>the output iterator that collects faces from the same connected component as <code>seed_face</code> </td></tr>
-    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__namedparameters.html">Named Parameters</a> described below</td></tr>
+    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> described below</td></tr>
   </table>
   </dd>
 </dl>
@@ -247,7 +246,7 @@ template&lt;typename PolygonMesh , typename FaceOutputIterator , typename NamedP
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -293,12 +292,12 @@ template&lt;typename PolygonMesh , typename FaceComponentMap , typename NamedPar
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/connected_components.h&gt;</code></p>
 
 <p>computes for each face the index of the corresponding connected component. </p>
-<p>A property map for <code>CGAL::face_index_t</code> should be either available as an internal property map to <code>pmesh</code> or provided as one of the <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
+<p>A property map for <code>CGAL::face_index_t</code> should be either available as an internal property map to <code>pmesh</code> or provided as one of the <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classWritablePropertyMap.html">WritablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classWritablePropertyMap.html">WritablePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -306,7 +305,7 @@ template&lt;typename PolygonMesh , typename FaceComponentMap , typename NamedPar
   <table class="params">
     <tr><td class="paramname">pmesh</td><td>the polygon mesh </td></tr>
     <tr><td class="paramname">fcm</td><td>the property map with indices of components associated to faces in <code>pmesh</code> </td></tr>
-    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__namedparameters.html">Named Parameters</a> described below</td></tr>
+    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> described below</td></tr>
   </table>
   </dd>
 </dl>
@@ -314,9 +313,9 @@ template&lt;typename PolygonMesh , typename FaceComponentMap , typename NamedPar
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -370,13 +369,13 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
 <p>keeps the connected components designated by theirs ids in <code>components_to_keep</code>, and removes the other connected components as well as all isolated vertices. </p>
 <p>The connected component id of a face is given by <code>fcm</code>.</p>
 <dl class="section note"><dt>Note</dt><dd>If the removal of the connected components makes <code>pmesh</code> a non-manifold surface, then the behavior of this function is undefined.</dd></dl>
-<p>Property maps for <code>CGAL::vertex_index_t</code> should be either available as internal property map to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
+<p>Property maps for <code>CGAL::vertex_index_t</code> should be either available as internal property map to <code>pmesh</code> or provided as <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">ComponentRange</td><td>a range of ids convertible to <code>std::size</code> </td></tr>
-    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
+    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
   </table>
   </dd>
 </dl>
@@ -385,7 +384,7 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
     <tr><td class="paramname">components_to_keep</td><td>the range of ids of connected components to keep </td></tr>
     <tr><td class="paramname">pmesh</td><td>the polygon mesh </td></tr>
     <tr><td class="paramname">fcm</td><td>the property map with indices of components associated to faces in <code>pmesh</code>. After calling this function, the values of <code>fcm</code> are undefined. </td></tr>
-    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__namedparameters.html">Named Parameters</a> described below</td></tr>
+    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> described below</td></tr>
   </table>
   </dd>
 </dl>
@@ -393,7 +392,7 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -437,12 +436,12 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/connected_components.h&gt;</code></p>
 
 <p>keeps the connected components designated by the faces in <code>components_to_keep</code>, and removes the other connected components and all isolated vertices. </p>
-<p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
+<p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>If the removal of the connected components makes <code>pmesh</code> a non-manifold surface, then the behavior of this function is undefined.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">FaceRange</td><td>a range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> indicating the connected components to be kept.</td></tr>
   </table>
   </dd>
@@ -451,7 +450,7 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
   <table class="params">
     <tr><td class="paramname">pmesh</td><td>the polygon mesh </td></tr>
     <tr><td class="paramname">components_to_keep</td><td>a face range, including one face or more on each component to be kept </td></tr>
-    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__namedparameters.html">Named Parameters</a> described below</td></tr>
+    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> described below</td></tr>
   </table>
   </dd>
 </dl>
@@ -459,11 +458,11 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -507,11 +506,11 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/connected_components.h&gt;</code></p>
 
 <p>removes connected components with less than a given number of faces. </p>
-<p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
+<p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -519,7 +518,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
   <table class="params">
     <tr><td class="paramname">pmesh</td><td>the polygon mesh </td></tr>
     <tr><td class="paramname">threshold_components_to_keep</td><td>the number of faces a component must have so that it is kept </td></tr>
-    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__namedparameters.html">Named Parameters</a> described below</td></tr>
+    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> described below</td></tr>
   </table>
   </dd>
 </dl>
@@ -527,11 +526,11 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -578,11 +577,11 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 
 <p>removes the small connected components and all isolated vertices. </p>
 <p>Keep <code>nb_components_to_keep</code> largest connected components.</p>
-<p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
+<p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -590,7 +589,7 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
   <table class="params">
     <tr><td class="paramname">pmesh</td><td>the polygon mesh </td></tr>
     <tr><td class="paramname">nb_components_to_keep</td><td>the number of components to be kept </td></tr>
-    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__namedparameters.html">Named Parameters</a> described below</td></tr>
+    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> described below</td></tr>
   </table>
   </dd>
 </dl>
@@ -598,11 +597,11 @@ template&lt;typename PolygonMesh , typename NamedParameters &gt; </div>
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -656,13 +655,13 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
 <p>Removes in <code>pmesh</code> the connected components designated by theirs ids in <code>components_to_remove</code> as well as all isolated vertices. </p>
 <p>The connected component id of a face is given by <code>fcm</code>.</p>
 <dl class="section note"><dt>Note</dt><dd>If the removal of the connected components makes <code>pmesh</code> a non-manifold surface, then the behavior of this function is undefined.</dd></dl>
-<p>Property maps for <code>CGAL::vertex_index_t</code> should be either available as internal property map to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
+<p>Property maps for <code>CGAL::vertex_index_t</code> should be either available as internal property map to <code>pmesh</code> or provided as <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">ComponentRange</td><td>a range of ids convertible to <code>std::size</code> </td></tr>
-    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
+    <tr><td class="paramname">FaceComponentMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and <code>boost::graph_traits&lt;PolygonMesh&gt;::faces_size_type</code> as value type.</td></tr>
   </table>
   </dd>
 </dl>
@@ -671,7 +670,7 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
     <tr><td class="paramname">components_to_remove</td><td>the range of ids of connected components to remove </td></tr>
     <tr><td class="paramname">pmesh</td><td>the polygon mesh </td></tr>
     <tr><td class="paramname">fcm</td><td>the property map with indices of components associated to faces in <code>pmesh</code>. After calling this function, the values of <code>fcm</code> are undefined. </td></tr>
-    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__namedparameters.html">Named Parameters</a> described below</td></tr>
+    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> described below</td></tr>
   </table>
   </dd>
 </dl>
@@ -679,7 +678,7 @@ template&lt;typename PolygonMesh , typename ComponentRange , typename FaceCompon
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -723,12 +722,12 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/connected_components.h&gt;</code></p>
 
 <p>keeps the connected components not designated by the faces in <code>components_to_remove</code>, and removes the other connected components and all isolated vertices. </p>
-<p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__namedparameters.html">Named Parameters</a>.</p>
+<p>Property maps for <code>CGAL::face_index_t</code> and <code>CGAL::vertex_index_t</code> should be either available as internal property maps to <code>pmesh</code> or provided as <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>If the removal of the connected components makes <code>pmesh</code> a non-manifold surface, then the behavior of this function is undefined.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
     <tr><td class="paramname">FaceRange</td><td>a range of <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> indicating the connected components to be removed.</td></tr>
   </table>
   </dd>
@@ -737,7 +736,7 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
   <table class="params">
     <tr><td class="paramname">components_to_remove</td><td>a face range, including one face or more on each component to be removed </td></tr>
     <tr><td class="paramname">pmesh</td><td>the polygon mesh </td></tr>
-    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__namedparameters.html">Named Parameters</a> described below</td></tr>
+    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> described below</td></tr>
   </table>
   </dd>
 </dl>
@@ -745,11 +744,11 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_edge_is_constrained_map">edge_is_constrained_map</a></td><td>a property map containing the constrained-or-not status of each edge of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_index_map">vertex_index_map</a></td><td>a property map containing the index of each vertex of <code>pmesh</code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -765,7 +764,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Thu Mar 22 2018 11:16:37 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

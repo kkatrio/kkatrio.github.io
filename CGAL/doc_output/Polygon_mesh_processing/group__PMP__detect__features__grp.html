@@ -20,7 +20,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
@@ -44,7 +43,7 @@ MathJax.Hub.Config({
     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <script src="../Manual/hacks.js" type="text/javascript"></script>
 <script src="modules.js" type="text/javascript"></script>
 </head>
@@ -209,10 +208,10 @@ template&lt;typename PolygonMesh , typename FT , typename EdgeIsFeatureMap , typ
 <p>Also computes the number of sharp edges incident to each vertex, if <code>vertex_feature_degree_map</code> is provided.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> </td></tr>
-    <tr><td class="paramname">FT</td><td>a number type. It is either deduced from the <code>geom_traits</code> <a class="el" href="group__namedparameters.html">Named Parameters</a> if provided, or from the geometric traits class deduced from the point property map of <code>PolygonMesh</code>. </td></tr>
-    <tr><td class="paramname">EdgeIsFeatureMap</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::edge_descriptor</code> as key type and <code>bool</code> as value type. It should be default constructible. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> </td></tr>
+    <tr><td class="paramname">FT</td><td>a number type. It is either deduced from the <code>geom_traits</code> <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> if provided, or from the geometric traits class deduced from the point property map of <code>PolygonMesh</code>. </td></tr>
+    <tr><td class="paramname">EdgeIsFeatureMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::edge_descriptor</code> as key type and <code>bool</code> as value type. It should be default constructible. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -221,7 +220,7 @@ template&lt;typename PolygonMesh , typename FT , typename EdgeIsFeatureMap , typ
     <tr><td class="paramname">pmesh</td><td>the polygon mesh </td></tr>
     <tr><td class="paramname">angle_in_deg</td><td>the dihedral angle bound </td></tr>
     <tr><td class="paramname">edge_is_feature_map</td><td>the property map that will contain the sharp-or-not status of each edge of <code>pmesh</code> </td></tr>
-    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__namedparameters.html">Named Parameters</a> described below</td></tr>
+    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> described below</td></tr>
   </table>
   </dd>
 </dl>
@@ -229,9 +228,9 @@ template&lt;typename PolygonMesh , typename FT , typename EdgeIsFeatureMap , typ
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_feature_degree_map">vertex_feature_degree_map</a></td><td>a property map that will contain the number of adjacent feature edges for each vertex of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_feature_degree_map">vertex_feature_degree_map</a></td><td>a property map that will contain the number of adjacent feature edges for each vertex of <code>pmesh</code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -283,9 +282,9 @@ template&lt;typename PolygonMesh , typename PatchIdMap , typename VertexIncident
 <p>collects the surface patches of the faces incident to each vertex of the input polygon mesh. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> </td></tr>
-    <tr><td class="paramname">PatchIdMap</td><td>a model of <code>ReadPropertyMap</code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and the desired patch id, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classCopyConstructible.html">CopyConstructible</a></code> as value type. </td></tr>
-    <tr><td class="paramname">VertexIncidentPatchesMap</td><td>a model of mutable <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classLvaluePropertyMap.html">LvaluePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::vertex_descriptor</code> as key type. Its value type must be a container of <code>boost::property_traits&lt;PatchIdMap&gt;::value_type</code> and have a function <code>insert()</code>. A <code>std::set</code> or a <code>boost::unordered_set</code> are recommended, as a patch index may be inserted several times. </td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classHalfedgeListGraph.html">HalfedgeListGraph</a></code> </td></tr>
+    <tr><td class="paramname">PatchIdMap</td><td>a model of <code>ReadPropertyMap</code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and the desired patch id, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classCopyConstructible.html">CopyConstructible</a></code> as value type. </td></tr>
+    <tr><td class="paramname">VertexIncidentPatchesMap</td><td>a model of mutable <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classLvaluePropertyMap.html">LvaluePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::vertex_descriptor</code> as key type. Its value type must be a container of <code>boost::property_traits&lt;PatchIdMap&gt;::value_type</code> and have a function <code>insert()</code>. A <code>std::set</code> or a <code>boost::unordered_set</code> are recommended, as a patch index may be inserted several times. </td></tr>
     <tr><td class="paramname">EdgeIsFeatureMap</td><td>a model of <code>ReadPropertyMap</code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::edge_descriptor</code> as key type and <code>bool</code> as value type. </td></tr>
   </table>
   </dd>
@@ -356,11 +355,11 @@ template&lt;typename PolygonMesh , typename FT , typename EdgeIsFeatureMap , typ
 <p>A property map for <code>CGAL::face_index_t</code>should be either available as an internal property map to <code>pmesh</code> or provided as one of the Named Parameters.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> </td></tr>
-    <tr><td class="paramname">FT</td><td>a number type. It is either deduced from the <code>geom_traits</code> <a class="el" href="group__namedparameters.html">Named Parameters</a> if provided, or from the geometric traits class deduced from the point property map of <code>PolygonMesh</code>. </td></tr>
-    <tr><td class="paramname">EdgeIsFeatureMap</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::edge_descriptor</code> </td></tr>
-    <tr><td class="paramname">PatchIdMap</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and the desired patch id, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classCopyConstructible.html">CopyConstructible</a></code> as value type. </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceGraph.html">FaceGraph</a></code> </td></tr>
+    <tr><td class="paramname">FT</td><td>a number type. It is either deduced from the <code>geom_traits</code> <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> if provided, or from the geometric traits class deduced from the point property map of <code>PolygonMesh</code>. </td></tr>
+    <tr><td class="paramname">EdgeIsFeatureMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::edge_descriptor</code> </td></tr>
+    <tr><td class="paramname">PatchIdMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadWritePropertyMap.html">ReadWritePropertyMap</a></code> with <code>boost::graph_traits&lt;PolygonMesh&gt;::face_descriptor</code> as key type and the desired patch id, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classCopyConstructible.html">CopyConstructible</a></code> as value type. </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -370,7 +369,7 @@ template&lt;typename PolygonMesh , typename FT , typename EdgeIsFeatureMap , typ
     <tr><td class="paramname">angle_in_deg</td><td>the dihedral angle bound </td></tr>
     <tr><td class="paramname">edge_is_feature_map</td><td>the property map that will contain the sharp-or-not status of each edge of <code>pmesh</code> </td></tr>
     <tr><td class="paramname">patch_id_map</td><td>the property map that will contain the surface patch ids for the faces of <code>pmesh</code>. </td></tr>
-    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__namedparameters.html">Named Parameters</a> described below</td></tr>
+    <tr><td class="paramname">np</td><td>optional <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> described below</td></tr>
   </table>
   </dd>
 </dl>
@@ -378,15 +377,15 @@ template&lt;typename PolygonMesh , typename FT , typename EdgeIsFeatureMap , typ
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_feature_degree_map">vertex_feature_degree_map</a></td><td>a property map that will contain the number of adjacent feature edges for each vertex of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_feature_degree_map">vertex_feature_degree_map</a></td><td>a property map that will contain the number of adjacent feature edges for each vertex of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_first_index">first_index</a></td><td>a <code>std::size_t</code> containing the index of the first surface patch of <code>pmesh</code>. The patches will be numbered on [first_index; first_index + num_patches], where num_patches is the number of surface patches  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_first_index">first_index</a></td><td>a <code>std::size_t</code> containing the index of the first surface patch of <code>pmesh</code>. The patches will be numbered on [first_index; first_index + num_patches], where num_patches is the number of surface patches  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_face_index_map">face_index_map</a></td><td>a property map containing the index of each face of <code>pmesh</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_incident_patches_map">vertex_incident_patches_map</a></td><td>a property map that will contain the patch ids of all the faces incident to each vertex of <code>pmesh</code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_incident_patches_map">vertex_incident_patches_map</a></td><td>a property map that will contain the patch ids of all the faces incident to each vertex of <code>pmesh</code>.  </td></tr>
 </table>
 </dd>
 </dl>
@@ -409,7 +408,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Thu Mar 22 2018 11:16:37 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

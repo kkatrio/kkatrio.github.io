@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['_5ftable_5fhandle',['_table_handle',['../../Kinetic_framework/classKinetic_1_1SimulationTraits.html#abfa8ed565b57153fc76b3d85e04fb431',1,'Kinetic::SimulationTraits']]]
+  ['cgal',['CGAL',['../namespaceCGAL.html',1,'']]],
+  ['copyconstructible',['CopyConstructible',['../classCopyConstructible.html',1,'']]],
+  ['checks_3a_20pre_2d_20and_20postconditions_2c_20assertions_2c_20and_20warnings',['Checks: Pre- and Postconditions, Assertions, and Warnings',['../devman_checks.html',1,'dev_manual']]],
+  ['coding_20conventions',['Coding Conventions',['../devman_code_format.html',1,'dev_manual']]]
 ];

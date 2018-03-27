@@ -20,7 +20,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
@@ -44,7 +43,7 @@ MathJax.Hub.Config({
     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <script src="../Manual/hacks.js" type="text/javascript"></script>
 <script src="modules.js" type="text/javascript"></script>
 </head>
@@ -149,11 +148,11 @@ $(document).ready(function(){initNavTree('group__PMP__intersection__grp.html',''
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga0afb9e365a2f16f0591255b8df468885"><td class="memTemplParams" colspan="2">template&lt;class TriangleMesh , class OutputIterator , class NamedParameters &gt; </td></tr>
-<tr class="memitem:ga0afb9e365a2f16f0591255b8df468885"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__intersection__grp.html#ga0afb9e365a2f16f0591255b8df468885">CGAL::Polygon_mesh_processing::self_intersections</a> (const TriangleMesh &amp;tmesh, <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</td></tr>
+<tr class="memitem:ga0afb9e365a2f16f0591255b8df468885"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__intersection__grp.html#ga0afb9e365a2f16f0591255b8df468885">CGAL::Polygon_mesh_processing::self_intersections</a> (const TriangleMesh &amp;tmesh, <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</td></tr>
 <tr class="memdesc:ga0afb9e365a2f16f0591255b8df468885"><td class="mdescLeft">&#160;</td><td class="mdescRight">detects and records self-intersections of a triangulated surface mesh.  <a href="group__PMP__intersection__grp.html#ga0afb9e365a2f16f0591255b8df468885">More...</a><br /></td></tr>
 <tr class="separator:ga0afb9e365a2f16f0591255b8df468885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8a27d056519cc5d2b1a7726bdc5ef0f6"><td class="memTemplParams" colspan="2">template&lt;class TriangleMesh , class FaceRange , class OutputIterator , class NamedParameters &gt; </td></tr>
-<tr class="memitem:ga8a27d056519cc5d2b1a7726bdc5ef0f6"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__intersection__grp.html#ga8a27d056519cc5d2b1a7726bdc5ef0f6">CGAL::Polygon_mesh_processing::self_intersections</a> (const FaceRange &amp;face_range, const TriangleMesh &amp;tmesh, <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</td></tr>
+<tr class="memitem:ga8a27d056519cc5d2b1a7726bdc5ef0f6"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__intersection__grp.html#ga8a27d056519cc5d2b1a7726bdc5ef0f6">CGAL::Polygon_mesh_processing::self_intersections</a> (const FaceRange &amp;face_range, const TriangleMesh &amp;tmesh, <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</td></tr>
 <tr class="memdesc:ga8a27d056519cc5d2b1a7726bdc5ef0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as above but the self-intersections reported are only limited to the faces in <code>face_range</code>.  <a href="group__PMP__intersection__grp.html#ga8a27d056519cc5d2b1a7726bdc5ef0f6">More...</a><br /></td></tr>
 <tr class="separator:ga8a27d056519cc5d2b1a7726bdc5ef0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0beba25d03a16010b20e2c9b6771cd12"><td class="memTemplParams" colspan="2">template&lt;class TriangleMesh , class NamedParameters &gt; </td></tr>
@@ -197,18 +196,18 @@ template&lt;class TriangleMesh , class NamedParameters &gt; </div>
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/self_intersections.h&gt;</code></p>
 
 <p>tests if a triangulated surface mesh self-intersects. </p>
-<p>This function depends on the package <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgBoxIntersectionDSummary">Intersecting Sequences of dD Iso-oriented Boxes</a> </p><dl class="section pre"><dt>Precondition</dt><dd><code>CGAL::is_triangle_mesh(tmesh)</code></dd></dl>
+<p>This function depends on the package <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgBoxIntersectionDSummary">Intersecting Sequences of dD Iso-oriented Boxes</a> </p><dl class="section pre"><dt>Precondition</dt><dd><code>CGAL::is_triangle_mesh(tmesh)</code></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tmesh</td><td>the triangulated surface mesh to be tested </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -216,9 +215,9 @@ template&lt;class TriangleMesh , class NamedParameters &gt; </div>
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="el" href="classPMPSelfIntersectionTraits.html" title="Geometric traits concept for the functions CGAL::self_intersections() and CGAL::does_self_intersect()...">PMPSelfIntersectionTraits</a></code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="el" href="classPMPSelfIntersectionTraits.html" title="Geometric traits concept for the functions CGAL::self_intersections() and CGAL::does_self_intersect()...">PMPSelfIntersectionTraits</a></code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -264,12 +263,12 @@ template&lt;class FaceRange , class TriangleMesh , class NamedParameters &gt; </
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/self_intersections.h&gt;</code></p>
 
 <p>tests if a set of faces of a triangulated surface mesh self-intersects. </p>
-<p>This function depends on the package <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgBoxIntersectionDSummary">Intersecting Sequences of dD Iso-oriented Boxes</a> </p><dl class="section pre"><dt>Precondition</dt><dd><code>CGAL::is_triangle_mesh(tmesh)</code></dd></dl>
+<p>This function depends on the package <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgBoxIntersectionDSummary">Intersecting Sequences of dD Iso-oriented Boxes</a> </p><dl class="section pre"><dt>Precondition</dt><dd><code>CGAL::is_triangle_mesh(tmesh)</code></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">FaceRange</td><td>a range of <code>face_descriptor</code> </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -277,7 +276,7 @@ template&lt;class FaceRange , class TriangleMesh , class NamedParameters &gt; </
   <table class="params">
     <tr><td class="paramname">face_range</td><td>the set of faces to test for self-intersection </td></tr>
     <tr><td class="paramname">tmesh</td><td>the triangulated surface mesh to be tested </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -285,9 +284,9 @@ template&lt;class FaceRange , class TriangleMesh , class NamedParameters &gt; </
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code>SelfIntersectionTraits</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code>SelfIntersectionTraits</code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -304,7 +303,7 @@ template&lt;class FaceRange , class TriangleMesh , class NamedParameters &gt; </
 template&lt;class TriangleMesh , class OutputIterator , class NamedParameters &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::self_intersections </td>
+          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::self_intersections </td>
           <td>(</td>
           <td class="paramtype">const TriangleMesh &amp;&#160;</td>
           <td class="paramname"><em>tmesh</em>, </td>
@@ -312,7 +311,7 @@ template&lt;class TriangleMesh , class OutputIterator , class NamedParameters &g
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
@@ -332,20 +331,20 @@ template&lt;class TriangleMesh , class OutputIterator , class NamedParameters &g
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/self_intersections.h&gt;</code></p>
 
 <p>detects and records self-intersections of a triangulated surface mesh. </p>
-<p>This function depends on the package <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgBoxIntersectionDSummary">Intersecting Sequences of dD Iso-oriented Boxes</a> </p><dl class="section pre"><dt>Precondition</dt><dd><code>CGAL::is_triangle_mesh(tmesh)</code></dd></dl>
+<p>This function depends on the package <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgBoxIntersectionDSummary">Intersecting Sequences of dD Iso-oriented Boxes</a> </p><dl class="section pre"><dt>Precondition</dt><dd><code>CGAL::is_triangle_mesh(tmesh)</code></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding objects of type <code>std::pair&lt;boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor, boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor&gt;</code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding objects of type <code>std::pair&lt;boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor, boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor&gt;</code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tmesh</td><td>the triangulated surface mesh to be checked </td></tr>
-    <tr><td class="paramname">out</td><td>output iterator to be filled with all pairs of non-adjacent faces that intersect </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">out</td><td>output iterator to be filled with all pairs of non-adjacent faces that intersect. In case <code>tmesh</code> contains some degenerate faces, for each degenerate face <code>f</code> a pair <code>(f,f)</code> will be put in <code>out</code> before any other self intersection between non-degenerate faces. These are the only pairs where degenerate faces will be reported. </td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -353,9 +352,9 @@ template&lt;class TriangleMesh , class OutputIterator , class NamedParameters &g
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="el" href="classPMPSelfIntersectionTraits.html" title="Geometric traits concept for the functions CGAL::self_intersections() and CGAL::does_self_intersect()...">PMPSelfIntersectionTraits</a></code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="el" href="classPMPSelfIntersectionTraits.html" title="Geometric traits concept for the functions CGAL::self_intersections() and CGAL::does_self_intersect()...">PMPSelfIntersectionTraits</a></code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -373,7 +372,7 @@ template&lt;class TriangleMesh , class OutputIterator , class NamedParameters &g
 template&lt;class TriangleMesh , class FaceRange , class OutputIterator , class NamedParameters &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::self_intersections </td>
+          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::self_intersections </td>
           <td>(</td>
           <td class="paramtype">const FaceRange &amp;&#160;</td>
           <td class="paramname"><em>face_range</em>, </td>
@@ -387,7 +386,7 @@ template&lt;class TriangleMesh , class FaceRange , class OutputIterator , class 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
@@ -410,10 +409,10 @@ template&lt;class TriangleMesh , class FaceRange , class OutputIterator , class 
 <dl class="section pre"><dt>Precondition</dt><dd><code>CGAL::is_triangle_mesh(tmesh)</code></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classRandomAccessIterator.html">RandomAccessIterator</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding objects of type <code>std::pair&lt;boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor, boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor&gt;</code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a></td></tr>
+    <tr><td class="paramname">FaceRange</td><td>range of <code>boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor</code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. Its iterator type is <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classRandomAccessIterator.html">RandomAccessIterator</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding objects of type <code>std::pair&lt;boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor, boost::graph_traits&lt;TriangleMesh&gt;::face_descriptor&gt;</code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -422,7 +421,7 @@ template&lt;class TriangleMesh , class FaceRange , class OutputIterator , class 
     <tr><td class="paramname">face_range</td><td>the range of faces to check for self-intersection. </td></tr>
     <tr><td class="paramname">tmesh</td><td>the triangulated surface mesh to be checked </td></tr>
     <tr><td class="paramname">out</td><td>output iterator to be filled with all pairs of non-adjacent faces that intersect </td></tr>
-    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -430,9 +429,9 @@ template&lt;class TriangleMesh , class FaceRange , class OutputIterator , class 
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pmesh</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>TriangleMesh</code> </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="el" href="classPMPSelfIntersectionTraits.html" title="Geometric traits concept for the functions CGAL::self_intersections() and CGAL::does_self_intersect()...">PMPSelfIntersectionTraits</a></code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="el" href="classPMPSelfIntersectionTraits.html" title="Geometric traits concept for the functions CGAL::self_intersections() and CGAL::does_self_intersect()...">PMPSelfIntersectionTraits</a></code>  </td></tr>
 </table>
 </dd>
 </dl>
@@ -448,7 +447,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Thu Mar 22 2018 11:16:37 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

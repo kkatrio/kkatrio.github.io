@@ -20,7 +20,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
@@ -44,7 +43,7 @@ MathJax.Hub.Config({
     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <script src="../Manual/hacks.js" type="text/javascript"></script>
 <script src="modules.js" type="text/javascript"></script>
 </head>
@@ -149,7 +148,7 @@ $(document).ready(function(){initNavTree('group__PMP__distance__grp.html','');})
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga7874c0f16badf7b7939039cf979ad16d"><td class="memTemplParams" colspan="2">template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &gt; </td></tr>
-<tr class="memitem:ga7874c0f16badf7b7939039cf979ad16d"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d">CGAL::Polygon_mesh_processing::sample_triangle_mesh</a> (const TriangleMesh &amp;tm, <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, NamedParameters np)</td></tr>
+<tr class="memitem:ga7874c0f16badf7b7939039cf979ad16d"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d">CGAL::Polygon_mesh_processing::sample_triangle_mesh</a> (const TriangleMesh &amp;tm, <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, NamedParameters np)</td></tr>
 <tr class="memdesc:ga7874c0f16badf7b7939039cf979ad16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates points taken on <code>tm</code> and outputs them to <code>out</code>, the sampling method is selected using named parameters.  <a href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d">More...</a><br /></td></tr>
 <tr class="separator:ga7874c0f16badf7b7939039cf979ad16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b28867dc150931b2f12d17b77d15266"><td class="memTemplParams" colspan="2">template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 , class NamedParameters2 &gt; </td></tr>
@@ -216,10 +215,10 @@ template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 
 <p>A parallel version is provided and requires the executable to be linked against the <a href="http://www.threadingbuildingblocks.org">Intel TBB library</a>. To control the number of threads used, the user may use the <code>tbb::task_scheduler_init</code> class. See the <a href="http://www.threadingbuildingblocks.org/documentation">TBB documentation</a> for more details.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Concurrency_tag</td><td>enables sequential versus parallel algorithm. Possible values are <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Sequential__tag.html">Sequential_tag</a></code> and <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Parallel__tag.html">Parallel_tag</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> for <code>tm1</code> </td></tr>
-    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> for <code>tm2</code></td></tr>
+    <tr><td class="paramname">Concurrency_tag</td><td>enables sequential versus parallel algorithm. Possible values are <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Sequential__tag.html">Sequential_tag</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1Parallel__tag.html">Parallel_tag</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters1</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> for <code>tm1</code> </td></tr>
+    <tr><td class="paramname">NamedParameters2</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> for <code>tm2</code></td></tr>
   </table>
   </dd>
 </dl>
@@ -227,8 +226,8 @@ template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 
   <table class="params">
     <tr><td class="paramname">tm1</td><td>the triangle mesh that will be sampled </td></tr>
     <tr><td class="paramname">tm2</td><td>the triangle mesh to compute the distance to </td></tr>
-    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> for <code>tm1</code> passed to <code><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d" title="generates points taken on tm and outputs them to out, the sampling method is selected using named par...">sample_triangle_mesh()</a></code>.</td></tr>
-    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> for <code>tm2</code> among the ones listed below</td></tr>
+    <tr><td class="paramname">np1</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> for <code>tm1</code> passed to <code><a class="el" href="group__PMP__distance__grp.html#ga7874c0f16badf7b7939039cf979ad16d" title="generates points taken on tm and outputs them to out, the sampling method is selected using named par...">sample_triangle_mesh()</a></code>.</td></tr>
+    <tr><td class="paramname">np2</td><td>optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> for <code>tm2</code> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -236,11 +235,11 @@ template&lt;class Concurrency_tag , class TriangleMesh , class NamedParameters1 
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm2</code> If this parameter is omitted, an internal property map for CGAL::vertex_point_t should be available in <code>TriangleMesh</code> and in all places where vertex_point_map is used.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm2</code> If this parameter is omitted, an internal property map for CGAL::vertex_point_t should be available in <code>TriangleMesh</code> and in all places where vertex_point_map is used.  </td></tr>
 </table>
 </dd>
 </dl>
-<p>The function <code><a class="el" href="group__namedparameters.html#gaee6e37c8d14cbf0847daa8a6bfeb69e6" title="This function can be used to indicate that all optional named parameters to be used are the default o...">CGAL::Polygon_mesh_processing::params::all_default()</a></code> can be used to indicate to use the default values for <code>np1</code> and specify custom values for <code>np2</code> </p>
+<p>The function <code><a class="el" href="polygon__mesh__processing_8h.html#aee6e37c8d14cbf0847daa8a6bfeb69e6" title="This function can be used to indicate that all optional named parameters to be used are the default o...">CGAL::parameters::all_default()</a></code> can be used to indicate to use the default values for <code>np1</code> and specify custom values for <code>np2</code> </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="Polygon_mesh_processing_2hausdorff_distance_remeshing_example_8cpp-example.html#a4">Polygon_mesh_processing/hausdorff_distance_remeshing_example.cpp</a>.</dd>
 </dl>
 </div>
@@ -290,9 +289,9 @@ template&lt;class TriangleMesh , class PointRange , class NamedParameters &gt; <
 <p>returns an approximation of the distance between <code>points</code> and the point lying on <code>tm</code> that is the farthest from <code>points</code> </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -301,7 +300,7 @@ template&lt;class TriangleMesh , class PointRange , class NamedParameters &gt; <
     <tr><td class="paramname">tm</td><td>a triangle mesh </td></tr>
     <tr><td class="paramname">points</td><td>a range of points </td></tr>
     <tr><td class="paramname">precision</td><td>for each triangle of <code>tm</code>, the distance of its farthest point from <code>points</code> is bounded. A triangle is subdivided into sub-triangles so that the difference of its distance bounds is smaller than <code>precision</code>. <code>precision</code> must be strictly positive to avoid infinite loops. </td></tr>
-    <tr><td class="paramname">np</td><td>an optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>an optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -309,9 +308,9 @@ template&lt;class TriangleMesh , class PointRange , class NamedParameters &gt; <
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available for the vertices of <code>tm</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available for the vertices of <code>tm</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="el" href="classPMPDistanceTraits.html" title="The concept PMPDistanceTraits is a refinement of the concepts AABBGeomTraits and SpatialSortingTraits...">PMPDistanceTraits</a></code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="el" href="classPMPDistanceTraits.html" title="The concept PMPDistanceTraits is a refinement of the concepts AABBGeomTraits and SpatialSortingTraits...">PMPDistanceTraits</a></code>.  </td></tr>
 </table>
 </dd>
 </dl>
@@ -405,9 +404,9 @@ template&lt;class Concurrency_tag , class TriangleMesh , class PointRange , clas
 <p>returns the distance to <code>tm</code> of the point from <code>points</code> that is the furthest from <code>tm</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> </td></tr>
+    <tr><td class="paramname">PointRange</td><td>a range of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>. </td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">NamedParameters</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -415,7 +414,7 @@ template&lt;class Concurrency_tag , class TriangleMesh , class PointRange , clas
   <table class="params">
     <tr><td class="paramname">points</td><td>the range of points of interest </td></tr>
     <tr><td class="paramname">tm</td><td>the triangle mesh to compute the distance to </td></tr>
-    <tr><td class="paramname">np</td><td>an optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>an optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -423,9 +422,9 @@ template&lt;class Concurrency_tag , class TriangleMesh , class PointRange , clas
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available for the vertices of <code>tm</code>  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available for the vertices of <code>tm</code>  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="el" href="classPMPDistanceTraits.html" title="The concept PMPDistanceTraits is a refinement of the concepts AABBGeomTraits and SpatialSortingTraits...">PMPDistanceTraits</a></code> </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>an instance of a geometric traits class, model of <code><a class="el" href="classPMPDistanceTraits.html" title="The concept PMPDistanceTraits is a refinement of the concepts AABBGeomTraits and SpatialSortingTraits...">PMPDistanceTraits</a></code> </td></tr>
 </table>
 </dd>
 </dl>
@@ -441,7 +440,7 @@ template&lt;class Concurrency_tag , class TriangleMesh , class PointRange , clas
 template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::sample_triangle_mesh </td>
+          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::sample_triangle_mesh </td>
           <td>(</td>
           <td class="paramtype">const TriangleMesh &amp;&#160;</td>
           <td class="paramname"><em>tm</em>, </td>
@@ -449,7 +448,7 @@ template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &g
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
@@ -471,8 +470,8 @@ template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &g
 <p>generates points taken on <code>tm</code> and outputs them to <code>out</code>, the sampling method is selected using named parameters. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding objects of the same point type as the value type of the internal vertex point map of <code>tm</code></td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a model of the concept <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding objects of the same point type as the value type of the internal vertex point map of <code>tm</code></td></tr>
   </table>
   </dd>
 </dl>
@@ -480,7 +479,7 @@ template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &g
   <table class="params">
     <tr><td class="paramname">tm</td><td>the triangle mesh that will be sampled </td></tr>
     <tr><td class="paramname">out</td><td>output iterator to be filled with sampled points </td></tr>
-    <tr><td class="paramname">np</td><td>an optional sequence of <a class="el" href="group__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
+    <tr><td class="paramname">np</td><td>an optional sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> among the ones listed below</td></tr>
   </table>
   </dd>
 </dl>
@@ -488,35 +487,35 @@ template&lt;class OutputIterator , class TriangleMesh , class NamedParameters &g
 <dt>Named Parameters</dt>
 <dd><table class="params">
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available for <code>TriangleMesh</code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>tm</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available for <code>TriangleMesh</code>.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a model of <code><a class="el" href="classPMPDistanceTraits.html" title="The concept PMPDistanceTraits is a refinement of the concepts AABBGeomTraits and SpatialSortingTraits...">PMPDistanceTraits</a></code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_geom_traits">geom_traits</a></td><td>a model of <code><a class="el" href="classPMPDistanceTraits.html" title="The concept PMPDistanceTraits is a refinement of the concepts AABBGeomTraits and SpatialSortingTraits...">PMPDistanceTraits</a></code>.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_use_random_uniform_sampling">use_random_uniform_sampling</a></td><td>if <code>true</code> is passed (the default), points are generated in a random and uniform way on the surface of <code>tm</code>, and/or on edges of <code>tm</code>. For faces, the number of sample points is the value passed to the named parameter <code>number_of_points_on_faces()</code>. If not set, the value passed to the named parameter <code>number_of_points_per_area_unit()</code> is multiplied by the area of <code>tm</code> to get the number of sample points. If none of these parameters is set, the number of points sampled is <code>num_vertices(tm)</code>. For edges, the number of the number of sample points is the value passed to the named parameter <code>number_of_points_on_edges()</code>. If not set, the value passed to the named parameter <code>number_of_points_per_distance_unit()</code> is multiplied by the sum of the length of edges of <code>tm</code> to get the number of sample points. If none of these parameters is set, the number of points sampled is <code>num_vertices(tm)</code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_use_random_uniform_sampling">use_random_uniform_sampling</a></td><td>if <code>true</code> is passed (the default), points are generated in a random and uniform way on the surface of <code>tm</code>, and/or on edges of <code>tm</code>. For faces, the number of sample points is the value passed to the named parameter <code>number_of_points_on_faces()</code>. If not set, the value passed to the named parameter <code>number_of_points_per_area_unit()</code> is multiplied by the area of <code>tm</code> to get the number of sample points. If none of these parameters is set, the number of points sampled is <code>num_vertices(tm)</code>. For edges, the number of the number of sample points is the value passed to the named parameter <code>number_of_points_on_edges()</code>. If not set, the value passed to the named parameter <code>number_of_points_per_distance_unit()</code> is multiplied by the sum of the length of edges of <code>tm</code> to get the number of sample points. If none of these parameters is set, the number of points sampled is <code>num_vertices(tm)</code>.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_use_grid_sampling">use_grid_sampling</a></td><td>if <code>true</code> is passed, points are generated on a grid in each triangle, with a minimum of one point per triangle. The distance between two consecutive points in the grid is that of the length of the smallest non-null edge of <code>tm</code> or the value passed to the named parameter <code>grid_spacing()</code>. Edges are also split using the same distance, if requested.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_use_grid_sampling">use_grid_sampling</a></td><td>if <code>true</code> is passed, points are generated on a grid in each triangle, with a minimum of one point per triangle. The distance between two consecutive points in the grid is that of the length of the smallest non-null edge of <code>tm</code> or the value passed to the named parameter <code>grid_spacing()</code>. Edges are also split using the same distance, if requested.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_use_monte_carlo_sampling">use_monte_carlo_sampling</a></td><td>if <code>true</code> is passed, points are generated randomly in each triangle and/or on each edge. For faces, the number of points per triangle is the value passed to the named parameter <code>number_of_points_per_face()</code>. If not set, the value passed to the named parameter <code>number_of_points_per_area_unit()</code> is used to pick a number of points per face proportional to the triangle area with a minimum of one point per face. If none of these parameters is set, 2 divided by the square of the length of the smallest non-null edge of <code>tm</code> is used as if it was passed to <code>number_of_points_per_area_unit()</code>. For edges, the number of points per edge is the value passed to the named parameter <code>number_of_points_per_edge()</code>. If not set, the value passed to the named parameter <code>number_of_points_per_distance_unit()</code> is used to pick a number of points per edge proportional to the length of the edge with a minimum of one point per face. If none of these parameters is set, 1 divided by the length of the smallest non-null edge of <code>tm</code> is used as if it was passed to <code>number_of_points_per_distance_unit()</code>.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_use_monte_carlo_sampling">use_monte_carlo_sampling</a></td><td>if <code>true</code> is passed, points are generated randomly in each triangle and/or on each edge. For faces, the number of points per triangle is the value passed to the named parameter <code>number_of_points_per_face()</code>. If not set, the value passed to the named parameter <code>number_of_points_per_area_unit()</code> is used to pick a number of points per face proportional to the triangle area with a minimum of one point per face. If none of these parameters is set, 2 divided by the square of the length of the smallest non-null edge of <code>tm</code> is used as if it was passed to <code>number_of_points_per_area_unit()</code>. For edges, the number of points per edge is the value passed to the named parameter <code>number_of_points_per_edge()</code>. If not set, the value passed to the named parameter <code>number_of_points_per_distance_unit()</code> is used to pick a number of points per edge proportional to the length of the edge with a minimum of one point per face. If none of these parameters is set, 1 divided by the length of the smallest non-null edge of <code>tm</code> is used as if it was passed to <code>number_of_points_per_distance_unit()</code>.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_sample_vertices">sample_vertices</a></td><td>if <code>true</code> is passed (default value), vertices of <code>tm</code> are put into <code>out</code>. </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_sample_vertices">sample_vertices</a></td><td>if <code>true</code> is passed (default value), vertices of <code>tm</code> are put into <code>out</code>. </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_sample_edges">sample_edges</a></td><td>if <code>true</code> is passed (default value), edges of <code>tm</code> are sampled. </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_sample_edges">sample_edges</a></td><td>if <code>true</code> is passed (default value), edges of <code>tm</code> are sampled. </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_sample_faces">sample_faces</a></td><td>if <code>true</code> is passed (default value), faces of <code>tm</code> are sampled. </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_sample_faces">sample_faces</a></td><td>if <code>true</code> is passed (default value), faces of <code>tm</code> are sampled. </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_grid_spacing">grid_spacing</a></td><td>a double value used as the grid spacing for the grid sampling method.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_grid_spacing">grid_spacing</a></td><td>a double value used as the grid spacing for the grid sampling method.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_number_of_points_on_edges">number_of_points_on_edges</a></td><td>an unsigned integral value used for the random sampling method as the number of points to pick exclusively on edges.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_number_of_points_on_edges">number_of_points_on_edges</a></td><td>an unsigned integral value used for the random sampling method as the number of points to pick exclusively on edges.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_number_of_points_on_faces">number_of_points_on_faces</a></td><td>an unsigned integral value used for the random sampling method as the number of points to pick on the surface.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_number_of_points_on_faces">number_of_points_on_faces</a></td><td>an unsigned integral value used for the random sampling method as the number of points to pick on the surface.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_number_of_points_per_distance_unit">number_of_points_per_distance_unit</a></td><td>a double value used for the random sampling and the Monte Carlo sampling methods to repectively determine the total number of points on edges and the number of points per edge.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_number_of_points_per_distance_unit">number_of_points_per_distance_unit</a></td><td>a double value used for the random sampling and the Monte Carlo sampling methods to repectively determine the total number of points on edges and the number of points per edge.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_number_of_points_per_edge">number_of_points_per_edge</a></td><td>an unsigned integral value used by the Monte-Carlo sampling method as the number of points per edge to pick.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_number_of_points_per_edge">number_of_points_per_edge</a></td><td>an unsigned integral value used by the Monte-Carlo sampling method as the number of points per edge to pick.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_number_of_points_per_face">number_of_points_per_face</a></td><td>an unsigned integral value used by the Monte-Carlo sampling method as the number of points per face to pick.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_number_of_points_per_face">number_of_points_per_face</a></td><td>an unsigned integral value used by the Monte-Carlo sampling method as the number of points per face to pick.  </td></tr>
 <tr>
-<td class="paramname"><a class="el" href="group__namedparameters.html#PMP_number_of_points_per_area_unit">number_of_points_per_area_unit</a></td><td>a double value used for the random sampling and the Monte Carlo sampling methods to repectively determine the total number of points inside faces and the number of points per face.  </td></tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_number_of_points_per_area_unit">number_of_points_per_area_unit</a></td><td>a double value used for the random sampling and the Monte Carlo sampling methods to repectively determine the total number of points inside faces and the number of points per face.  </td></tr>
 </table>
 </dd>
 </dl>
@@ -532,7 +531,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Thu Mar 22 2018 11:16:37 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

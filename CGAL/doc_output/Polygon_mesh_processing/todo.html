@@ -20,7 +20,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
@@ -44,7 +43,7 @@ MathJax.Hub.Config({
     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <script src="../Manual/hacks.js" type="text/javascript"></script>
 <script src="modules.js" type="text/javascript"></script>
 </head>
@@ -142,52 +141,50 @@ $(document).ready(function(){initNavTree('todo.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="group__PMP__meshing__grp.html#gaa091c8368920920eed87784107d68ecf">CGAL::Polygon_mesh_processing::fair</a>  (TriangleMesh &amp;tmesh, const VertexRange &amp;vertices, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="group__PMP__meshing__grp.html#gaa091c8368920920eed87784107d68ecf">CGAL::Polygon_mesh_processing::fair</a>  (TriangleMesh &amp;tmesh, const VertexRange &amp;vertices, const NamedParameters &amp;np)</dt>
 <dd>accuracy of solvers are not good, for example when there is no boundary condition pre_factor should fail, but it does not.  </dd>
-<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="group__PMP__orientation__grp.html#gad71360b56f0d5340bf3006febd49286c">CGAL::Polygon_mesh_processing::is_outward_oriented</a>  (const PolygonMesh &amp;pmesh, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="group__PMP__orientation__grp.html#gad71360b56f0d5340bf3006febd49286c">CGAL::Polygon_mesh_processing::is_outward_oriented</a>  (const PolygonMesh &amp;pmesh, const NamedParameters &amp;np)</dt>
 <dd>code : The following only handles polyhedron with one connected component the code, the sample example and the plugin must be updated. </dd>
-<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="group__PMP__meshing__grp.html#gad3d03890515ae8103bd32a30a3486412">CGAL::Polygon_mesh_processing::isotropic_remeshing</a>  (const FaceRange &amp;faces, const double &amp;target_edge_length, PolygonMesh &amp;pmesh, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="group__PMP__meshing__grp.html#gad3d03890515ae8103bd32a30a3486412">CGAL::Polygon_mesh_processing::isotropic_remeshing</a>  (const FaceRange &amp;faces, const double &amp;target_edge_length, PolygonMesh &amp;pmesh, const NamedParameters &amp;np)</dt>
 <dd><p class="startdd">add possibility to provide a functor that projects to a prescribed surface </p>
-<p class="enddd">Deal with exact constructions <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a>. The only thing that makes sense is to guarantee that the output vertices are exactly on the input surface. To do so, we can do every construction in <code>double</code>, and use an exact process for projection. For each vertex, the <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> would be used in an inexact manner to find the triangle on which projection has to be done. Then, use <code>CGAL::intersection(triangle, line)</code> in the exact constructions kernel to get a point which is exactly on the surface. </p>
+<p class="enddd">Deal with exact constructions <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a>. The only thing that makes sense is to guarantee that the output vertices are exactly on the input surface. To do so, we can do every construction in <code>double</code>, and use an exact process for projection. For each vertex, the <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> would be used in an inexact manner to find the triangle on which projection has to be done. Then, use <code>CGAL::intersection(triangle, line)</code> in the exact constructions kernel to get a point which is exactly on the surface. </p>
 </dd>
-<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="group__PMP__meshing__grp.html#gad0449d8e1021fc46507074cd6db65ef4">CGAL::Polygon_mesh_processing::refine</a>  (TriangleMesh &amp;tmesh, const FaceRange &amp;faces, FaceOutputIterator faces_out, VertexOutputIterator vertices_out, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="group__PMP__meshing__grp.html#gad0449d8e1021fc46507074cd6db65ef4">CGAL::Polygon_mesh_processing::refine</a>  (TriangleMesh &amp;tmesh, const FaceRange &amp;faces, FaceOutputIterator faces_out, VertexOutputIterator vertices_out, const NamedParameters &amp;np)</dt>
 <dd>current algorithm iterates 10 times at most, since (I guess) there is no termination proof.  </dd>
-<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="group__hole__filling__grp.html#gaaa1bfaf9a57dea8b6c71168a18f9b6eb">CGAL::Polygon_mesh_processing::triangulate_and_refine_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, FaceOutputIterator face_out, VertexOutputIterator vertex_out, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="group__hole__filling__grp.html#gaaa1bfaf9a57dea8b6c71168a18f9b6eb">CGAL::Polygon_mesh_processing::triangulate_and_refine_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, FaceOutputIterator face_out, VertexOutputIterator vertex_out, const NamedParameters &amp;np)</dt>
 <dd>handle islands  </dd>
-<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="group__hole__filling__grp.html#ga4aacaa46c800a53ca0a0e5fd518a7b20">CGAL::Polygon_mesh_processing::triangulate_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="group__hole__filling__grp.html#ga4aacaa46c800a53ca0a0e5fd518a7b20">CGAL::Polygon_mesh_processing::triangulate_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</dt>
 <dd><p class="startdd">handle islands </p>
 <p>Replace border_halfedge by a range of border halfedges. The first one would describe the hole, the other ones would describe the islands. </p>
 <p>Then, insert the holes vertices in the set of possibilities for connecting vertices together </p>
 <p class="enddd">handle the case where an island is reduced to a point  </p>
 </dd>
-<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="group__hole__filling__grp.html#ga8508fd49a2482ec7dcb3e1799234696a">CGAL::Polygon_mesh_processing::triangulate_hole_polyline</a>  (const PointRange1 &amp;points, const PointRange2 &amp;third_points, <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="group__hole__filling__grp.html#ga8508fd49a2482ec7dcb3e1799234696a">CGAL::Polygon_mesh_processing::triangulate_hole_polyline</a>  (const PointRange1 &amp;points, const PointRange2 &amp;third_points, <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</dt>
 <dd>handle islands  </dd>
-<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="group__hole__filling__grp.html#ga87655fb8d54a8d85e7eec7a21e5c0058">CGAL::Polygon_mesh_processing::triangulate_refine_and_fair_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, FaceOutputIterator face_out, VertexOutputIterator vertex_out, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="group__hole__filling__grp.html#ga87655fb8d54a8d85e7eec7a21e5c0058">CGAL::Polygon_mesh_processing::triangulate_refine_and_fair_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, FaceOutputIterator face_out, VertexOutputIterator vertex_out, const NamedParameters &amp;np)</dt>
 <dd>handle islands  </dd>
-<dt><a class="anchor" id="_todo000012"></a>Class <a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html">CGAL::Polygon_mesh_slicer&lt; TriangleMesh, Traits, VertexPointMap, AABBTree, UseParallelPlaneOptimization &gt;</a>  </dt>
+<dt><a class="anchor" id="_todo000011"></a>Class <a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html">CGAL::Polygon_mesh_slicer&lt; TriangleMesh, Traits, VertexPointMap, AABBTree, UseParallelPlaneOptimization &gt;</a>  </dt>
 <dd><p class="startdd">Shall we document more in details what is required? <code>Traits</code> must provide:</p><ul>
-<li><code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Plane__3.html">Plane_3</a></code></li>
-<li><code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code></li>
-<li><code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Segment__3.html">Segment_3</a></code></li>
+<li><code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Plane__3.html">Plane_3</a></code></li>
+<li><code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code></li>
+<li><code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Segment__3.html">Segment_3</a></code></li>
 <li><code>Oriented_side_3</code> with <code>Oriented_side operator()(Plane_3, Point_3)</code></li>
-<li><code>Do_intersect_3</code> with <code>boost::optional&lt;variant&lt;<a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>,<a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Segment__3.html">Segment_3</a>&gt; operator()(Plane_3,Segment_3)</code></li>
+<li><code>Do_intersect_3</code> with <code>boost::optional&lt;variant&lt;<a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>,<a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Segment__3.html">Segment_3</a>&gt; operator()(Plane_3,Segment_3)</code></li>
 <li><code>Do_intersect_3</code> with <code>bool operator()(Plane_3, Bbox_3)</code></li>
 </ul>
 <p>If we keep the traits for plane orthogonal to a frame axis, <code>Traits</code> must also provide:</p><ul>
 <li><code>FT</code></li>
-<li><code>Construct_cartesian_const_iterator_3</code> with <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classIterator.html">Iterator</a> operator()(Point_3)</code> <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classIterator.html">Iterator</a></code> being a random access iterator with <code>FT</code> as value type</li>
-<li><code>Construct_point_3</code> with <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a> operator()(FT,FT,FT)</code>; <code>Construct_source_3</code> with <code>const <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>&amp; operator()(Segment_3)</code></li>
-<li><code>Construct_target_3</code> with <code>const <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>&amp; operator()(Segment_3)</code></li>
+<li><code>Construct_cartesian_const_iterator_3</code> with <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classIterator.html">Iterator</a> operator()(Point_3)</code> <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classIterator.html">Iterator</a></code> being a random access iterator with <code>FT</code> as value type</li>
+<li><code>Construct_point_3</code> with <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a> operator()(FT,FT,FT)</code>; <code>Construct_source_3</code> with <code>const <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>&amp; operator()(Segment_3)</code></li>
+<li><code>Construct_target_3</code> with <code>const <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a>&amp; operator()(Segment_3)</code></li>
 </ul>
 <p class="enddd"><code>_object()</code> functions must also be provided  </p>
 </dd>
-<dt><a class="anchor" id="_todo000001"></a>Module <a class="el" href="group__namedparameters.html">namedparameters</a>  </dt>
-<dd>reorder this list, maybe </dd>
-<dt><a class="anchor" id="_todo000002"></a>Module <a class="el" href="group__PkgPolygonMeshProcessing.html">PkgPolygonMeshProcessing</a>  </dt>
+<dt><a class="anchor" id="_todo000001"></a>Module <a class="el" href="group__PkgPolygonMeshProcessing.html">PkgPolygonMeshProcessing</a>  </dt>
 <dd><p class="startdd">add <code>clip_triangle_mesh()</code> using the code of <code>Polyhedron_place_clipping.h</code> and <code><a class="el" href="group__PMP__corefinement__grp.html#ga697ccb186c6e2cc3216306f9b87392bb" title="corefines  tm1 and tm2. ">PMP::corefine()</a></code> </p>
 <p class="enddd">fix and restore remove_degenerate_faces in the user and the reference manual  </p>
 </dd>
-<dt><a class="anchor" id="_todo000003"></a>page <a class="el" href="index.html">User Manual</a>  </dt>
+<dt><a class="anchor" id="_todo000002"></a>page <a class="el" href="index.html">User Manual</a>  </dt>
 <dd>more information on coplanar patches.</dd>
 </dl>
 </div></div><!-- contents -->
@@ -199,7 +196,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Thu Mar 22 2018 11:16:37 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

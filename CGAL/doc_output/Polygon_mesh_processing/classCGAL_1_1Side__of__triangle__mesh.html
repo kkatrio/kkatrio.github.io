@@ -20,7 +20,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/searchdata.js"></script>
@@ -44,7 +43,7 @@ MathJax.Hub.Config({
     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <script src="../Manual/hacks.js" type="text/javascript"></script>
 <script src="modules.js" type="text/javascript"></script>
 </head>
@@ -155,12 +154,12 @@ class CGAL::Side_of_triangle_mesh&lt; TriangleMesh, GeomTraits, VertexPointMap &
 <p>A point is said to be on the bounded side of the domain if an odd number of surfaces is crossed when walking from the point to infinity.</p>
 <p>The input triangle mesh is expected to contain no self-intersections and to be free from self-inclusions.</p>
 <p>In case the triangle mesh has several connected components, the same test is performed and returns correct results. In case of self-inclusions, the user should be aware that the predicate called inside every other sub-volume bounded by a nested surface will return in turns <code>CGAL::ON_BOUNDED_SIDE</code> and <code>CGAL::ON_UNBOUNDED_SIDE</code>, following the aforementioned parity criterion.</p>
-<p>This class depends on the package <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgAABB_treeSummary">3D Fast Intersection and Distance Computation</a>.</p>
+<p>This class depends on the package <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgAABB_treeSummary">3D Fast Intersection and Distance Computation</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TriangleMesh</td><td>a triangulated surface mesh, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
-    <tr><td class="paramname">GeomTraits</td><td>a geometric traits class, model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
-    <tr><td class="paramname">VertexPointMap</td><td>a model of <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadablePropertyMap.html">ReadablePropertyMap</a></code> with <code>boost::graph_traits&lt;TriangleMesh&gt;::vertex_descriptor</code> as key type and <code>GeomTraits::Point_3</code> as value type. The default is <code>typename boost::property_map&lt;TriangleMesh,vertex_point_t&gt;::type</code>.</td></tr>
+    <tr><td class="paramname">TriangleMesh</td><td>a triangulated surface mesh, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> </td></tr>
+    <tr><td class="paramname">GeomTraits</td><td>a geometric traits class, model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a></code> </td></tr>
+    <tr><td class="paramname">VertexPointMap</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classReadablePropertyMap.html">ReadablePropertyMap</a></code> with <code>boost::graph_traits&lt;TriangleMesh&gt;::vertex_descriptor</code> as key type and <code>GeomTraits::Point_3</code> as value type. The default is <code>typename boost::property_map&lt;TriangleMesh,vertex_point_t&gt;::type</code>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -171,7 +170,7 @@ class CGAL::Side_of_triangle_mesh&lt; TriangleMesh, GeomTraits, VertexPointMap &
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a3822c53e5eedd4fa9fbee68c7825fb35"><td class="memItemLeft" align="right" valign="top"><a id="a3822c53e5eedd4fa9fbee68c7825fb35"></a>
-typedef <a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Side__of__triangle__mesh.html#a3822c53e5eedd4fa9fbee68c7825fb35">AABB_tree</a></td></tr>
+typedef <a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Side__of__triangle__mesh.html#a3822c53e5eedd4fa9fbee68c7825fb35">AABB_tree</a></td></tr>
 <tr class="memdesc:a3822c53e5eedd4fa9fbee68c7825fb35"><td class="mdescLeft">&#160;</td><td class="mdescRight">AABB-tree accepting faces of <code>TriangleMesh</code> <br /></td></tr>
 <tr class="separator:a3822c53e5eedd4fa9fbee68c7825fb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -184,9 +183,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad66b74dedd63fc7d0694d807e84e6971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with one surface triangle mesh, using <code>get(boost::vertex_point, tmesh)</code> as vertex point property map.  <a href="#ad66b74dedd63fc7d0694d807e84e6971">More...</a><br /></td></tr>
 <tr class="separator:ad66b74dedd63fc7d0694d807e84e6971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65d2c8f27d795b719dea2f553ee5efc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Side__of__triangle__mesh.html#a65d2c8f27d795b719dea2f553ee5efc7">Side_of_triangle_mesh</a> (const <a class="el" href="classCGAL_1_1Side__of__triangle__mesh.html#a3822c53e5eedd4fa9fbee68c7825fb35">AABB_tree</a> &amp;tree, const GeomTraits &amp;gt=GeomTraits())</td></tr>
-<tr class="memdesc:a65d2c8f27d795b719dea2f553ee5efc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that takes a pre-built <span style="font-variant: small-caps;">CGAL</span> <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> of the triangulated surface mesh primitives.  <a href="#a65d2c8f27d795b719dea2f553ee5efc7">More...</a><br /></td></tr>
+<tr class="memdesc:a65d2c8f27d795b719dea2f553ee5efc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that takes a pre-built <span style="font-variant: small-caps;">CGAL</span> <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> of the triangulated surface mesh primitives.  <a href="#a65d2c8f27d795b719dea2f553ee5efc7">More...</a><br /></td></tr>
 <tr class="separator:a65d2c8f27d795b719dea2f553ee5efc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e61908d7107fb42f1531d6f10c4df50"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#gaf6030e89dadcc1f45369b0cdc5d9e111">Bounded_side</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Side__of__triangle__mesh.html#a5e61908d7107fb42f1531d6f10c4df50">operator()</a> (const Point &amp;point) const</td></tr>
+<tr class="memitem:a5e61908d7107fb42f1531d6f10c4df50"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#gaf6030e89dadcc1f45369b0cdc5d9e111">Bounded_side</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Side__of__triangle__mesh.html#a5e61908d7107fb42f1531d6f10c4df50">operator()</a> (const Point &amp;point) const</td></tr>
 <tr class="memdesc:a5e61908d7107fb42f1531d6f10c4df50"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the location of a query point  <a href="#a5e61908d7107fb42f1531d6f10c4df50">More...</a><br /></td></tr>
 <tr class="separator:a5e61908d7107fb42f1531d6f10c4df50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -306,10 +305,10 @@ template&lt;class TriangleMesh, class GeomTraits, class VertexPointMap = Default
       </table>
 </div><div class="memdoc">
 
-<p>Constructor that takes a pre-built <span style="font-variant: small-caps;">CGAL</span> <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> of the triangulated surface mesh primitives. </p>
+<p>Constructor that takes a pre-built <span style="font-variant: small-caps;">CGAL</span> <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> of the triangulated surface mesh primitives. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tree</td><td>a <span style="font-variant: small-caps;">CGAL</span> <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> with <code><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__face__graph__triangle__primitive.html">AABB_face_graph_triangle_primitive</a></code> as <code>Primitive</code> type </td></tr>
+    <tr><td class="paramname">tree</td><td>a <span style="font-variant: small-caps;">CGAL</span> <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> with <code><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__face__graph__triangle__primitive.html">AABB_face_graph_triangle_primitive</a></code> as <code>Primitive</code> type </td></tr>
     <tr><td class="paramname">gt</td><td>an instance of the geometric traits class</td></tr>
   </table>
   </dd>
@@ -328,7 +327,7 @@ template&lt;class TriangleMesh, class GeomTraits, class VertexPointMap = Default
 template&lt;class TriangleMesh, class GeomTraits, class VertexPointMap = Default&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/konstantinos/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#gaf6030e89dadcc1f45369b0cdc5d9e111">Bounded_side</a> <a class="el" href="classCGAL_1_1Side__of__triangle__mesh.html">CGAL::Side_of_triangle_mesh</a>&lt; TriangleMesh, GeomTraits, VertexPointMap &gt;::operator() </td>
+          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal/build-smoothing/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#gaf6030e89dadcc1f45369b0cdc5d9e111">Bounded_side</a> <a class="el" href="classCGAL_1_1Side__of__triangle__mesh.html">CGAL::Side_of_triangle_mesh</a>&lt; TriangleMesh, GeomTraits, VertexPointMap &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">const Point &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
@@ -363,7 +362,7 @@ move the footer to the bottom of the page. -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>CGAL</b></li><li class="navelem"><a class="el" href="classCGAL_1_1Side__of__triangle__mesh.html">Side_of_triangle_mesh</a></li>
-    <li class="footer">Generated on Mon Jan 15 2018 11:32:21 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Thu Mar 22 2018 11:16:37 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
