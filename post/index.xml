@@ -17,7 +17,7 @@
       <pubDate>Fri, 24 Nov 2017 17:13:11 +0300</pubDate>
       
       <guid>https://kkatrio.github.io/post/fibonacci/</guid>
-      <description>Math inspires us all!</description>
+      <description>Maths = inspiration</description>
     </item>
     
     <item>
@@ -112,8 +112,8 @@ My main task was to enhance the Polygon mesh processing package with two algorit
       <pubDate>Tue, 08 Aug 2017 17:13:11 +0300</pubDate>
       
       <guid>https://kkatrio.github.io/post/2017-08-08-prime-numbers/</guid>
-      <description>This is my sieve of Eratosthenes. Well, it&#39;s not mine and Eratosthenes&#39; at the same time. It rather belongs to Eratosthenes more, since he thought of it first. I guess I just like it so much that subconsciously I claimed his idea. And how fast is it? Hmmm
- .numbers li{ display: inline-block; counter-increment: numbers; color: grey; text-align:center; padding: 0.5vw; width: 30px; height: 30px; line-height: 30px; color: red; } .numbers li::before{ content: counter(numbers); } .</description>
+      <description>This is my sieve of Eratosthenes. How fast is it? Hmmm
+ .numbers li{ display: inline-block; counter-increment: numbers; color: grey; text-align:center; padding: 0.5vw; width: 30px; height: 30px; line-height: 30px; color: red; } .numbers li::before{ content: counter(numbers); } .numbers li:first-child, .numbers li:nth-child(2n+4), .numbers li:nth-child(3n+6), .numbers li:nth-child(5n+10), .numbers li:nth-child(7n+14) { color: #aaa; border-color: transparent; }                                                                                                         &amp;lt;style&amp;gt; .</description>
     </item>
     
     <item>
@@ -122,7 +122,7 @@ My main task was to enhance the Polygon mesh processing package with two algorit
       <pubDate>Mon, 27 Feb 2017 17:13:11 +0300</pubDate>
       
       <guid>https://kkatrio.github.io/post/master-thesis/</guid>
-      <description>Here is the full text of my master&amp;rsquo;s degree thesis, released under a Creative Commons license.</description>
+      <description>Here is the full text of my master&amp;rsquo;s degree thesis.</description>
     </item>
     
   </channel>
