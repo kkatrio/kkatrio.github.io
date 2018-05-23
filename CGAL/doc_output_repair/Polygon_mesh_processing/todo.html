@@ -141,39 +141,40 @@ $(document).ready(function(){initNavTree('todo.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="group__PMP__repairing__grp.html#gafa9b682528c5dc2a4821d01193518d14">CGAL::Polygon_mesh_processing::extract_boundary_cycles</a>  (PolygonMesh &amp;pm, <a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out)</dt>
+<dd><p class="startdd">Maybe move to BGL </p>
+<p>It should make sense to also return the length of each cycle. </p>
+<p class="enddd">It should probably go into BGL package.  </p>
+</dd>
 <dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="group__PMP__meshing__grp.html#gaa091c8368920920eed87784107d68ecf">CGAL::Polygon_mesh_processing::fair</a>  (TriangleMesh &amp;tmesh, const VertexRange &amp;vertices, const NamedParameters &amp;np)</dt>
 <dd>accuracy of solvers are not good, for example when there is no boundary condition pre_factor should fail, but it does not.  </dd>
-<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="group__PMP__orientation__grp.html#gad71360b56f0d5340bf3006febd49286c">CGAL::Polygon_mesh_processing::is_outward_oriented</a>  (const PolygonMesh &amp;pmesh, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="group__PMP__orientation__grp.html#gad71360b56f0d5340bf3006febd49286c">CGAL::Polygon_mesh_processing::is_outward_oriented</a>  (const PolygonMesh &amp;pmesh, const NamedParameters &amp;np)</dt>
 <dd>code : The following only handles polyhedron with one connected component the code, the sample example and the plugin must be updated. </dd>
-<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="group__PMP__meshing__grp.html#gad3d03890515ae8103bd32a30a3486412">CGAL::Polygon_mesh_processing::isotropic_remeshing</a>  (const FaceRange &amp;faces, const double &amp;target_edge_length, PolygonMesh &amp;pmesh, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="group__PMP__meshing__grp.html#gad3d03890515ae8103bd32a30a3486412">CGAL::Polygon_mesh_processing::isotropic_remeshing</a>  (const FaceRange &amp;faces, const double &amp;target_edge_length, PolygonMesh &amp;pmesh, const NamedParameters &amp;np)</dt>
 <dd><p class="startdd">add possibility to provide a functor that projects to a prescribed surface </p>
 <p class="enddd">Deal with exact constructions <a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a>. The only thing that makes sense is to guarantee that the output vertices are exactly on the input surface. To do so, we can do every construction in <code>double</code>, and use an exact process for projection. For each vertex, the <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> would be used in an inexact manner to find the triangle on which projection has to be done. Then, use <code>CGAL::intersection(triangle, line)</code> in the exact constructions kernel to get a point which is exactly on the surface. </p>
 </dd>
 <dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="group__PMP__repairing__grp.html#gae4538a9e9119b59284c2741363101307">CGAL::Polygon_mesh_processing::merge_boundary_vertices_in_cycle</a>  (const HalfedgeRange &amp;sorted_hedges, PolygonMesh &amp;pm)</dt>
-<dd>document me we merge the all the target of the halfedges in <code>hedges</code> hedges must be sorted along the cycle  </dd>
-<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="group__PMP__repairing__grp.html#ga49fdb6be166d8a25aeb68e84a62a8cab">CGAL::Polygon_mesh_processing::merge_duplicated_vertices_in_boundary_cycle</a>  (typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor h, PolygonMesh &amp;pm, const NamedParameter &amp;np)</dt>
-<dd>document me  </dd>
-<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="group__PMP__repairing__grp.html#gacbdd35f464c7a989cb2b5c9ec774dd51">CGAL::Polygon_mesh_processing::merge_duplicated_vertices_in_boundary_cycles</a>  (PolygonMesh &amp;pm, const NamedParameter &amp;np)</dt>
-<dd>document me  </dd>
-<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="group__PMP__meshing__grp.html#gad0449d8e1021fc46507074cd6db65ef4">CGAL::Polygon_mesh_processing::refine</a>  (TriangleMesh &amp;tmesh, const FaceRange &amp;faces, FaceOutputIterator faces_out, VertexOutputIterator vertices_out, const NamedParameters &amp;np)</dt>
+<dd>rename me to <code>merge_vertices_in_range</code> because I merge any king of vertices in the list.  </dd>
+<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="group__PMP__meshing__grp.html#gad0449d8e1021fc46507074cd6db65ef4">CGAL::Polygon_mesh_processing::refine</a>  (TriangleMesh &amp;tmesh, const FaceRange &amp;faces, FaceOutputIterator faces_out, VertexOutputIterator vertices_out, const NamedParameters &amp;np)</dt>
 <dd>current algorithm iterates 10 times at most, since (I guess) there is no termination proof.  </dd>
-<dt><a class="anchor" id="_todo000013"></a>Member <a class="el" href="group__PMP__repairing__grp.html#gad78b8f3f5194dd55b348a1a9761dcaca">CGAL::Polygon_mesh_processing::remove_degenerate_faces</a>  (TriangleMesh &amp;tmesh, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="group__PMP__repairing__grp.html#gad78b8f3f5194dd55b348a1a9761dcaca">CGAL::Polygon_mesh_processing::remove_degenerate_faces</a>  (TriangleMesh &amp;tmesh, const NamedParameters &amp;np)</dt>
 <dd><p class="startdd">the function might not be able to remove all degenerate faces. We should probably do something with the return type. </p>
 <p class="enddd">Find to way to handle that case  </p>
 </dd>
-<dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="group__hole__filling__grp.html#gaaa1bfaf9a57dea8b6c71168a18f9b6eb">CGAL::Polygon_mesh_processing::triangulate_and_refine_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, FaceOutputIterator face_out, VertexOutputIterator vertex_out, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000014"></a>Member <a class="el" href="group__hole__filling__grp.html#gaaa1bfaf9a57dea8b6c71168a18f9b6eb">CGAL::Polygon_mesh_processing::triangulate_and_refine_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, FaceOutputIterator face_out, VertexOutputIterator vertex_out, const NamedParameters &amp;np)</dt>
 <dd>handle islands  </dd>
-<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="group__hole__filling__grp.html#ga4aacaa46c800a53ca0a0e5fd518a7b20">CGAL::Polygon_mesh_processing::triangulate_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, <a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000013"></a>Member <a class="el" href="group__hole__filling__grp.html#ga4aacaa46c800a53ca0a0e5fd518a7b20">CGAL::Polygon_mesh_processing::triangulate_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, <a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</dt>
 <dd><p class="startdd">handle islands </p>
 <p>Replace border_halfedge by a range of border halfedges. The first one would describe the hole, the other ones would describe the islands. </p>
 <p>Then, insert the holes vertices in the set of possibilities for connecting vertices together </p>
 <p class="enddd">handle the case where an island is reduced to a point  </p>
 </dd>
-<dt><a class="anchor" id="_todo000018"></a>Member <a class="el" href="group__hole__filling__grp.html#ga8508fd49a2482ec7dcb3e1799234696a">CGAL::Polygon_mesh_processing::triangulate_hole_polyline</a>  (const PointRange1 &amp;points, const PointRange2 &amp;third_points, <a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="group__hole__filling__grp.html#ga8508fd49a2482ec7dcb3e1799234696a">CGAL::Polygon_mesh_processing::triangulate_hole_polyline</a>  (const PointRange1 &amp;points, const PointRange2 &amp;third_points, <a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out, const NamedParameters &amp;np)</dt>
 <dd>handle islands  </dd>
-<dt><a class="anchor" id="_todo000017"></a>Member <a class="el" href="group__hole__filling__grp.html#ga87655fb8d54a8d85e7eec7a21e5c0058">CGAL::Polygon_mesh_processing::triangulate_refine_and_fair_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, FaceOutputIterator face_out, VertexOutputIterator vertex_out, const NamedParameters &amp;np)</dt>
+<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="group__hole__filling__grp.html#ga87655fb8d54a8d85e7eec7a21e5c0058">CGAL::Polygon_mesh_processing::triangulate_refine_and_fair_hole</a>  (PolygonMesh &amp;pmesh, typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor border_halfedge, FaceOutputIterator face_out, VertexOutputIterator vertex_out, const NamedParameters &amp;np)</dt>
 <dd>handle islands  </dd>
-<dt><a class="anchor" id="_todo000019"></a>Class <a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html">CGAL::Polygon_mesh_slicer&lt; TriangleMesh, Traits, VertexPointMap, AABBTree, UseParallelPlaneOptimization &gt;</a>  </dt>
+<dt><a class="anchor" id="_todo000017"></a>Class <a class="el" href="classCGAL_1_1Polygon__mesh__slicer.html">CGAL::Polygon_mesh_slicer&lt; TriangleMesh, Traits, VertexPointMap, AABBTree, UseParallelPlaneOptimization &gt;</a>  </dt>
 <dd><p class="startdd">Shall we document more in details what is required? <code>Traits</code> must provide:</p><ul>
 <li><code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Plane__3.html">Plane_3</a></code></li>
 <li><code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__3.html">Point_3</a></code></li>
@@ -206,7 +207,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 22 2018 12:56:57 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Wed May 23 2018 12:42:09 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

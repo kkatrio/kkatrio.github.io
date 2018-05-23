@@ -1,6 +1,7 @@
 var group__PMP__repairing__grp =
 [
     [ "duplicate_non_manifold_vertices", "group__PMP__repairing__grp.html#ga5727c14450c419fdaa36b6fc271304a5", null ],
+    [ "extract_boundary_cycles", "group__PMP__repairing__grp.html#gafa9b682528c5dc2a4821d01193518d14", null ],
     [ "is_cap_triangle_face", "group__PMP__repairing__grp.html#gaa4f824f785bbd5f5c18917c337130a4b", null ],
     [ "is_degenerate_edge", "group__PMP__repairing__grp.html#ga01a4a699d8e5d0193d4823297eddbeec", null ],
     [ "is_degenerate_triangle_face", "group__PMP__repairing__grp.html#ga3722f80ee24b4a245e68e0543d728962", null ],

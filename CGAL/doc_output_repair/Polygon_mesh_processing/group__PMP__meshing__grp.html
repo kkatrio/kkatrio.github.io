@@ -352,7 +352,7 @@ template&lt;typename PolygonMesh , typename FaceRange , typename NamedParameters
 </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__PMP__meshing__grp.html#gaafd017f4424c3942bfdcc93874c8f596" title="splits the edges listed in edges into sub-edges that are not longer than the given threshold max_leng...">split_long_edges()</a></code></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd><p class="startdd">add possibility to provide a functor that projects to a prescribed surface </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd><p class="startdd">add possibility to provide a functor that projects to a prescribed surface </p>
 <p class="enddd">Deal with exact constructions <a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a>. The only thing that makes sense is to guarantee that the output vertices are exactly on the input surface. To do so, we can do every construction in <code>double</code>, and use an exact process for projection. For each vertex, the <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/AABB_tree.tag:../AABB_tree/" href="../AABB_tree/classCGAL_1_1AABB__tree.html">AABB_tree</a></code> would be used in an inexact manner to find the triangle on which projection has to be done. Then, use <code>CGAL::intersection(triangle, line)</code> in the exact constructions kernel to get a point which is exactly on the surface.</p>
 </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="Polygon_mesh_processing_2corefinement_difference_remeshed_8cpp-example.html#a7">Polygon_mesh_processing/corefinement_difference_remeshed.cpp</a>, <a class="el" href="Polygon_mesh_processing_2hausdorff_distance_remeshing_example_8cpp-example.html#a3">Polygon_mesh_processing/hausdorff_distance_remeshing_example.cpp</a>, and <a class="el" href="Polygon_mesh_processing_2isotropic_remeshing_example_8cpp-example.html#a5">Polygon_mesh_processing/isotropic_remeshing_example.cpp</a>.</dd>
@@ -520,7 +520,7 @@ template&lt;typename TriangleMesh , typename FaceRange , typename FaceOutputIter
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pair of <code>faces_out</code> and <code>vertices_out</code></dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>is_triangle_mesh(tmesh)</code></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>current algorithm iterates 10 times at most, since (I guess) there is no termination proof. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>current algorithm iterates 10 times at most, since (I guess) there is no termination proof. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="Polygon_mesh_processing_2refine_fair_example_8cpp-example.html#a3">Polygon_mesh_processing/refine_fair_example.cpp</a>.</dd>
 </dl>
 </div>
@@ -804,7 +804,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 22 2018 12:56:57 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Wed May 23 2018 12:42:09 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

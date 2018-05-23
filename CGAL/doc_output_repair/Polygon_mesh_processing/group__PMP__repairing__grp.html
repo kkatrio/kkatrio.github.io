@@ -167,14 +167,21 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa4f824f785bbd5f5c18917c337130a4b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__repairing__grp.html#gaa4f824f785bbd5f5c18917c337130a4b">CGAL::Polygon_mesh_processing::is_cap_triangle_face</a> (typename boost::graph_traits&lt; TriangleMesh &gt;::face_descriptor f, const TriangleMesh &amp;tm, const double threshold, const NamedParameters &amp;np)</td></tr>
 <tr class="memdesc:gaa4f824f785bbd5f5c18917c337130a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks whether a triangle face is a cap.  <a href="group__PMP__repairing__grp.html#gaa4f824f785bbd5f5c18917c337130a4b">More...</a><br /></td></tr>
 <tr class="separator:gaa4f824f785bbd5f5c18917c337130a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa9b682528c5dc2a4821d01193518d14"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , typename OutputIterator &gt; </td></tr>
+<tr class="memitem:gafa9b682528c5dc2a4821d01193518d14"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__repairing__grp.html#gafa9b682528c5dc2a4821d01193518d14">CGAL::Polygon_mesh_processing::extract_boundary_cycles</a> (PolygonMesh &amp;pm, <a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> out)</td></tr>
+<tr class="memdesc:gafa9b682528c5dc2a4821d01193518d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">extracts boundary cycles as a list of halfedges.  <a href="group__PMP__repairing__grp.html#gafa9b682528c5dc2a4821d01193518d14">More...</a><br /></td></tr>
+<tr class="separator:gafa9b682528c5dc2a4821d01193518d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae4538a9e9119b59284c2741363101307"><td class="memTemplParams" colspan="2">template&lt;typename PolygonMesh , class HalfedgeRange &gt; </td></tr>
 <tr class="memitem:gae4538a9e9119b59284c2741363101307"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__repairing__grp.html#gae4538a9e9119b59284c2741363101307">CGAL::Polygon_mesh_processing::merge_boundary_vertices_in_cycle</a> (const HalfedgeRange &amp;sorted_hedges, PolygonMesh &amp;pm)</td></tr>
+<tr class="memdesc:gae4538a9e9119b59284c2741363101307"><td class="mdescLeft">&#160;</td><td class="mdescRight">merges target vertices of a list of halfedges.  <a href="group__PMP__repairing__grp.html#gae4538a9e9119b59284c2741363101307">More...</a><br /></td></tr>
 <tr class="separator:gae4538a9e9119b59284c2741363101307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga49fdb6be166d8a25aeb68e84a62a8cab"><td class="memTemplParams" colspan="2">template&lt;class PolygonMesh , class NamedParameter &gt; </td></tr>
 <tr class="memitem:ga49fdb6be166d8a25aeb68e84a62a8cab"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__repairing__grp.html#ga49fdb6be166d8a25aeb68e84a62a8cab">CGAL::Polygon_mesh_processing::merge_duplicated_vertices_in_boundary_cycle</a> (typename boost::graph_traits&lt; PolygonMesh &gt;::halfedge_descriptor h, PolygonMesh &amp;pm, const NamedParameter &amp;np)</td></tr>
+<tr class="memdesc:ga49fdb6be166d8a25aeb68e84a62a8cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">merges identical vertices around a cycle of connected edges.  <a href="group__PMP__repairing__grp.html#ga49fdb6be166d8a25aeb68e84a62a8cab">More...</a><br /></td></tr>
 <tr class="separator:ga49fdb6be166d8a25aeb68e84a62a8cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacbdd35f464c7a989cb2b5c9ec774dd51"><td class="memTemplParams" colspan="2">template&lt;class PolygonMesh , class NamedParameter &gt; </td></tr>
 <tr class="memitem:gacbdd35f464c7a989cb2b5c9ec774dd51"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__repairing__grp.html#gacbdd35f464c7a989cb2b5c9ec774dd51">CGAL::Polygon_mesh_processing::merge_duplicated_vertices_in_boundary_cycles</a> (PolygonMesh &amp;pm, const NamedParameter &amp;np)</td></tr>
+<tr class="memdesc:gacbdd35f464c7a989cb2b5c9ec774dd51"><td class="mdescLeft">&#160;</td><td class="mdescRight">extracts boundary cycles and merges the duplicated vertices of each cycle.  <a href="group__PMP__repairing__grp.html#gacbdd35f464c7a989cb2b5c9ec774dd51">More...</a><br /></td></tr>
 <tr class="separator:gacbdd35f464c7a989cb2b5c9ec774dd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8b9d12d817b5cc76f5a42d74eac75bf3"><td class="memTemplParams" colspan="2">template&lt;class PolygonRange &gt; </td></tr>
 <tr class="memitem:ga8b9d12d817b5cc76f5a42d74eac75bf3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__PMP__repairing__grp.html#ga8b9d12d817b5cc76f5a42d74eac75bf3">CGAL::Polygon_mesh_processing::is_polygon_soup_a_polygon_mesh</a> (const PolygonRange &amp;polygons)</td></tr>
@@ -264,6 +271,58 @@ template&lt;typename TriangleMesh , typename NamedParameters &gt; </div>
 </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the number of vertices created </dd></dl>
+
+</div>
+</div>
+<a id="gafa9b682528c5dc2a4821d01193518d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa9b682528c5dc2a4821d01193518d14">&#9670;&nbsp;</a></span>extract_boundary_cycles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PolygonMesh , typename OutputIterator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> CGAL::Polygon_mesh_processing::extract_boundary_cycles </td>
+          <td>(</td>
+          <td class="paramtype">PolygonMesh &amp;&#160;</td>
+          <td class="paramname"><em>pm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;CGAL/Polygon_mesh_processing/merge_border_vertices.h&gt;</code></p>
+
+<p>extracts boundary cycles as a list of halfedges. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. </td></tr>
+    <tr><td class="paramname"><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a></code> holding objects of type <code>boost::graph_traits&lt;PolygonMesh&gt;::halfedge_descriptor</code></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pm</td><td>the polygon mesh. </td></tr>
+    <tr><td class="paramname">out</td><td>an output iterator where the list of halfedges will be put.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd><p class="startdd">Maybe move to BGL </p>
+<p>It should make sense to also return the length of each cycle. </p>
+<p class="enddd">It should probably go into BGL package. </p>
+</dd></dl>
 
 </div>
 </div>
@@ -670,7 +729,24 @@ template&lt;typename PolygonMesh , class HalfedgeRange &gt; </div>
 </div><div class="memdoc">
 
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/merge_border_vertices.h&gt;</code></p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>document me we merge the all the target of the halfedges in <code>hedges</code> hedges must be sorted along the cycle </dd></dl>
+
+<p>merges target vertices of a list of halfedges. </p>
+<p>Halfedges must be sorted in the list.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. </td></tr>
+    <tr><td class="paramname">HalfedgeRange</td><td>a range of halfedge descriptors of <code>PolygonMesh</code>, model of <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/Circulator.tag:../Circulator/" href="../Circulator/classRange.html">Range</a></code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sorted_hedges</td><td>a sorted list of halfedges. </td></tr>
+    <tr><td class="paramname">pm</td><td>the polygon mesh which contains the list of halfedges.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>rename me to <code>merge_vertices_in_range</code> because I merge any king of vertices in the list. </dd></dl>
 
 </div>
 </div>
@@ -709,7 +785,31 @@ template&lt;class PolygonMesh , class NamedParameter &gt; </div>
 </div><div class="memdoc">
 
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/merge_border_vertices.h&gt;</code></p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>document me </dd></dl>
+
+<p>merges identical vertices around a cycle of connected edges. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. </td></tr>
+    <tr><td class="paramname">NamedParameter</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>a halfedge that belongs to the cycle. </td></tr>
+    <tr><td class="paramname">pm</td><td>the polygon mesh which containts the cycle. </td></tr>
+    <tr><td class="paramname">np</td><td>optional parameter of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> listed below.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params">
+<dt>Named Parameters</dt>
+<dd><table class="params">
+<tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pm</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code>  </td></tr>
+</table>
+</dd>
+</dl>
 
 </div>
 </div>
@@ -742,7 +842,30 @@ template&lt;class PolygonMesh , class NamedParameter &gt; </div>
 </div><div class="memdoc">
 
 <p><code>#include &lt;CGAL/Polygon_mesh_processing/merge_border_vertices.h&gt;</code></p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>document me </dd></dl>
+
+<p>extracts boundary cycles and merges the duplicated vertices of each cycle. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">PolygonMesh</td><td>a model of <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classFaceListGraph.html">FaceListGraph</a></code> and <code><a class="elRef" doxygen="/home/kon/cgal/build/doc_tags/BGL.tag:../BGL/" href="../BGL/classMutableFaceGraph.html">MutableFaceGraph</a></code>. </td></tr>
+    <tr><td class="paramname">NamedParameter</td><td>a sequence of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pm</td><td>the polygon mesh which containts the cycle. </td></tr>
+    <tr><td class="paramname">np</td><td>optional parameter of <a class="el" href="group__pmp__namedparameters.html">Named Parameters</a> listed below.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params">
+<dt>Named Parameters</dt>
+<dd><table class="params">
+<tr>
+<td class="paramname"><a class="el" href="group__pmp__namedparameters.html#PMP_vertex_point_map">vertex_point_map</a></td><td>the property map with the points associated to the vertices of <code>pm</code>. If this parameter is omitted, an internal property map for <code>CGAL::vertex_point_t</code> should be available in <code>PolygonMesh</code>  </td></tr>
+</table>
+</dd>
+</dl>
 
 </div>
 </div>
@@ -873,9 +996,9 @@ template&lt;class TriangleMesh , class NamedParameters &gt; </div>
 </table>
 </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>the function might not be able to remove all degenerate faces. We should probably do something with the return type. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>the function might not be able to remove all degenerate faces. We should probably do something with the return type. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>number of removed degenerate faces </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>Find to way to handle that case </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Find to way to handle that case </dd></dl>
 
 </div>
 </div>
@@ -1033,7 +1156,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 22 2018 12:56:57 for CGAL 4.12 - Polygon Mesh Processing by
+    <li class="footer">Generated on Wed May 23 2018 12:42:09 for CGAL 4.12 - Polygon Mesh Processing by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
